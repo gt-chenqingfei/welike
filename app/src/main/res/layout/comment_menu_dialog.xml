@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.redefine.richtext.RichTextView
+        android:id="@+id/comment_menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:gravity="center"
+        tools:text="aaa"
+        android:padding="@dimen/common_padding"
+        android:textColor="@color/comment_menu_title_text_color"
+        android:textSize="@dimen/comment_menu_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_color" />
+
+    <TextView
+        android:id="@+id/comment_menu_reply"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        tools:text="aaa"
+        android:textColor="@color/comment_menu_text_color"
+        android:textSize="@dimen/comment_menu_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_color"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/comment_menu_forward"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        tools:text="aaa"
+        android:singleLine="true"
+        android:textColor="@color/comment_menu_text_color"
+        android:textSize="@dimen/comment_menu_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_color"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/comment_menu_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/comment_menu_text_color"
+        android:textSize="@dimen/comment_menu_text_size"
+        android:visibility="visible"
+        tools:text="delete" />
+</LinearLayout>

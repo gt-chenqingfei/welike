@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_setting_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/common_action_bar" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_b_t_shadow">
+
+        <TextView
+            android:id="@+id/setting_language_item"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@drawable/common_left_arrow_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/common_text_color_31"
+            android:textSize="@dimen/common_text_size_14"
+            android:textStyle="bold"
+            tools:text="setting_language_item" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_b_t_shadow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_mute_notification"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_mute_notification"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableRight="@drawable/common_left_arrow_icon"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/common_text_color_31"
+                android:textSize="@dimen/common_text_size_14"
+                android:textStyle="bold"
+                tools:text="tv_mute_notification" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divider_px1"
+            android:background="@color/common_setting_bg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/setting_privacy_item"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableRight="@drawable/common_left_arrow_icon"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/common_text_color_31"
+                android:textSize="@dimen/common_text_size_14"
+                android:textStyle="bold"
+                tools:text="setting_privacy_item" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divider_px1"
+            android:background="@color/common_setting_bg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/setting_block_item"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableRight="@drawable/common_left_arrow_icon"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/common_text_color_31"
+                android:textSize="@dimen/common_text_size_14"
+                android:textStyle="bold"
+                tools:text="setting_block_item" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_b_t_shadow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_check_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_check_update"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:textColor="@color/common_text_color_31"
+                android:textSize="@dimen/common_text_size_14"
+                android:textStyle="bold"
+                tools:text="tv_check_update" />
+
+            <ImageView
+                android:id="@+id/mine_check_update_red_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:scaleType="center" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divider_px1"
+            android:background="@color/common_setting_bg"/>
+        <LinearLayout
+            android:id="@+id/ll_clearCache"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="1dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_mine_clear_cache"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:textColor="@color/common_text_color_31"
+                android:textSize="@dimen/common_text_size_14"
+                android:textStyle="bold"
+                tools:text="tv_mine_clear_cache" />
+
+            <TextView
+                android:id="@+id/tv_mine_clear_cache_text"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:textColor="@color/regist_language_text_gray"
+                android:textSize="@dimen/common_text_size_14"
+                tools:text="tv_mine_clear_cache" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_setting_app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/mine_check_update_text"
+        android:textSize="@dimen/common_text_size_14"
+        tools:text="tv_mine_clear_cache" />
+
+    <TextView
+        android:id="@+id/tv_setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="@dimen/common_item_margin_12"
+        android:background="@drawable/common_red_btn_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_16"
+        android:textStyle="bold"
+        tools:text="Logout" />
+
+    <TextView
+        android:id="@+id/tv_setting_deactivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/common_text_size_14"
+        android:visibility="visible"
+        tools:text="Deactivate account" />
+
+
+</LinearLayout>

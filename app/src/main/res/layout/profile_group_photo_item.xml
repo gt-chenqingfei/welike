@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/profile_photo_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:gravity="center_vertical|start"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/color_4A"
+        android:textSize="@dimen/common_text_size_14"
+        tools:text="09-2018"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.redefine.welike.commonui.widget.NoScrollableRecyclerView
+        android:id="@+id/profile_photo_item_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_divider_f4_color"
+        app:layout_constraintTop_toBottomOf="@id/profile_photo_item_time"
+        app:layout_constraintLeft_toLeftOf="@id/profile_photo_item_time"
+        app:layout_constraintRight_toRightOf="@id/profile_photo_item_time"/>
+
+</android.support.constraint.ConstraintLayout>

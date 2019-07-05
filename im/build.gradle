@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+//            buildConfigField "String", "LONG_CONNECTION", "\"dev-msg.welike.in\""
+            buildConfigField "int", "LONG_CONNECTION_PORT", "8200"
+        }
+        release {
+//            buildConfigField "String", "LONG_CONNECTION", "\"msg.welike.in\""
+            buildConfigField "int", "LONG_CONNECTION_PORT", "8200"
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':foundation')
+    implementation project(':framework')
+    api project(':multimedia')
+    implementation project(':richtext')
+    implementation project(':commonui')
+    implementation project(':base')
+    implementation deps.constraint_layout
+    implementation deps.kotlin.stdlib
+    implementation deps.protobuf
+    implementation deps.gms.base
+    implementation project(':im2')
+}
+repositories {
+    mavenCentral()
+}

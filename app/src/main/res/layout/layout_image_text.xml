@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_view"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:src="@drawable/default_head_boy1"/>
+
+    <com.redefine.multimedia.widget.CircleDownloadProgressBar
+        android:id="@+id/download_progress_bar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:visibility="gone"
+        app:circle_color="@color/main"
+        app:circle_stroke="3"
+        app:layout_constraintTop_toTopOf="@id/image_view"
+        app:layout_constraintBottom_toBottomOf="@id/image_view"
+        app:layout_constraintLeft_toLeftOf="@id/image_view"
+        app:layout_constraintRight_toRightOf="@id/image_view"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:textSize="@dimen/common_text_size_12"
+        android:textColor="@color/white"
+        android:shadowColor="@color/video_text_shadow_color"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="8"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        app:layout_constraintTop_toBottomOf="@id/image_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Download"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="im_session_list_item_height">72dp</dimen>
+    <dimen name="im_session_user_head_size">48dp</dimen>
+    <dimen name="session_group_name_text_size">16dp</dimen>
+    <dimen name="session_message_content_text_size">15dp</dimen>
+    <dimen name="session_message_time_text_size">14dp</dimen>
+    <dimen name="session_message_red_point_text_size">11dp</dimen>
+    <dimen name="im_chat_item_user_header_size">35dp</dimen>
+    <dimen name="im_chat_item_text_size">16dp</dimen>
+    <dimen name="chat_input_text_size">16dp</dimen>
+    <dimen name="im_time_section_time_text_size">14dp</dimen>
+</resources>

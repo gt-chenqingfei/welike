@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- button color -->
+    <color name="normal_btn_text">#5B5B5B</color>
+    <color name="normal_btn_bg">#D7D7D7</color>
+    <color name="normal_btn_bg_p">#B2B2B2</color>
+    <color name="bottom_bar_bg">#2196f3</color>
+    <color name="main_bottom_tab_text_color_selected">#fafcfe</color>
+    <color name="main_bottom_tab_text_color_default">#b3dbfb</color>
+    <color name="common_feed_name_text_color">#313131</color>
+    <color name="common_feed_follow_text_color">@color/white</color>
+
+    <color name="text_feed_content_text_color">#313131</color>
+    <color name="common_feed_bottom_text_color">#839BAE</color>
+    <color name="common_feed_bottom_text_color_pressed">#2B98EE</color>
+    <color name="common_feed_time_text_color">#999999</color>
+    <color name="common_feed_follow_btn_bg">#2196f3</color>
+    <color name="linked_feed_title_text_color">#8C8C8C</color>
+    <color name="linked_feed_content_text_color">#c4c4c4</color>
+    <color name="linked_feed_content_stroke_color">#eeeeee</color>
+    <color name="forward_feed_content_bg">#f8f8f8</color>
+    <color name="forward_feed_nick_name_text_color">#464646</color>
+
+    <color name="feed_detail_head_tab_text_color">@color/black</color>
+
+
+    <color name="comment_like_count_text_color">@color/black</color>
+    <color name="comment_like_btn_text_color">#2196f3</color>
+    <color name="comment_reply_btn_text_color">#2196f3</color>
+    <color name="comment_forward_btn_text_color">#2196f3</color>
+    <color name="second_level_comment_container_bg">#f2f2f2</color>
+
+    <color name="comment_second_level_text_color">@color/black</color>
+
+    <color name="main_home_red_point_text_color">@color/white</color>
+
+    <!--自定义联系人列表属性-->
+    <color name="item_decoration_title_background">#23282E</color>
+    <color name="item_decoration_title_fontcolor">#74869C</color>
+    <color name="background_recyclerview">#2E363C</color>
+    <color name="listitem_title_text">#D8DFE7</color>
+    <color name="listitem_subtitle_text">#74869C</color>
+    <color name="dialog_hint">#4CD8DFE7</color>
+    <color name="contacts_menu_title_color">#8d8d8d</color>
+    <color name="contacts_page_bg_color">#f9f9f9</color>
+    <color name="contacts_page_search_text">#c2c2c2</color>
+    <color name="contacts_page_search_result_text">#626262</color>
+    <color name="contacts_page_search_bg_view">#46000000</color>
+    <color name="contacts_page_search_online_btn">#FF9300</color>
+    <color name="contacts_page_search_online_btn_bg">#FFF9EF</color>
+
+    <color name="feed_detail_bottom_forward_text_color">#1A000000</color>
+    <color name="comment_detail_bottom_forward_text_color">@color/black</color>
+    <color name="comment_menu_text_color">#2196f3</color>
+    <color name="comment_menu_title_text_color">@color/black</color>
+
+
+    <color name="feed_detail_bottom_tab_bg">#2196f3</color>
+    <color name="comment_detail_bottom_bar_bg">#e0e0e0</color>
+    <color name="feed_detail_top_bar_text_color">#acd8fb</color>
+    <color name="feed_detail_top_bar_text_color_selected">#e7f3fd</color>
+    <color name="common_feed_item_bg">@color/white</color>
+
+
+    <!--注册-->
+    <color name="regist_nick_name_title">#9D6200</color>
+    <color name="regist_nick_name_edit">#F9F9F9</color>
+    <color name="regist_nick_name_tip">#B5B5B5</color>
+    <color name="regist_nick_name_next">#EDEDED</color>
+    <color name="regist_nick_name_sex_boy">#00B4FF</color>
+    <color name="regist_nick_name_sex_girl">#FF9E9E</color>
+    <color name="regist_yellow">#FECF1C</color>
+    <color name="regist_blue">#2C97ED</color>
+    <color name="regist_language_gray">#F8F8F8</color>
+    <color name="regist_language_text_gray">#A9A9A9</color>
+    <color name="regist_language_text_color">#626262</color>
+    <color name="regist_language_terms_color">#12BCFC</color>
+    <color name="regist_number_incorrect_red">#FF4b52</color>
+    <color name="regist_sms_code_gray">#505050</color>
+    <color name="regist_recommond_gray">#7A7A7A</color>
+    <color name="regist_recommond_list_gray">#707070</color>
+    <color name="regist_interest_list_gray">#666666</color>
+    <color name="regist_recommond_user_introduce_gray">#A2A2A2</color>
+    <color name="regist_title_text_color">#423D2D</color>
+    <color name="regist_sub_title_text_color">#AFB0B1</color>
+    <color name="regist_phone_num_line_color">#f1f1f1</color>
+    <color name="regist_phone_num_count_num_color">#A1A1A1</color>
+    <color name="regist_phone_num_resend">#0CDDBF</color>
+    <color name="regist_sms_input_color">#666666</color>
+
+    <!-- 首页  -->
+    <color name="main_home_bottom_bar_bg">@color/white</color>
+    <color name="main_bottom_add_progress_color">#FF6A49</color>
+    <color name="main_title_view_text_color">#9D6200</color>
+    <color name="feed_delete_dialog_title_text_color">#9B9B9B</color>
+    <!-- 消息页 -->
+    <color name="message_tab_icon_bg">#9D6200</color>
+    <color name="message_tab_text_color">#423D2D</color>
+    <color name="message_message_bg_gray">#f7f7f7</color>
+    <color name="message_like_empty_str">#d6d6d6</color>
+    <color name="message_comment_title_black">#464646</color>
+    <color name="message_list_divider_line_gray">#f5f5f5</color>
+    <color name="message_content_gray">#878787</color>
+    <color name="message_content_time_gray">#A4A4A4</color>
+    <color name="post_from_text_color">#2C97ED</color>
+    <color name="feed_bottom_divider_color">#f5f5f5</color>
+    <color name="common_feed_divider_color">#f7f7f7</color>
+    <color name="transparent_12">#1F000000</color>
+    <color name="transparent_35">#59000000</color>
+    <color name="search_user_name_text_color">#454545</color>
+    <color name="search_user_follower_text_color">#B0B0B0</color>
+    <color name="feed_load_more_bg">#f7f7f7</color>
+    <color name="feed_no_more_color">#B4B4B4</color>
+    <color name="transparent_40">#66000000</color>
+    <color name="transparent_07">#07000000</color>
+    <color name="transparent_03">#03000000</color>
+
+    <!-- feed详情 -->
+
+    <color name="feed_detail_bottom_comment_bg_color">#F9F9F9</color>
+    <!-- feed详情 forward -->
+    <color name="feed_detail_item_user_nick_text_color">#313131</color>
+    <color name="feed_detail_item_content_text_color">#454545</color>
+    <color name="feed_detail_item_time_text_color">#AFB0B1</color>
+    <color name="feed_detail_item_like_text_color">#A6A7A8</color>
+    <color name="feed_detail_multi_container_bg">#F7F7F7</color>
+    <color name="feed_detail_multi_nick_name_text_color">#2B98EE</color>
+    <color name="feed_detail_comment_more_text_color">#2B98EE</color>
+    <color name="feed_detail_like_user_nick_text_color">#313131</color>
+    <!-- 评论详情 -->
+    <color name="comment_detail_main_user_nick_text_color">#313131</color>
+    <color name="comment_detail_main_time_text_color">#A4A4A4</color>
+    <color name="comment_detail_main_content_text_color">#423D2D</color>
+    <color name="comment_detail_main_view_blog_text_color">#2B98EE</color>
+    <color name="comment_detail_reply_user_nick_text_color">#313131</color>
+    <color name="comment_detail_reply_content_text_color">#454545</color>
+    <color name="comment_detail_reply_time_text_color">#AFB0B1</color>
+    <color name="comment_detail_reply_like_text_color">#CDCDCD</color>
+
+    <!--mine-->
+    <color name="mine_setting_text_color">#AFB0B1</color>
+    <color name="mine_setting_text_line_color">#d8d8d8</color>
+    <color name="mine_line_vertical_color">#f0f0f0</color>
+    <color name="mine_nick_name_color">#412900</color>
+    <color name="mine_user_host_vp_tab_text">#9D6200</color>
+    <color name="mine_user_host_personal_info_text">#CACACA</color>
+    <color name="mine_user_host_personal_nickName_title">#B1B1B1</color>
+    <color name="mine_user_host_personal_nickName">#454545</color>
+    <color name="mine_user_host_personal_edit_nickName">#939393</color>
+    <color name="mine_user_host_bottom_text">#8c8c8c</color>
+    <color name="mine_user_host_bottom_line">#e9e9e9</color>
+    <color name="mine_user_host_follow_following">#A1A1A1</color>
+    <color name="mine_user_host_setting_logout">#FF6A49</color>
+    <color name="mine_user_edit_modify_name_dialog_title">#696969</color>
+    <color name="mine_follow_divider_color">#f5f5f5</color>
+    <color name="mine_check_update_text">#c2c2c2</color>
+    <color name="mine_setting_bg">#f7f7f7</color>
+    <color name="mine_setting_type_text_color">#454545</color>
+    <color name="mine_setting_dialog_confirm_color">#423d2d</color>
+    <color name="mine_setting_dialog_cancel_color">#a1a1a1</color>
+    <color name="mine_setting_language_bg">#F5F5F5</color>
+    <color name="mine_user_nickname_color">#313131</color>
+    <color name="mine_user_host_tab_text_color">#838383</color>
+    <color name="mine_user_follow_num_text_color">#b0b0b0</color>
+    <color name="mine_user_follow_introduce_text_color">#7D7D7D</color>
+    <color name="mine_user_follow_nickname_text_color">#454545</color>
+    <color name="mine_setting_switch_color">#a9a9a9</color>
+    <color name="setting_text_color">#454545</color>
+    <color name="user_host_pagetab_divider_color">#E9E9E9</color>
+    <color name="user_host_follow_underline_color">#9D6200</color>
+    <color name="profile_setting_text_color">#B06E00</color>
+
+    <!-- 发布器 -->
+    <color name="editor_text_limit_text_color">#A1A1A1</color>
+    <color name="editor_root_view_bg">@color/white</color>
+    <color name="editor_forward_card_bg">#F4F4F4</color>
+    <color name="editor_forward_user_nick_text_color">#423D2D</color>
+    <color name="editor_post_check_btn_text_color">#A1A1A1</color>
+    <color name="editor_send_text_color">#423D2D</color>
+    <color name="editor_from_text_color">#A4A4A4</color>
+    <color name="editor_rich_edit_text_color">#5C5C5C</color>
+    <color name="editor_rich_edit_text_hint_color">#E5E5E5</color>
+    <color name="editor_forward_feed_text_color">#5C5C5C</color>
+    <color name="editor_send_btn_bg_disable">#EDEDED</color>
+    <color name="add_link_edit_text_bg_color">#F5F5F5</color>
+    <color name="add_link_submit_text_color">#423D2D</color>
+    <color name="add_link_ward_text_color">#AFB0B1</color>
+    <color name="main_home_bg_color">#F7F7F7</color>
+    <color name="main_discover_bg_color">#F7F7F7</color>
+    <color name="search_page_edit_text_color">#626262</color>
+    <color name="forward_feed_delete_img_bg">#E0E0E0</color>
+
+    <color name="discover_hot_feed_title_text_color">#636363</color>
+    <color name="discover_search_hot_feed_title_divider">#F5F5F5</color>
+
+    <color name="search_tab_text_color_pressed">#FF313131</color>
+    <color name="search_tab_text_color_default">#7F313131</color>
+    <color name="search_latest_user_title_text_color">#aaaaaa</color>
+    <color name="search_latest_user_title_divider">#F5F5F5</color>
+    <color name="search_user_item_divider">#F5F5F5</color>
+    <color name="search_user_introduction_text_color">#7D7D7D</color>
+    <color name="common_limit_color">#B8B8B8</color>
+    <color name="common_limit_over_color">#FF6A49</color>
+    <color name="link_feed_content_bg_color">#F7F7F7</color>
+    <color name="feed_nine_grid_img_bg_color">#F7F7F7</color>
+    <color name="user_information_nick_warn_text_color">#A3A3A3</color>
+    <color name="message_remind_text_color">#C2C2C2</color>
+    <color name="message_nick_name_text_color">#2C97ED</color>
+    <color name="message_text_color">#626262</color>
+    <color name="message_card_text_color">#5c5c5c</color>
+    <color name="message_divider_color">#F5F5F5</color>
+    <color name="message_card_layout_bg_color">#F7F7F7</color>
+    <color name="message_card_img_bg">#EAEAEA</color>
+    <color name="search_sug_cancel_text_color">#313131</color>
+    <color name="search_all_history_text_color">#2C97ED</color>
+    <color name="search_sug_text_color">@color/black</color>
+    <color name="search_history_title_text_color">#464646</color>
+    <color name="common_search_item_divider">#F5F5F5</color>
+    <color name="search_sug_bg">#F6F6F6</color>
+    <color name="draft_time_text_color">#AFB0B1</color>
+    <color name="draft_item_nick_text_color">#2B98EE</color>
+    <color name="forward_draft_item_bg">#F4F4F4</color>
+    <color name="forward_draft_text_color">#5C5C5C</color>
+    <color name="draft_text_color">#626262</color>
+    <color name="draft_layout_bg">#F6F6F6</color>
+    <color name="draft_resend_text_color">#423D2D</color>
+    <color name="editor_location_text_color">#2C97ED</color>
+    <color name="location_select_hint_text_color">#afb0b1</color>
+    <color name="location_select_text_color">#313131</color>
+    <color name="location_search_bg">#F6F6F6</color>
+    <color name="feed_location_text_color">#2B98EE</color>
+    <color name="location_mix_poi_text_color">@color/white</color>
+    <color name="location_user_count_text_color">#464646</color>
+    <color name="feed_list_bg_color">#F4F4F4</color>
+    <color name="color_normal_48779D">#48779D</color>
+    <color name="location_passer_by_nick_text_color">#423D2D</color>
+    <color name="location_passer_by_time_text_color">#7D7D7D</color>
+    <color name="location_passer_by_introduction_text_color">#B0B0B0</color>
+    <color name="discover_top_user_title_text_color">#464646</color>
+    <color name="discover_card_divider_color">#F7F7F7</color>
+    <color name="discover_rank_text_color">@color/white</color>
+    <color name="discover_top_user_nick_text_color">#464646</color>
+    <color name="choice_category_confirm_text_color">#423D2D</color>
+    <color name="interest_category_text_color">#ACACAC</color>
+    <color name="user_task_divider_color">#F0F0F0</color>
+    <color name="user_main_task_text_color">#313131</color>
+    <color name="user_sub_task_text_color">#B2B2B2</color>
+    <color name="user_sub_task_btn_color">#313131</color>
+    <color name="location_poi_text_color">#454545</color>
+    <color name="location_poi_near_by_count_text_color">#7D7D7D</color>
+    <color name="location_poi_divider_color">#F5F5F5</color>
+    <color name="location_mix_bg">#F7F7F7</color>
+    <color name="link_feed_thumb_bg_color">#E9E9E9</color>
+    <color name="forward_text_feed_content_text_color">#5C5C5C</color>
+    <color name="main_discover_search_text_color">#313131</color>
+    <color name="discover_top_user_no1_text_color">#DFC296</color>
+    <color name="editor_photo_add_btn_bg_color">#E8E8E8</color>
+    <color name="mine_draft_box_text_color">#313131</color>
+    <color name="main_draft_bg_color">#C4C4C4</color>
+    <color name="topic_choice_edit_text_color">#313131</color>
+    <color name="topic_sug_high_color">#4DCDFD</color>
+    <color name="common_color_2c97ed">#2C97ED</color>
+    <color name="common_color_53d0ff">#53D0FF</color>
+
+    <color name="common_color_b0b0b0">#B0B0B0</color>
+    <color name="new_topic_text_color">#9B9B9B</color>
+    <color name="follow_btn_orange_color">#FFA00B</color>
+    <color name="follow_btn_gray_color">#AFB0B1</color>
+    <color name="vote_gray_color">#AFB0B1</color>
+
+
+    <color name="common_tab_indicator_color">#FFA00B</color>
+    <color name="common_text_color_62">#626262</color>
+    <color name="common_edit_text_disable">#FFEDE9</color>
+    <color name="common_text_color_48779D">#48779D</color>
+    <color name="notification_mute_tips">#9B9B9B</color>
+    <color name="notification_mute_time">#4A90E2</color>
+    <color name="mute_selected">#EAEAEA</color>
+
+    <color name="vote_master_stroke">#E9E9E9</color>
+    <color name="vote_guest_stroke_sucess">#FF9A00</color>
+
+    <color name="vote_text_item_1">#E1E5FF</color>
+    <color name="vote_text_item_2">#BEF7EA</color>
+    <color name="vote_text_item_3">#FFDCEE</color>
+    <color name="vote_text_item_4">#D1F0FF</color>
+    <color name="vote_text_color">#626262</color>
+
+    <color name="guide_bg">#48A8FF</color>
+    <color name="topic_card_title">#48A8FF</color>
+    <color name="topic_card_content">#313131</color>
+    <color name="topic_card_layer">#E6F6F6F6</color>
+
+
+    <color name="task_level_bg">#76B7FF</color>
+    <color name="topic_header_bg">#BAF6F2</color>
+    <color name="feed_flag_trending_text_color">#FF4B52</color>
+    <color name="feed_flag_top_text_color">#2B98EE</color>
+    <color name="feed_lbs_backgroud_color">#F4F6F9</color>
+    <color name="topic_card_backgroud_stroke">#E1E1E1</color>
+    <color name="vote_un_select_color">#E6EBF0</color>
+    <color name="vote_selected_color">#8FDDFF</color>
+    <color name="feed_repost_back_groud">#F8F8F8</color>
+    <color name="feed_card_text_color">#626262</color>
+    <color name="topic_divide">#edf1f5</color>
+    <color name="topic_send_botton_back_ground">#1AFFFFFF</color>
+
+    <color name="splash_bg_start_color">#FF9300</color>
+    <color name="splash_bg_end_color">#FFD100</color>
+
+    <color name="video_guide_bg">#B3000000</color>
+    <color name="video_text_shadow_color">#99000000</color>
+    <color name="color_e5">#e5e5e5</color>
+    <color name="color_4A">#4A4A4A</color>
+    <color name="color_edf1f5">#EDF1F5</color>
+    <color name="notification_push_bg_color">#F7FDFB</color>
+    <color name="color_c9">#C9C9C9</color>
+
+    <color name="color_ff6a49">#FF6A49</color>
+    <color name="color_fffaf4">#FFFAF4</color>
+
+
+</resources>

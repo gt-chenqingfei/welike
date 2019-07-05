@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_feed_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false">
+
+        <com.redefine.welike.commonui.view.ClassicsHeader1
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_color_f8f8f8"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="5dp"
+            app:srlDrawableProgressSize="15dp"
+            app:srlEnableLastTime="false"
+            app:srlFinishDuration="1500"
+            app:srlTextSizeTitle="14dp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feed_posts_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.redefine.commonui.widget.ErrorView
+        android:id="@+id/discover_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <com.redefine.commonui.widget.LoadingView
+        android:id="@+id/discover_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <com.redefine.commonui.widget.EmptyView
+        android:id="@+id/discover_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</FrameLayout>

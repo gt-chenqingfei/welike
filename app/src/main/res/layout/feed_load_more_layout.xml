@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <FrameLayout
+        android:id="@+id/load_more_container"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/common_color_f8f8f8">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical">
+
+                <!--<ProgressBar-->
+                <!--android:id="@+id/load_more_progress"-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:indeterminate="true"-->
+                <!--android:indeterminateDrawable="@drawable/im_chat_load_more_progress" />-->
+
+                <com.redefine.commonui.widget.loading.ProgressView
+                    android:id="@+id/load_more_progress"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <ImageView
+                    android:id="@+id/load_more_no_more"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:scaleType="center"
+                    android:src="@drawable/im_chat_load_more_no_more"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/load_more_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/feed_no_more_color"
+                android:textSize="@dimen/load_more_text_size" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

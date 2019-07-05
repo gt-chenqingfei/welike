@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+  <string name="message_comment_reposted_you_post_text">&#160;shared&#160;your&#160;post</string>
+  <string name="message_comment_forward_text">reposted&#160;your&#160;post</string>
+  <string name="message_comment_commented_you_post_text">&#160;commented&#160;on&#160;your&#160;post</string>
+  <string name="message_comment_liked_your_post_text">&#160;liked&#160;your&#160;post</string>
+  <string name="message_comment_reposted_you_comment_text">&#160;shared&#160;your&#160;comment</string>
+  <string name="message_comment_forward_you_text">&#160;shared&#160;your&#160;post</string>
+  <string name="message_comment_liked_your_reply_text">&#160;liked&#160;your&#160;reply</string>
+  <string name="message_comment_reply_you_text">&#160;replied&#160;to&#160;your&#160;comment</string>
+  <string name="message_comment_forward_comment">reposted&#160;your&#160;comment</string>
+  <string name="message_like_text">Likes</string>
+  <string name="chat_edit_text_hint">Send&#160;a&#160;message</string>
+  <string name="message_mention_text">@</string>
+  <string name="message_comment_mentioned_you">&#160;mentioned&#160;you</string>
+  <string name="message_comment_text">Comment</string>
+  <string name="message_comment_like_text">Like</string>
+  <string name="im_content_text_over_limit">Input&#160;character&#160;limit&#160;exceeded</string>
+  <string name="message_comment_dislike_text">Dislike</string>
+  <string name="im_chat_loading_text">Loading</string>
+  <string name="im_session_pic_message">[Picture]</string>
+  <string name="im_feed_back_text">Feedback</string>
+  <string name="message_comment_liked_your_comment_text">&#160;liked&#160;your&#160;comment</string>
+  <string name="message_comment_reply_text">Comment</string>
+  <string name="message_no_information_text">No&#160;information</string>
+  <string name="im_chat_no_more_text">No&#160;message</string>
+  <string name="chat_sent_a_message">sent&#160;you&#160;a&#160;message</string>
+  <string name="follow_you">followed&#160;you</string>
+  <string name="follower_new_post">sent&#160;a&#160;new&#160;post</string>
+
+</resources>

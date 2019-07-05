@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/choice_category_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/common_title_view"
+            style="@style/BaseAppTheme.TextView.CommonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/choice_category_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/choice_category_confirm"
+            style="@style/BaseAppTheme.AppColorButton"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColor="@color/choice_category_confirm_text_color"
+            android:textSize="@dimen/common_text_size_16" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/choice_category_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/choice_category_bottom_layout"
+        android:layout_below="@id/choice_category_title_view" />
+
+    <com.redefine.commonui.widget.shadowlayout.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/choice_category_recycler"
+        app:is_draw_bottom="true" />
+
+
+    <com.redefine.commonui.widget.ErrorView
+        android:id="@+id/common_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/choice_category_title_view"
+        android:visibility="invisible" />
+
+    <com.redefine.commonui.widget.LoadingView
+        android:id="@+id/common_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/choice_category_title_view"
+        android:visibility="invisible" />
+
+</RelativeLayout>

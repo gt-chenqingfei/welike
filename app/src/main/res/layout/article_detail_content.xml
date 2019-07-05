@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/color_4A"
+        android:textSize="@dimen/common_text_size_24"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Gas Grill Burners Getting To Know You" />
+
+    <TextView
+        android:id="@+id/article_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_title"
+        tools:text="2018.08.17 04:55" />
+
+    <TextView
+        android:id="@+id/article_view_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintStart_toEndOf="@id/article_time"
+        app:layout_constraintTop_toBottomOf="@id/article_title"
+        tools:text="Views 800K+" />
+
+    <View
+        android:id="@+id/article_title_dash_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_divider_dp1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/common_dash_line"
+        android:layerType="software"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_time" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/article_share_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_title_dash_line">
+
+        <View
+            android:id="@+id/share_start"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/article_share_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_text_color_afb0b1"
+            android:textSize="@dimen/common_text_size_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/article_whats_app_share"
+            app:layout_constraintStart_toEndOf="@id/share_start"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Share to" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/article_whats_app_share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintEnd_toStartOf="@id/article_facebook_share"
+            app:layout_constraintStart_toEndOf="@id/article_share_text"
+            app:srcCompat="@drawable/whats_app_icon" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/article_facebook_share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintEnd_toStartOf="@id/article_instagram_share"
+            app:layout_constraintStart_toEndOf="@id/article_whats_app_share"
+            app:srcCompat="@drawable/facebook_share_icon" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/article_instagram_share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintEnd_toStartOf="@id/article_copy_share"
+            app:layout_constraintStart_toEndOf="@id/article_facebook_share"
+            app:srcCompat="@drawable/instagram_share_icon" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/article_copy_share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintEnd_toStartOf="@id/article_more_share"
+            app:layout_constraintStart_toEndOf="@id/article_instagram_share"
+            app:srcCompat="@drawable/copy_share_blue_icon" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/article_more_share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintEnd_toStartOf="@id/share_end"
+            app:layout_constraintStart_toEndOf="@id/article_copy_share"
+            app:srcCompat="@drawable/more_share_icon" />
+
+        <View
+            android:id="@+id/share_end"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.redefine.richtext.RichDraweeSpanTextView
+        android:id="@+id/article_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:lineSpacingExtra="8dp"
+        android:textColor="@color/color_31"
+        android:textSize="@dimen/common_text_size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_share_layout" />
+
+    <FrameLayout
+        android:id="@+id/article_video_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/video_thumb_image_size"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/article_video_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_40" />
+
+        <ImageView
+            android:id="@+id/article_video_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/video_feed_play" />
+    </FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bottom_share_divider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_video_container">
+
+        <TextView
+            android:id="@+id/article_bottom_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_text_color_afb0b1"
+            android:textSize="@dimen/common_text_size_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Share to" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_divider_px1"
+            android:layout_marginEnd="17dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginStart="12dp"
+            android:background="@color/common_div_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/article_bottom_share"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_divider_px1"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="17dp"
+            android:background="@color/common_div_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/article_bottom_share"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/article_bottom_share_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_share_divider">
+
+        <View
+            android:id="@+id/bottom_share_start"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/article_bottom_whats_app_share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/article_bottom_facebook_share_layout"
+            app:layout_constraintStart_toEndOf="@id/bottom_share_start">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/article_bottom_whats_app_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/whats_app_icon" />
+
+            <TextView
+                android:id="@+id/whats_app_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/common_text_color_62"
+                android:textSize="@dimen/common_text_size_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/article_bottom_whats_app_share" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/article_bottom_facebook_share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/article_bottom_instagram_share_layout"
+            app:layout_constraintStart_toEndOf="@id/article_bottom_whats_app_share_layout">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/article_bottom_facebook_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/facebook_share_icon" />
+
+            <TextView
+                android:id="@+id/face_book_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/common_text_color_62"
+                android:textSize="@dimen/common_text_size_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/article_bottom_facebook_share" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/article_bottom_instagram_share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/article_bottom_copy_share_layout"
+            app:layout_constraintStart_toEndOf="@id/article_bottom_facebook_share_layout">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/article_bottom_instagram_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/instagram_share_icon" />
+
+            <TextView
+                android:id="@+id/instagram_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/common_text_color_62"
+                android:textSize="@dimen/common_text_size_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/article_bottom_instagram_share" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/article_bottom_copy_share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/article_bottom_more_share_layout"
+            app:layout_constraintStart_toEndOf="@id/article_bottom_instagram_share_layout">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/article_bottom_copy_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/copy_share_blue_icon" />
+
+            <TextView
+                android:id="@+id/copy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/common_text_color_62"
+                android:textSize="@dimen/common_text_size_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/article_bottom_copy_share" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/article_bottom_more_share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/bottom_share_end"
+            app:layout_constraintStart_toEndOf="@id/article_bottom_copy_share_layout">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/article_bottom_more_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/more_share_icon" />
+
+            <TextView
+                android:id="@+id/more_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/common_text_color_62"
+                android:textSize="@dimen/common_text_size_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/article_bottom_more_share" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/bottom_share_end"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/color_edf1f5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_bottom_share_layout"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

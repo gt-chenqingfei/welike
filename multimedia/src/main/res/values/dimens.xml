@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_selector_confirm_text_size">15dp</dimen>
+    <dimen name="camera_video_recorder_text_size">15dp</dimen>
+    <dimen name="video_time_text_size">10dp</dimen>
+    <dimen name="album_item_height">72dp</dimen>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/assignment_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <ImageView
+            android:id="@+id/common_close_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:layout_toRightOf="@id/common_back_btn"
+            app:srcCompat="@drawable/common_close_btn" />
+
+        <TextView
+            android:id="@+id/common_title_view"
+            style="@style/BaseAppTheme.TextView.CommonTitle"
+            android:layout_width="match_parent"
+            tools:text = "adasdasdasdasdasd dadas"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/common_more_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/common_more_btn" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/web_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

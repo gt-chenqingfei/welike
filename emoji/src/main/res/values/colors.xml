@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="emoji_background">#eceff1</color>
+    <color name="emoji_icons">#61000000</color>
+    <color name="emoji_divider">#1f000000</color>
+
+    <drawable name="emoji_category_btn_background_normal">#F8F8F8</drawable>
+    <drawable name="emoji_category_btn_background_selected">#FFFFFF</drawable>
+</resources>

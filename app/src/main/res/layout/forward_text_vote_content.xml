@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forward_feed_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/common_item_margin_12"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="@dimen/common_item_margin_12"
+    android:layout_marginBottom="@dimen/common_feed_card_forward_margin"
+    android:background="@drawable/drawable_shape_forward_bg"
+    android:orientation="vertical"
+    android:paddingBottom="6dp">
+
+    <include layout="@layout/forward_feed_header" />
+
+    <com.redefine.welike.commonui.view.MultiTextVoteView
+        android:id="@+id/vote_text_multi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+    </com.redefine.welike.commonui.view.MultiTextVoteView>
+
+    <include layout="@layout/common_feed_bottom_checkbox" />
+
+    <include layout="@layout/common_feed_bottom_right_text" />
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/topic_landing_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:background="@color/main_title_bg">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/common_title_view"
+            style="@style/new_ui.title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/common_back_btn" />
+
+        <ImageView
+            android:id="@+id/common_more_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_topic_share" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/topic_landing_title_view"
+        android:background="@drawable/common_transition_t_b_bg" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/topic_landing_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topic_landing_title_view"
+        android:background="@color/common_color_f8f8f8"
+        app:srlEnableLoadMore="false">
+
+        <com.redefine.welike.commonui.view.ClassicsHeader1
+            android:id="@+id/topic_landing_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="5dp"
+            app:srlDrawableProgressSize="15dp"
+            app:srlEnableLastTime="false"
+            app:srlFinishDuration="1500"
+            app:srlTextSizeTitle="14dp" />
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/topic_landing_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:orientation="vertical"
+                app:elevation="0dp"
+                app:layout_behavior="com.redefine.welike.commonui.view.FlingBehavior">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/head_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/common_color_f8f8f8">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/topic_landing_banner"
+                                android:layout_width="match_parent"
+                                android:layout_height="113dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                fresco:fadeDuration="300"
+                                fresco:placeholderImage="@drawable/topic_landing_banner_default"
+                                fresco:placeholderImageScaleType="centerCrop" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="113dp"
+                                android:background="@color/transparent_40" />
+
+
+                            <TextView
+                                android:id="@+id/topic_landing_topic_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginTop="12dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textColor="@color/location_mix_poi_text_color"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="#Topic name"
+                                tools:visibility="visible" />
+
+
+                            <TextView
+                                android:id="@+id/topic_landing_topic_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="10dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:textColor="@color/location_mix_poi_text_color"
+                                android:textSize="16sp"
+                                android:visibility="gone"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/topic_landing_topic_name"
+                                tools:text="24k people participated"
+                                tools:visibility="visible" />
+
+                            <FrameLayout
+                                android:id="@+id/ll_top_user_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="13dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="8dp"
+                                android:visibility="gone"
+
+                                app:layout_constraintBottom_toBottomOf="@+id/topic_landing_banner"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_topic_user_headers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right"
+                                    android:layout_marginRight="20dp"
+                                    android:orientation="horizontal" />
+
+                                <TextView
+                                    android:id="@+id/tv_topic_landing_user_all"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="bottom|right"
+                                    android:background="@drawable/topic_all"
+                                    android:gravity="center"
+                                    android:textColor="@color/topic_all"
+                                    android:textSize="@dimen/common_text_size_12"
+                                    android:textStyle="bold"
+                                    tools:text="ALL" />
+                            </FrameLayout>
+
+                            <com.redefine.richtext.RichTextView
+                                android:id="@+id/topic_detial_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:gravity="left"
+                                android:lineSpacingMultiplier="1"
+                                android:padding="15dp"
+                                android:textColor="@color/text_feed_content_text_color"
+                                android:textSize="@dimen/common_text_size_15"
+                                android:visibility="gone"
+                                app:layout_constraintTop_toBottomOf="@+id/topic_landing_banner"
+                                tools:text="lalalala"
+                                tools:visibility="visible" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <FrameLayout
+                            android:id="@+id/common_feed_bottom_root_shadow"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_feed_card_bottom_line_height"
+                            android:background="@color/common_color_f8f8f8"
+                            android:foreground="@drawable/common_shadow_icon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/common_feed_bottom_root_view" />
+
+
+                        <FrameLayout
+                            android:id="@+id/topic_feed_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/common_item_margin_40"
+                    android:paddingRight="@dimen/common_item_margin_40">
+
+                    <com.androidkun.xtablayout.XTabLayout
+                        android:id="@+id/topic_page_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        app:xTabDividerWidthWidthText="true"
+                        app:xTabIndicatorColor="@color/main_orange_dark"
+                        app:xTabMode="fixed"
+                        app:xTabSelectedTextColor="@color/common_text_color_31"
+                        app:xTabSelectedTextSize="@dimen/common_text_size_16"
+                        app:xTabTextBold="true"
+                        app:xTabTextColor="@color/common_text_color_afb0b1"
+                        app:xTabTextSelectedBold="true"
+                        app:xTabTextSize="@dimen/common_text_size_16"
+                        tools:visibility="visible" />
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <View
+                    style="@style/new_ui.div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <com.redefine.welike.commonui.widget.NoScrollViewPager
+                android:id="@+id/topic_landing_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:scrollable="false" />
+
+            <View
+                android:id="@+id/topic_landing_view_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/common_transition_t_b_bg"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/topic_landing_post_topic_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="3dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/vector_publish"
+        tools:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="photo_selector_confirm_text_color">#9D6200</color>
+    <color name="video_recorder_text_color_default">#CEB07F</color>
+    <color name="video_recorder_text_color_selected">#9D6200</color>
+    <color name="video_time_text_color">#F8F8F8</color>
+
+    <color name="photo_complete_text_disable">#B6B6B6</color>
+    <color name="photo_complete_text_enable">#423D2D</color>
+    <color name="album_name_text_color">#DE000000</color>
+    <color name="album_count_text_color">#999999</color>
+    <color name="image_pick_item_default_color">#E0DEDE</color>
+    <color name="transparent_db">#E0DBDBDB</color>
+
+    <color name="image_pick_complete_text_disable">#B6B6B6</color>
+    <color name="image_pick_complete_text_enable">#423D2D</color>
+    <color name="blue">#7D7DFF</color>
+
+    <color name="line_color">#EEEEEE</color>
+</resources>

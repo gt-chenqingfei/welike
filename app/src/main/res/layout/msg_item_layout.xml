@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/message_head"
+        android:layout_width="@dimen/common_feed_head_size"
+        android:layout_height="@dimen/common_feed_head_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true"
+        tools:background="@drawable/alien" />
+
+
+    <LinearLayout
+        android:id="@+id/message_nick_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/message_card_layout"
+        android:layout_alignRight="@+id/message_card_layout"
+        android:layout_alignTop="@id/message_head"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/message_head"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/message_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/message_nick_name_text_color"
+            android:textSize="@dimen/message_nick_name_text_size"
+            tools:text="AAAAAAAAAAAA" />
+
+        <TextView
+            android:id="@+id/message_remind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/message_remind_text_color"
+            android:textSize="@dimen/message_remind_text_size"
+            tools:text="mentioned you" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_nick_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/message_card_layout"
+        android:layout_alignRight="@+id/message_card_layout"
+
+        android:layout_below="@+id/message_nick_name_layout"
+        android:layout_marginLeft="10dp"
+
+        android:layout_toRightOf="@id/message_head"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/common_feed_time_text_color"
+        android:textSize="@dimen/common_feed_time_text_size"
+        tools:text="02-08 11:30" />
+
+    <com.redefine.richtext.RichTextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_head"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/message_text_color"
+        android:textSize="@dimen/message_text_size"
+        tools:text="how about you @ aaaa" />
+
+    <LinearLayout
+        android:id="@+id/message_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/message_text"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/message_card_layout_bg_color"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/message_card_img_layout"
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/message_card_img"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@color/message_card_img_bg"
+                fresco:fadeDuration="300"
+                fresco:failureImage="@drawable/message_error_icon"
+                fresco:failureImageScaleType="center"
+                fresco:placeholderImage="@drawable/message_default_icon"
+                fresco:placeholderImageScaleType="center" />
+
+            <ImageView
+                android:id="@+id/message_card_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_video_play"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.redefine.richtext.RichTextView
+            android:id="@+id/message_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/message_card_text_color"
+            android:textSize="@dimen/message_card_text_size"
+            tools:text="Lorem ipsum damet, consectetur adipiscing elit.😄 Aenean euismod " />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:layout_below="@id/message_card_layout"
+        android:background="@color/message_divider_color" />
+</RelativeLayout>

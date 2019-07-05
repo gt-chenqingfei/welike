@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/item_preview_root_view"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="4dp"
+    android:background="@drawable/preview_bottom_shape_bg_selector">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_preview_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <View
+        android:id="@+id/item_preview_image_holder"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@color/white_color_70"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

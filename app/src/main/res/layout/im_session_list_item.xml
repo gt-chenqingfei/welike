@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.redefine.commonui.widget.ScrollSwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/im_session_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/im_session_list_item_height">
+
+
+    <ImageView
+        android:id="@+id/im_session_delete_btn"
+        android:layout_width="@dimen/common_swipe_delete_width"
+        android:layout_height="match_parent"
+        android:background="@color/common_delete_bg_color"
+        android:scaleType="center"
+        app:srcCompat="@drawable/common_swipe_delete_btn" />
+
+    <RelativeLayout
+        android:id="@+id/im_session_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chat_list_item_bg_selector"
+        android:foreground="?android:selectableItemBackground">
+
+        <com.redefine.welike.commonui.widget.VipAvatar
+            android:id="@+id/session_group_photo"
+            android:layout_width="@dimen/im_session_user_head_size"
+            android:layout_height="@dimen/im_session_user_head_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@drawable/user_default_head"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true"
+            tools:background="@drawable/user_default_head" />
+
+        <TextView
+            android:id="@+id/session_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/session_group_photo"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/session_group_photo"
+            android:textStyle="bold"
+            android:textColor="@color/common_text_color_31"
+            android:textSize="@dimen/session_group_name_text_size"
+            tools:text="Stranger" />
+
+
+        <TextView
+            android:id="@+id/session_message_last_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/session_group_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/common_text_color_afb0b1"
+            android:textSize="@dimen/common_text_size_12"
+            tools:text="03/01" />
+
+        <com.redefine.richtext.RichTextView
+            android:id="@+id/session_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/session_group_name"
+            android:layout_below="@id/session_group_name"
+            android:layout_toLeftOf="@id/session_message_last_time"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="@color/common_text_color_afb0b1"
+            android:textSize="@dimen/common_text_size_14"
+            tools:text="Tur adipiscing elit.Tur adipiscing elit.Tur adipiscing elit." />
+
+        <TextView
+            android:id="@+id/session_message_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@id/session_message_content"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/message_red_point_bg"
+            android:textColor="@color/session_message_red_point_text_color"
+            android:textSize="@dimen/session_message_red_point_text_size"
+            tools:text="0"/>
+
+    </RelativeLayout>
+</com.redefine.commonui.widget.ScrollSwipeLayout>

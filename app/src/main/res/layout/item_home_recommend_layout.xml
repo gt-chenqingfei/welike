@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/common_item_margin_8">
+
+    <TextView
+        android:id="@+id/tv_tag_title"
+        style="@style/new_ui.text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/common_item_margin_12"
+        tools:text="Follow your interested person" />
+
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="46dp"
+        android:layout_height="24dp"
+        android:src="@drawable/regist_recommond_checked"
+        android:paddingBottom="@dimen/common_item_margin_8"
+        android:paddingLeft="18dp"
+        android:scaleType="fitXY"
+        android:paddingRight="@dimen/common_item_margin_12"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="@dimen/common_item_margin_12"
+        android:layout_marginStart="@dimen/common_item_margin_12"
+        android:layout_marginTop="@dimen/common_item_margin_8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tag_title" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_item_margin_24"
+        android:paddingLeft="@dimen/common_item_margin_12"
+        android:paddingRight="@dimen/common_item_margin_12"
+        android:paddingTop="@dimen/common_item_margin_24"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_f6"
+        app:layout_constraintTop_toBottomOf="@+id/rv_user_list" />
+
+
+</android.support.constraint.ConstraintLayout>

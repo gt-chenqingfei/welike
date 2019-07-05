@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/draft_item_root_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/draft_item_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/draft_delete_btn"
+            android:layout_width="@dimen/common_swipe_delete_width"
+            android:layout_height="match_parent"
+            android:background="@color/common_delete_bg_color"
+            android:scaleType="center"
+            app:srcCompat="@drawable/common_swipe_delete_btn" />
+
+        <LinearLayout
+            android:id="@+id/draft_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.redefine.richtext.RichTextView
+                android:id="@+id/text_draft_rich_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/draft_text_color"
+                android:textSize="@dimen/draft_text_size" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/pic_draft_img"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_pic_default_color"
+                fresco:failureImage="@drawable/draft_error_default_pic"
+                fresco:failureImageScaleType="center"
+                fresco:placeholderImage="@color/common_pic_default_color"
+                fresco:placeholderImageScaleType="fitCenter" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/draft_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:textColor="@color/draft_time_text_color"
+                    android:textSize="@dimen/draft_time_text_size" />
+
+                <TextView
+                    android:id="@+id/draft_resend_btn"
+                    style="@style/BaseAppTheme.AppColorButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/draft_resend_text_color"
+                    android:textSize="@dimen/draft_resend_text_size" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/common_divider_f6_color" />
+</LinearLayout>

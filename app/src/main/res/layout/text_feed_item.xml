@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_shape_white">
+
+    <include
+        android:id="@+id/header_card_layout"
+        layout="@layout/common_feed_ad_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/common_feed_head_root_view"
+        layout="@layout/common_feed_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_card_layout" />
+
+    <include
+        android:id="@+id/text_feed_content"
+        layout="@layout/text_feed_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_feed_head_root_view" />
+
+    <include
+        android:id="@+id/ad_card_layout"
+        layout="@layout/common_feed_ad_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_feed_content" />
+
+    <include
+        android:id="@+id/active_card_layout"
+        layout="@layout/common_feed_active_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_card_layout" />
+
+    <include
+        android:id="@+id/topic_card_layout"
+        layout="@layout/common_feed_topic_card"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginTop="@dimen/common_item_margin_8"
+        app:layout_constraintTop_toBottomOf="@+id/active_card_layout" />
+
+    <include
+        android:id="@+id/common_feed_bottom_root_view"
+        layout="@layout/common_feed_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_goneMarginTop="@dimen/common_item_margin_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_card_layout" />
+
+    <com.redefine.welike.commonui.widget.ArrowTextView
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="12dp"
+        android:text="Long press to send a SUPERLIKE"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:visibility="visible" />
+
+    <com.redefine.welike.commonui.widget.ArrowTextView
+        android:id="@+id/guide_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="12dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="Long press to send a SUPERLIKE"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/common_feed_bottom_root_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_feed_card_bottom_line_height"
+        android:background="@color/common_color_f8f8f8"
+        android:foreground="@drawable/common_shadow_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_feed_bottom_root_view" />
+</android.support.constraint.ConstraintLayout>
+

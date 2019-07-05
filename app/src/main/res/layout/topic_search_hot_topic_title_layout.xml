@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/topic_search_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/topic_search_hot_topic_title_icon"
+        android:drawablePadding="8dp"
+        android:textColor="@color/common_text_color_31"
+        android:textSize="@dimen/common_text_size_18" />
+</FrameLayout>

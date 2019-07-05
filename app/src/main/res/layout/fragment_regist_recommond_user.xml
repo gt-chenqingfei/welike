@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_referrer_top" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_regist_recommond_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cl_referrer"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:id="@+id/tv_regist_recommond_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/common_item_margin_12"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/common_appcolor_btn_new_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:text="AAAAAAAA" />
+
+</RelativeLayout>

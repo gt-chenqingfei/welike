@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+
+        <FrameLayout
+            android:id="@+id/discover_top_user_head_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/oval_gray_d6_bg">
+
+            <com.redefine.welike.commonui.widget.VipAvatar
+                android:id="@+id/discover_top_user_header"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                fresco:placeholderImage="@drawable/user_default_head"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="true" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="17dp"
+            android:layout_alignLeft="@id/discover_top_user_head_layout"
+            android:layout_alignTop="@id/discover_top_user_head_layout"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="-8dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/top_user_head_no2_hat" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/discover_top_user_level"
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_alignBottom="@id/discover_top_user_head_layout"
+            android:layout_toRightOf="@id/discover_top_user_head_layout"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/discover_top_user_no1_text_color"
+            android:textSize="@dimen/common_text_size_18"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/discover_top_user_nick"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/discover_top_user_head_layout"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/discover_top_user_nick_text_color"
+            android:textSize="@dimen/common_text_size_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

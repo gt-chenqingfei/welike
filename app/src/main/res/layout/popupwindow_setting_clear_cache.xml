@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="288dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/white_shape_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mine_setting_clearCache_pop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/setting_clearCache_no"
+            android:layout_width="87dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/common_confirm_cancel_btn"
+            android:gravity="center"
+            android:textColor="@color/color_31" />
+
+        <TextView
+            android:id="@+id/setting_clearCache_yes"
+            android:layout_width="87dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/common_confirm_ok_btn"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

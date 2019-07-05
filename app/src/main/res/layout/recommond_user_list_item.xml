@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal">
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/simple_headview_list"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="44dp"
+        android:layout_toRightOf="@+id/simple_headview_list"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nickName_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/regist_title_text_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_introduce_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/regist_recommond_user_introduce_gray"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_follower_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/regist_recommond_user_introduce_gray"
+            android:visibility="gone"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cb_recommond_list"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/recommon_user_check" />
+
+</RelativeLayout>

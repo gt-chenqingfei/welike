@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/search_history_delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ripple3"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/search_history_delete_icon" />
+
+    <TextView
+        android:id="@+id/search_history_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_item_margin_12"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/search_history_delete_btn"
+        android:background="@drawable/ripple3"
+        android:drawableLeft="@drawable/search_history_icon"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_text_size_14"
+        tools:text="search history" />
+
+
+    <View
+        android:id="@+id/search_his_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36dp"
+        android:background="@color/common_color_ee" />
+</RelativeLayout>

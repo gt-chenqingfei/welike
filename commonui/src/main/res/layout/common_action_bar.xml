@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_common_layout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/common_b_t_shadow">
+
+    <ImageView
+        android:id="@+id/iv_common_back"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple1"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_back_btn" />
+
+    <TextView
+        android:id="@+id/tv_common_title"
+        style="@style/new_ui.title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/iv_common_back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Connect contacts" />
+
+
+    <ImageView
+        android:id="@+id/iv_common_next"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ripple1"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<View-->
+    <!--android:id="@+id/bottom_line"-->
+    <!--style="@style/new_ui.div"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="1dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent" />-->
+</android.support.constraint.ConstraintLayout>

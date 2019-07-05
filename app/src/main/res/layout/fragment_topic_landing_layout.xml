@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_color_f8f8f8">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/topic_landing_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+        <com.redefine.commonui.widget.EmptyView
+            android:id="@+id/common_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="72dp"
+            android:visibility="visible" />
+
+        <com.redefine.commonui.widget.ErrorView
+            android:id="@+id/common_error_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="72dp"
+            android:visibility="invisible" />
+
+        <com.redefine.commonui.widget.LoadingView
+            android:id="@+id/common_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

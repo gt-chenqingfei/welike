@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/location_mix_title_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/common_title_bar_height"-->
+    <!--android:background="@color/main_title_bg">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/common_back_btn"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="center"-->
+    <!--app:srcCompat="@drawable/common_back_btn" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/common_title_view"-->
+    <!--style="@style/new_ui.title"-->
+
+    <!---->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <include layout="@layout/common_action_with_shadow_bar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/location_mix_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/location_mix_bg"
+        android:layout_above="@id/feed_detail_bottom_bar"
+        app:srlEnableLoadMore="false">
+
+        <com.redefine.welike.commonui.view.ClassicsHeader1
+            android:id="@+id/location_mix_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="5dp"
+            app:srlDrawableProgressSize="15dp"
+            app:srlEnableLastTime="false"
+            app:srlFinishDuration="1500"
+            app:srlTextSizeTitle="14dp" />
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/location_mix_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_behavior="com.redefine.welike.commonui.view.FlingBehavior">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/head_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/location_lbs_default"
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                fresco:placeholderImage="@drawable/location_lbs_default"
+                                fresco:placeholderImageScaleType="centerCrop" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:background="@color/transparent_40" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_location_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginTop="16dp"
+                                android:orientation="vertical"
+                                android:paddingLeft="12dp"
+
+                                android:visibility="gone"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/location_mix_poi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/location_mix_poi"
+                                    android:drawablePadding="5dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:textColor="@color/location_mix_poi_text_color"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold"
+                                    tools:text="#Topic name" />
+
+                                <TextView
+                                    android:id="@+id/location_landing_posts_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:drawablePadding="10dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:textColor="@color/location_mix_poi_text_color"
+                                    android:textSize="@dimen/common_text_size_16"
+                                    tools:text="24k people participated" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:id="@+id/ll_location_user_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="8dp"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_location_user_headers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom|right"
+                                    android:layout_marginRight="20dp"
+                                    android:orientation="horizontal" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_location_landing_user_all"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="bottom|right"
+                                    android:background="@drawable/topic_all"
+                                    android:gravity="center"
+                                    android:textColor="@color/topic_all"
+                                    android:textSize="@dimen/common_text_size_14"
+                                    android:textStyle="bold"
+
+                                    tools:text="ALL" />
+
+
+                            </FrameLayout>
+
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_tab"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:id="@+id/topic_hot_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/topic_hot_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:textColor="@color/common_feed_detail_tab_text_color_selector"
+                                    android:textSize="@dimen/common_text_size_16"
+                                    android:textStyle="bold"
+                                    tools:text="HOT" />
+
+                                <View
+                                    android:id="@+id/topic_hot_indicator"
+                                    android:layout_width="0dp"
+                                    android:layout_height="2dp"
+                                    android:layout_alignLeft="@+id/topic_hot_text"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignRight="@+id/topic_hot_text"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@color/main_orange_dark" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/topic_latest_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/topic_latest_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:textColor="@color/common_feed_detail_tab_text_color_selector"
+                                    android:textSize="@dimen/common_text_size_16"
+                                    android:textStyle="bold"
+                                    tools:text="LATEST" />
+
+                                <View
+                                    android:id="@+id/topic_latest_indicator"
+                                    android:layout_width="0dp"
+                                    android:layout_height="2dp"
+                                    android:layout_alignLeft="@+id/topic_latest_text"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignRight="@+id/topic_latest_text"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@color/main_orange_dark" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+
+            <FrameLayout
+                android:id="@+id/feed_detail_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1px"
+                android:background="@color/common_color_f8f8f8"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/location_mix_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+                <com.redefine.commonui.widget.EmptyView
+                    android:id="@+id/common_empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="70dp"
+                    android:visibility="invisible" />
+
+                <com.redefine.commonui.widget.ErrorView
+                    android:id="@+id/common_error_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="70dp"
+                    android:visibility="invisible" />
+
+                <com.redefine.commonui.widget.LoadingView
+                    android:id="@+id/common_loading_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

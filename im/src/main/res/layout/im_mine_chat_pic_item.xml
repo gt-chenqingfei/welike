@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp">
+
+    <FrameLayout
+        android:id="@+id/message_state_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="50dp"
+        android:paddingRight="8dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/message_state_loading"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/message_state_error"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="center"
+            android:src="@drawable/message_state_error" />
+    </FrameLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/chat_pic_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        fresco:fadeDuration="0"
+        fresco:placeholderImage="@drawable/pic_preview_default"
+        fresco:placeholderImageScaleType="centerInside"
+        fresco:failureImage="@drawable/pic_preview_error"
+        fresco:failureImageScaleType="centerInside"
+        android:background="@color/chat_pic_bg_color"/>
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/chat_user_header"
+        android:layout_width="@dimen/im_chat_item_user_header_size"
+        android:layout_height="@dimen/im_chat_item_user_header_size"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true" />
+</LinearLayout>

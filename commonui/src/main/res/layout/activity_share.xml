@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/share_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent20"
+    tools:context=".share.activity.ShareActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/share_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/share_apk"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/share_bg_f8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            
+            <ImageView
+                android:id="@+id/icon_welike"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/icon_welike"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_14"
+                android:textColor="@color/app_color"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:text="@string/share_app_to_whatsapp"
+                app:layout_constraintTop_toTopOf="@id/icon_welike"
+                app:layout_constraintBottom_toBottomOf="@id/icon_welike"
+                app:layout_constraintLeft_toRightOf="@id/icon_welike"
+                tools:text="Share app to WhatsApp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="8dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/common_arrow_right_orange"
+                app:layout_constraintTop_toTopOf="@id/icon_welike"
+                app:layout_constraintBottom_toBottomOf="@id/icon_welike"
+                app:layout_constraintRight_toRightOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <GridView
+            android:id="@+id/share_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:numColumns="5"
+            android:background="@drawable/share_bg_f8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/share_apk"
+            tools:listitem="@layout/share_layout"/>
+        
+    </android.support.constraint.ConstraintLayout>
+
+    <com.redefine.commonui.widget.LoadingView
+        android:id="@+id/common_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

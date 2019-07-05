@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    tools:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_mine_followNum"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="123"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_mine_followNum_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:text="Followers"
+        android:gravity="top|center_horizontal"
+        android:textColor="@color/mine_setting_text_color"
+        android:textSize="13dp" />
+
+</LinearLayout>

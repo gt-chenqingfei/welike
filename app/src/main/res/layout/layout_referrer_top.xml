@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_referrer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_type_default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cl_type_referrer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_regist_interests_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/color_31"
+            android:textSize="@dimen/common_text_size_20"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Select your interest." />
+
+        <TextView
+            android:id="@+id/tv_regist_interests_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="@dimen/common_item_margin_8"
+            android:textColor="@color/main_grey"
+            android:textSize="@dimen/common_text_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_regist_interests_title"
+            tools:text="Pick 2 or more topics" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_type_referrer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.redefine.welike.commonui.widget.VipAvatar
+            android:id="@+id/iv_referrer_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@drawable/user_default_head"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tv_referrer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/common_title_view_text_color"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_referrer_icon"
+            app:layout_constraintStart_toEndOf="@+id/iv_referrer_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_referrer_icon"
+            tools:text="Illnalex" />
+
+        <TextView
+            android:id="@+id/tv_referrer_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_referrer_bg"
+            android:padding="10dp"
+            android:textColor="@color/common_title_view_text_color"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_referrer_icon"
+            app:layout_constraintTop_toBottomOf="@+id/iv_referrer_icon"
+            tools:text="Make your timeline yours.\n Follow your interested person" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_referrer_toast"
+            app:layout_constraintTop_toBottomOf="@+id/iv_referrer_icon"
+            app:srcCompat="@drawable/ic_referrer_arrow" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

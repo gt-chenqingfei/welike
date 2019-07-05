@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="52dp"
+    android:background="?android:selectableItemBackground"
+    android:gravity="center"
+    android:minWidth="84dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/discover_interest_category_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        app:actualImageScaleType="centerInside"
+        app:failureImage="@drawable/icon_discover_vertical_all"
+        app:failureImageScaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/discover_interest_category_tag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:placeholderImage="@drawable/icon_discover_vertical_default"
+        app:placeholderImageScaleType="fitXY"
+        app:roundedCornerRadius="3dp" />
+
+    <TextView
+        android:id="@+id/discover_interest_category_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/discover_table_layout_indicator"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discover_interest_category_img"
+        tools:text="Entertainment" />
+
+</android.support.constraint.ConstraintLayout>

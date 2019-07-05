@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_feed_poll_header"
+    android:layout_width="match_parent"
+    android:layout_height="23dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="12dp">
+
+    <android.support.v7.widget.AppCompatImageView
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/common_flag"
+        android:layout_width="13dp"
+        android:layout_height="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/ic_poll_header_flag" />
+
+    <TextView
+       app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/votePeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="90dp"
+        android:textColor="@color/color_31"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/common_flag"
+        tools:text="34 dfsdfsffsdfsdfsdfsdfsdfsdffsdfsdfsdffvoted" />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/voteDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:maxLines="1"
+        android:textColor="@color/color_31"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/votePeople"
+        tools:text="1232132 others voted" />
+
+    <android.support.v7.widget.AppCompatImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/down_flag"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        app:layout_constraintLeft_toRightOf="@id/voteDec"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_down_indicator_flag" />
+
+
+    <TextView
+        android:id="@+id/voteMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_menu_share_text_color"
+        android:textSize="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="more poll" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/poll_header_layout_indicator"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

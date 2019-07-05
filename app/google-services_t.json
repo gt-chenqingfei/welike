@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "668487685656",
+    "firebase_url": "https://fir-welike.firebaseio.com",
+    "project_id": "firebase-welike",
+    "storage_bucket": "firebase-welike.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668487685656:android:0e869c32b8edfe1d",
+        "android_client_info": {
+          "package_name": "com.redefine.welike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668487685656-6e1gsdovuj1ulbnm0k7bf564nsdpqicn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.redefine.welike",
+            "certificate_hash": "a41dd51cf159c580a435b5f294aafcea9838e255"
+          }
+        },
+        {
+          "client_id": "668487685656-5v8jfvgchai9oqo2nofiq99fvh28n83u.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "668487685656-36vlo605ohla473183s42c1prk07oea7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-BypmsqOXANISKiO6ldrnJGJyIqQMHUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-115041627-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

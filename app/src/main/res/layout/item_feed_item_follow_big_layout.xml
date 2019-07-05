@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_stroke_main_gray"
+        android:foreground="?android:selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_user_avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            app:actualImageScaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholderImage="@drawable/recommend_user_default"
+            app:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/iv_user_delete"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:background="@drawable/ripple1"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/vector_follow_delete" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/common_text_color_423d2d"
+            android:textSize="@dimen/common_text_size_18"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            Tools:text="mamm,,, "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sdv_user_avatar"
+            app:layout_goneMarginTop="12dp" />
+
+
+        <TextView
+            android:id="@+id/tv_user_intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/common_text_color_afb0b1"
+            android:textSize="@dimen/common_text_size_16"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            Tools:text="mamm,,,nnandansdnasndansdnasndansd "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+        <com.redefine.welike.commonui.widget.UserFollowBtn
+            android:id="@+id/common_feed_follow_btn"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:foreground="@drawable/ripple1"
+            Tools:background="@color/Orange"
+            Tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/sdv_user_avatar"
+            app:layout_constraintStart_toStartOf="@id/sdv_user_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_intro" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

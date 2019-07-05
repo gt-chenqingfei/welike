@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="new_ui" />
+
+    <style name="new_ui.title">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/color_31</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="new_ui.text_1">
+        <item name="android:textColor">@color/color_31</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="new_ui.text_gray">
+        <item name="android:textColor">@color/main_grey</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="new_ui.text_2" parent="new_ui.text_1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="new_ui.div">
+        <item name="android:background">@color/common_setting_div_color</item>
+    </style>
+
+    <style name="new_ui.div1">
+        <item name="android:background">@color/color_f6</item>
+    </style>
+
+    <style name="new_ui.div2">
+        <item name="android:background">@drawable/common_shadow</item>
+    </style>
+
+    <style name="new_ui.button_1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_button_selector</item>
+        <item name="android:textColor">@color/common_color_button_text</item>
+    </style>
+
+    <style name="new_ui.button_2">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

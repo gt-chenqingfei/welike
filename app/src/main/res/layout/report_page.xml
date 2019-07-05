@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/feed_detail_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/common_title_view"
+            style="@style/BaseAppTheme.TextView.CommonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/report"/>
+
+        <ImageView
+            android:id="@+id/common_more_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/common_more_btn" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divider_px1"
+            android:background="@color/common_divider_color"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/report_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:textSize="@dimen/common_text_size_15"
+        android:textColor="@color/common_title_view_text_color"
+        android:gravity="center_vertical"
+        tools:text="举报@每日笑话百科的博文"/>
+
+    <ScrollView
+        android:id="@+id/report_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_select_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size_13"
+            android:textColor="@color/common_text_color_62"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/report_select_reason"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_divider_color"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/report_reason_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <TextView
+                android:id="@+id/report_reason_text_1"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_14"
+                android:textColor="@color/common_title_view_text_color"
+                android:layout_centerVertical="true"
+                android:maxLines="5"
+                android:ellipsize="none"
+                android:text="@string/report_reason1"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/common_left_arrow_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report_reason_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <TextView
+                android:id="@+id/report_reason_text_2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_14"
+                android:textColor="@color/common_title_view_text_color"
+                android:layout_centerVertical="true"
+                android:maxLines="5"
+                android:ellipsize="none"
+                android:text="@string/report_reason2"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/common_left_arrow_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report_reason_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <TextView
+                android:id="@+id/report_reason_text_3"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_14"
+                android:textColor="@color/common_title_view_text_color"
+                android:layout_centerVertical="true"
+                android:maxLines="5"
+                android:ellipsize="none"
+                android:text="@string/report_reason3"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/common_left_arrow_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report_reason_4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <TextView
+                android:id="@+id/report_reason_text_4"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_14"
+                android:textColor="@color/common_title_view_text_color"
+                android:layout_centerVertical="true"
+                android:maxLines="5"
+                android:ellipsize="none"
+                android:text="@string/report_reason4"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/common_left_arrow_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report_reason_5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <TextView
+                android:id="@+id/report_reason_text_5"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_14"
+                android:textColor="@color/common_title_view_text_color"
+                android:layout_centerVertical="true"
+                android:maxLines="5"
+                android:ellipsize="none"
+                android:text="@string/report_reason5"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/common_left_arrow_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report_reason_6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <TextView
+                android:id="@+id/report_reason_text_6"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_14"
+                android:textColor="@color/common_title_view_text_color"
+                android:layout_centerVertical="true"
+                android:maxLines="5"
+                android:ellipsize="none"
+                android:text="@string/report_reason_others"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/common_left_arrow_icon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">multimedia</string>
+    <string name="recorder_time">00:00</string>
+
+    <string name="string_next">Next</string>
+    <string name="string_preview">Preview</string>
+</resources>

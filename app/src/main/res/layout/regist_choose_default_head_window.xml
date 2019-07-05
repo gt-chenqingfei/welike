@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_shape_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/regist_pop_def_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/regist_title_text_color"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/regist_pop_def_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/regist_nick_name_tip"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="37dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_weight="1">
+
+            <com.redefine.commonui.widget.CircleBgView
+                android:id="@+id/regist_pop_def_head1_circle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <com.redefine.welike.commonui.widget.VipAvatar
+                android:id="@+id/regist_pop_def_head1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                app:placeholderImage="@drawable/user_default_head"
+                app:placeholderImageScaleType="fitCenter"
+                app:roundAsCircle="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_weight="1">
+
+            <com.redefine.commonui.widget.CircleBgView
+                android:id="@+id/regist_pop_def_head2_circle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <com.redefine.welike.commonui.widget.VipAvatar
+                android:id="@+id/regist_pop_def_head2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                app:placeholderImage="@drawable/user_default_head"
+                app:placeholderImageScaleType="fitCenter"
+                app:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/regist_yellow" />
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/regist_pop_choose_headView"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            app:roundAsCircle="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/regist_pop_choose_head_next"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:textColor="@color/regist_title_text_color" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal">-->
+
+<!--<TextView--><!--android:id="@+id/topic_search_title_text"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:gravity="left|center_vertical"--><!--android:paddingLeft="15dp"--><!--android:paddingTop="15dp"--><!--android:textStyle="bold"--><!--tools:text="Invite Friends"--><!--android:textColor="@color/common_text_color_423d2d"--><!--android:textSize="@dimen/common_text_size_18" />-->
+
+<!--<TextView--><!--android:id="@+id/topic_search_sub_title_text"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="2dp"--><!--android:maxLines="1"--><!--android:ellipsize="end"--><!--android:paddingRight="15dp"--><!--tools:text="Invite Friends"--><!--android:gravity="left|center_vertical"--><!--android:textColor="@color/common_color_b0b0b0"--><!--android:visibility="invisible"--><!--android:textSize="@dimen/common_text_size_12" />-->
+
+<!--</LinearLayout>-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/white">
+
+    <TextView
+        android:id="@+id/header_title"
+        style="@style/new_ui.text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Recommend" />
+
+    <TextView
+        android:id="@+id/header_tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/main_grey"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/header_title"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        tools:text="They are already on Welike" />
+
+    <ImageView
+        android:id="@+id/none"
+        android:layout_width="4dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/header_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header_title"
+        fresco:srcCompat="@drawable/common_bar_bg" />
+
+    <View
+        android:id="@+id/div_line"
+        style="@style/new_ui.div"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/header_title" />
+</android.support.constraint.ConstraintLayout>

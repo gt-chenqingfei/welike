@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:layout_width="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_mine_followerNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            tools:text="123" />
+
+        <TextView
+            android:id="@+id/tv_mine_follownum_red_point"
+            android:layout_width="wrap_content"
+            android:minWidth="18dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv_mine_followerNum"
+            android:background="@drawable/shape_red_point_8"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_12"
+            android:visibility="invisible"
+            tools:text="99+" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_mine_followerNum_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|center_horizontal"
+        android:textColor="@color/mine_setting_text_color"
+        android:textSize="13dp"
+        tools:layout_height="50dp"
+        tools:text="Followers" />
+
+</LinearLayout>

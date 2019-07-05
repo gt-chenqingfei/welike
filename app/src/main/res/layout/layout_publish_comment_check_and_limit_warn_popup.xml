@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editor_limit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="31dp"
+    android:clickable="false">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/editor_check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:drawableLeft="@drawable/editor_forward_selector"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/editor_post_check_btn_text_color"
+        android:textSize="@dimen/editor_post_check_btn_text_size"
+        tools:text="Also comment" />
+
+    <TextView
+        android:id="@+id/editor_post_text_limit_warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/editor_check_btn"
+        android:textColor="@color/main"
+        android:textSize="@dimen/common_text_size_15"
+        tools:text="275" />
+
+    <ImageView
+        android:id="@+id/iv_expand"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:scaleType="center"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_expand"
+        app:tint="@color/common_click_color" />
+
+</RelativeLayout>

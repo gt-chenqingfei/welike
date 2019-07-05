@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+        <com.redefine.welike.commonui.widget.VipAvatar
+            android:id="@+id/simpleView_user_follow_recycler"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            app:fadeDuration="300"
+            app:placeholderImage="@drawable/user_default_head"
+            app:placeholderImageScaleType="fitCenter"
+            app:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_follow_recycler_nickName"
+                style="@style/new_ui.text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tv_user_follow_recycler_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/mine_user_follow_introduce_text_color"
+                android:textSize="@dimen/common_text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_user_follow_recycler_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mine_user_follow_num_text_color"
+                android:textSize="@dimen/common_text_size_12" />
+
+        </LinearLayout>
+
+        <com.redefine.welike.commonui.widget.UserFollowBtn
+            android:id="@+id/iv_user_follow_followBtn"
+            android:layout_width="76dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="9dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="71.5dp" />
+
+</LinearLayout>

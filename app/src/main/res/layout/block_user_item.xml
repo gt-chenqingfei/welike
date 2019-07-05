@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp">
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/block_user_head"
+        android:layout_width="@dimen/feed_detail_head_size"
+        android:layout_height="@dimen/feed_detail_head_size"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true" />
+
+
+    <TextView
+        android:id="@+id/block_user_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="95dp"
+        android:layout_toRightOf="@id/block_user_head"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/common_text_black_31"
+        android:textSize="@dimen/common_text_size_16"
+        tools:text="Ko Gopinath Ko Gopinath "/>
+
+    <TextView
+        android:id="@+id/un_block_btn"
+        style="@style/BaseAppTheme.NewAppColorButton"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:textSize="@dimen/common_text_size_14"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        tools:visibility="visible"
+        android:gravity="center"
+        tools:text="UNBLOCK"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:background="@color/common_divider_color"
+        android:layout_marginLeft="45dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

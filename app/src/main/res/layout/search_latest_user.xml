@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/search_latest_people_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/search_latest_user_title_text_color"
+            android:textSize="@dimen/search_latest_user_title_text_size"
+            tools:text="1111111" />
+
+        <TextView
+            android:id="@+id/search_latest_all_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/main"
+            android:textSize="@dimen/search_latest_all_title_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="aaaaaaaa" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:background="@color/search_latest_user_title_divider" />
+
+    <LinearLayout
+        android:id="@+id/search_latest_user_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/common_feed_bottom_root_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_feed_card_bottom_line_height"
+        android:background="@color/common_color_f8f8f8"
+        android:foreground="@drawable/common_shadow_icon" />
+
+</LinearLayout>

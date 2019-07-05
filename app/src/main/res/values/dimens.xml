@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_feed_card_elevation">2dp</dimen>
+    <dimen name="common_feed_card_bottom">3dp</dimen>
+    <dimen name="common_feed_card_bottom_line_height">8dp</dimen>
+    <dimen name="common_feed_card_forward_margin">12dp</dimen>
+    <dimen name="common_padding">10dp</dimen>
+    <dimen name="common_feed_name_text_size">16dp</dimen>
+    <dimen name="common_feed_head_size">40dp</dimen>
+    <dimen name="common_feed_tab_head_size">16dp</dimen>
+
+    <dimen name="text_feed_content_text_size">15dp</dimen>
+    <dimen name="common_feed_bottom_text_size">14dp</dimen>
+    <dimen name="common_feed_follow_text_size">10dp</dimen>
+    <dimen name="common_feed_time_text_size">12dp</dimen>
+    <dimen name="linked_thumb_image_size">96dp</dimen>
+    <dimen name="linked_feed_title_text_size">16dp</dimen>
+    <dimen name="linked_feed_content_text_size">10dp</dimen>
+    <dimen name="forward_feed_nick_name_text_size">16dp</dimen>
+
+    <dimen name="feed_detail_head_tab_text_size">12dp</dimen>
+
+
+    <dimen name="comment_like_count_text_size">10dp</dimen>
+    <dimen name="comment_like_btn_text_size">10dp</dimen>
+    <dimen name="comment_reply_btn_text_size">10dp</dimen>
+    <dimen name="comment_forward_btn_text_size">10dp</dimen>
+
+    <dimen name="comment_second_level_text_size">10dp</dimen>
+
+
+    <!--@自定义关注列表属性-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="item_decoration_title_height">30dp</dimen>
+    <dimen name="item_decoration_title_start_margin">16dp</dimen>
+    <dimen name="item_decoration_title_fontsize">20dp</dimen>
+    <!--@自定义关注列表属性-->
+
+    <dimen name="main_home_red_point_text_size">8dp</dimen>
+
+    <dimen name="feed_detail_bottom_forward_text_size">14dp</dimen>
+    <dimen name="comment_detail_bottom_forward_text_size">14dp</dimen>
+    <dimen name="comment_menu_text_size">14dp</dimen>
+    <dimen name="feed_detail_top_bar_text_size">14dp</dimen>
+
+    <dimen name="video_thumb_image_size">186dp</dimen>
+    <dimen name="video_play_image_size">50dp</dimen>
+
+    <!-- 首页 -->
+    <dimen name="main_bottom_bar_height">48dp</dimen>
+    <dimen name="main_title_view_text_size">20dp</dimen>
+    <dimen name="main_bottom_tab_text_size">14dp</dimen>
+    <dimen name="feed_delete_dialog_title_text_size">16dp</dimen>
+
+    <!-- 消息页 -->
+    <dimen name="message_tab_height">93dp</dimen>
+    <dimen name="message_tab_text_size">15dp</dimen>
+    <dimen name="message_tab_icon_size">44dp</dimen>
+    <dimen name="search_page_tab_text_size">16dp</dimen>
+    <dimen name="search_user_name_text_size">16dp</dimen>
+    <dimen name="search_user_follower_text_size">12dp</dimen>
+
+    <!-- feed详情-->
+    <dimen name="feed_detail_head_size">33dp</dimen>
+    <dimen name="feed_detail_item_user_nick_text_size">16dp</dimen>
+    <dimen name="feed_detail_item_content_text_size">14dp</dimen>
+    <dimen name="feed_detail_item_time_text_size">14dp</dimen>
+    <dimen name="feed_detail_item_like_text_size">10dp</dimen>
+    <dimen name="feed_detail_multi_comment_content_text_size">14dp</dimen>
+    <dimen name="feed_detail_comment_more_text_size">14dp</dimen>
+    <dimen name="feed_detail_like_user_header">30dp</dimen>
+    <dimen name="feed_detail_like_user_nick_text_size">16dp</dimen>
+
+    <!-- 评论详情 -->
+    <dimen name="comment_detail_main_user_header_size">40dp</dimen>
+    <dimen name="comment_detail_main_user_nick_text_size">16dp</dimen>
+    <dimen name="comment_detail_main_time_text_size">12dp</dimen>
+    <dimen name="comment_detail_main_content_text_size">15dp</dimen>
+    <dimen name="comment_detail_main_view_blog_text_size">14dp</dimen>
+    <dimen name="comment_detail_reply_user_header_size">30dp</dimen>
+    <dimen name="comment_detail_reply_user_nick_text_size">16dp</dimen>
+    <dimen name="comment_detail_reply_content_text_size">14dp</dimen>
+    <dimen name="comment_detail_reply_time_text_size">14dp</dimen>
+    <dimen name="comment_detail_reply_text_size">10dp</dimen>
+
+
+    <dimen name="mine_setting_clear_cache_height">96dp</dimen>
+    <dimen name="mine_setting_clear_cache_width">280dp</dimen>
+
+    <!-- 发布器 -->
+    <dimen name="editor_head_size">46dp</dimen>
+    <dimen name="editor_text_limit_text_size">15dp</dimen>
+    <dimen name="editor_forward_feed_thumb_size">96dp</dimen>
+    <dimen name="editor_forward_user_nick_text_size">16dp</dimen>
+    <dimen name="editor_post_check_btn_text_size">15dp</dimen>
+    <dimen name="editor_send_text_size">15dp</dimen>
+    <dimen name="editor_send_btn_min_width">104dp</dimen>
+    <dimen name="editor_from_text_size">12dp</dimen>
+    <dimen name="editor_rich_edit_text_size">15dp</dimen>
+    <dimen name="editor_forward_feed_text_size">15dp</dimen>
+    <dimen name="add_link_submit_text_size">15dp</dimen>
+    <dimen name="add_link_text_ward_text_size">12dp</dimen>
+    <dimen name="forward_feed_delete_img_size">75dp</dimen>
+    <dimen name="search_page_edit_text_size">16dp</dimen>
+    <dimen name="discover_hot_feed_title_text_size">16dp</dimen>
+    <dimen name="discover_search_title_text_size">16dp</dimen>
+    <dimen name="search_latest_user_title_text_size">16dp</dimen>
+    <dimen name="search_latest_all_title_text_size">14dp</dimen>
+    <dimen name="search_user_introduction_text_size">12dp</dimen>
+    <dimen name="user_information_nick_warn_text_size">13dp</dimen>
+    <dimen name="message_remind_text_size">16dp</dimen>
+    <dimen name="message_nick_name_text_size">16dp</dimen>
+    <dimen name="message_text_size">16dp</dimen>
+    <dimen name="message_card_text_size">14dp</dimen>
+    <dimen name="search_sug_cancel_text_size">16dp</dimen>
+    <dimen name="search_all_history_text_size">16dp</dimen>
+    <dimen name="search_history_text_size">16dp</dimen>
+    <dimen name="search_sug_text_size">16dp</dimen>
+    <dimen name="search_history_title_text_size">16dp</dimen>
+    <dimen name="draft_time_text_size">10dp</dimen>
+    <dimen name="draft_item_nick_text_size">14dp</dimen>
+    <dimen name="forward_draft_text_size">14dp</dimen>
+    <dimen name="draft_text_size">14dp</dimen>
+    <dimen name="draft_resend_text_size">15dp</dimen>
+    <dimen name="editor_location_text_size">12dp</dimen>
+    <dimen name="location_select_text_size">14dp</dimen>
+    <dimen name="location_mix_poi_text_size">28dp</dimen>
+    <dimen name="discover_top_user_title_text_size">16dp</dimen>
+    <dimen name="discover_rank_text_size">14dp</dimen>
+    <dimen name="topic_total">14dp</dimen>
+
+
+
+    <!-- add by honlin 18/5/8 -->
+    <dimen name="font_large3">20dp</dimen>
+    <dimen name="font_large2">18dp</dimen>
+    <dimen name="font_large1">16dp</dimen>
+    <dimen name="font_large">14dp</dimen>
+    <dimen name="font_normal">12dp</dimen>
+    <dimen name="font_small">10dp</dimen>
+    <dimen name="font_tiny">8dp</dimen>
+
+
+</resources>

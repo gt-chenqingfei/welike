@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_campaign_pic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:fadeDuration="300"
+        app:failureImage="@drawable/interest_default"
+        app:layout_constraintDimensionRatio="306:95"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:placeholderImage="@drawable/interest_default"
+        app:placeholderImageScaleType="centerCrop"
+        app:roundedCornerRadius="4dp" />
+
+</android.support.constraint.ConstraintLayout>

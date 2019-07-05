@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_setting_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ripple1"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_common_title"
+            style="@style/new_ui.title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_common_back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Connect contacts" />
+
+
+        <ImageView
+            android:id="@+id/iv_common_next"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/ripple1"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:background="@color/common_divider_color"/>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/feed_detail_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_behavior="com.redefine.welike.commonui.view.FlingBehavior">
+
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_setting_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/common_b_t_shadow"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/add_user_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:paddingLeft="16dp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="10dp"
+                                app:srcCompat="@drawable/add_block_user" />
+
+                            <TextView
+                                android:id="@+id/add_block_user"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/common_text_black_31"
+                                android:textSize="@dimen/common_text_size_16"
+                                android:textStyle="bold"
+                                tools:text="Add block user" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/common_setting_bg" />
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/block_users_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.redefine.commonui.widget.ErrorView
+                android:id="@+id/common_error_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="80dp"
+                android:visibility="invisible" />
+
+            <com.redefine.commonui.widget.EmptyView
+                android:id="@+id/common_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_setting_bg"
+                android:paddingTop="80dp"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+            <com.redefine.commonui.widget.LoadingView
+                android:id="@+id/common_loading_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        tools:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/forward_feed_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:ellipsize="end"
+            android:paddingBottom="8dp"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:textColor="@color/feed_flag_top_text_color"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="123" />
+
+        <com.redefine.richtext.RichTextView
+            android:id="@+id/forward_feed_text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/forward_feed_nick_name"
+            android:lineSpacingMultiplier="1"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/forward_text_feed_content_text_color"
+            android:textSize="14dp"
+            tools:text="456kdjfsljflskdjfsjdfsdkjfskdjfslkdjfsldkjfslkdjfskdjfjflskfkjsdfjsdkfjsdkfjskdjf" />
+
+        <com.redefine.welike.commonui.widget.UserForwardFollowBtn
+            android:id="@+id/forward_follow_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="11dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</merge>

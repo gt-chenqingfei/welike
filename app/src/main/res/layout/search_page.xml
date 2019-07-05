@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_color_f8f8f8"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_shape_search_bg"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="36dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="@color/location_select_text_color"
+            android:textColorHint="@color/location_select_hint_text_color"
+            android:textSize="@dimen/location_select_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/common_back_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/location_search_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/search_edit"
+            app:layout_constraintLeft_toLeftOf="@+id/search_edit"
+            app:layout_constraintTop_toTopOf="@+id/search_edit"
+            app:srcCompat="@drawable/ic_common_search" />
+
+        <ImageView
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:scaleType="center"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_edit_text_clear_icon"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/div_line"
+            style="@style/new_ui.div"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/discover_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/movie_card_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:visibility="gone">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/movie_card_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/none"
+                            android:layout_width="4dp"
+                            android:layout_height="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/common_bar_bg" />
+
+                        <TextView
+                            android:id="@+id/movie_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:textColor="@color/color_31"
+                            android:textSize="@dimen/common_text_size_14"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/none"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="Movie" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:background="@color/common_gray_f6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="144dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        app:layout_constraintTop_toBottomOf="@+id/movie_card_header">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/movie_cover"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:placeholderImage="@drawable/default_movie_card_cover"
+                            app:placeholderImageScaleType="centerCrop"
+                            tools:background="@drawable/default_movie_card_cover" />
+
+                        <TextView
+                            android:id="@+id/movie_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="12dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/color_31"
+                            android:textSize="@dimen/common_text_size_14"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toRightOf="@+id/movie_cover"
+                            app:layout_constraintRight_toLeftOf="@+id/movie_like_flag"
+                            app:layout_constraintTop_toTopOf="@+id/movie_cover"
+                            tools:text="movienamemovienamemovienamemovienamemovienamemovienamemovienamemovienamemoviename" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/movie_like_flag"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:layout_constraintRight_toLeftOf="@+id/movie_percent"
+                            app:layout_constraintTop_toTopOf="@+id/movie_cover"
+                            app:srcCompat="@drawable/movie_like_flag" />
+
+                        <TextView
+                            android:id="@+id/movie_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/main"
+                            android:textSize="@dimen/common_text_size_14"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/movie_like_flag"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/movie_cover"
+                            tools:text="79%" />
+
+                        <TextView
+                            android:id="@+id/movie_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/common_text_color_afb0b1"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toRightOf="@+id/movie_cover"
+                            app:layout_constraintTop_toBottomOf="@+id/movie_title"
+                            tools:text="1h 59min" />
+
+                        <TextView
+                            android:id="@+id/movie_introduce"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:textColor="@color/color_31"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toRightOf="@+id/movie_cover"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/movie_time"
+                            tools:text="1h59minmovie_introducemovie_introducemovie_introducemovie_introducemovie_introducemovie_introducemovie_introducemovie_introducemovie_introduce" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <!--<View-->
+                    <!--style="@style/new_ui.div"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                    <!--app:layout_constraintRight_toRightOf="parent" />-->
+
+                    <FrameLayout
+                        android:id="@+id/common_feed_bottom_root_shadow"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/common_feed_card_bottom_line_height"
+                        android:background="@color/common_color_f8f8f8"
+                        android:foreground="@drawable/common_shadow_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/search_latest_tab"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/search_page_tab_text_size"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/indicator1"
+                        android:layout_width="16dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/discover_table_layout_indicator"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/search_post_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/search_page_tab_text_size"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/indicator2"
+                        android:layout_width="16dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/discover_table_layout_indicator"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/search_user_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/search_page_tab_text_size"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/indicator3"
+                        android:layout_width="16dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/discover_table_layout_indicator"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/discover_fragment_page_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/topic_landing_view_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/common_transition_t_b_bg"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

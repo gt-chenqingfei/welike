@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_slogan"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash_lottie_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/rl_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/logo"-->
+        <!--android:layout_width="54dp"-->
+        <!--android:layout_height="54dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginBottom="13dp"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:src="@drawable/logo" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/welike"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/logo"-->
+        <!--android:layout_marginLeft="7dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_toRightOf="@+id/logo"-->
+        <!--app:srcCompat="@drawable/ic_splash_welike_logo" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/tv_slogan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/welike"-->
+        <!--android:layout_below="@+id/welike"-->
+        <!--android:layout_marginLeft="2dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--app:srcCompat="@drawable/ic_splash_slogan" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_slogan" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_splash_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/common_splash_jump_bg"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

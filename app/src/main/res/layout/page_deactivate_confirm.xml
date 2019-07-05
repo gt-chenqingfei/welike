@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <include layout="@layout/common_action_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="104dp"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/deactivate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/logo"
+            android:gravity="left"
+            android:textColor="@color/common_text_color_31"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_regist_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/rl_slogan"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingLeft="24dp"
+        android:textColor="@color/regist_sms_input_color"
+        android:textColorHint="@color/regist_phone_num_count_num_color"
+        android:textSize="19dp"
+        tools:text="Enter your mobile number"
+        tools:textColor="@color/regist_title_text_color" />
+
+    <View
+        android:id="@+id/regist_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_regist_phoneNum"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/regist_phone_num_line_color" />
+
+    <ImageView
+        android:id="@+id/regist_phoneNum_delete"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_above="@id/regist_line"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/regist_phonenum_delete"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_regist_phoneNum_incorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/et_regist_phoneNum"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/regist_number_incorrect_red"
+        android:textSize="13dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/btn_regist_phoneNum_next"
+        style="@style/new_ui.button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="@dimen/font_large1"
+        tools:text="Next" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:text="OR"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="16dp" />
+
+    <com.redefine.welike.commonui.thirdlogin.ThirdLoginLayout
+        android:id="@+id/third_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_or"/>
+
+</RelativeLayout>

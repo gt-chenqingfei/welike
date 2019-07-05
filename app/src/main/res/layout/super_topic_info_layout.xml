@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/ripple_shape_white">
+
+    <TextView
+        android:id="@+id/super_topic_page_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/common_text_black_62"
+        android:textSize="@dimen/common_text_size_14"
+        app:layout_constraintBottom_toTopOf="@+id/common_feed_bottom_root_shadow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Among thousands of people, meet the people you've met thousands of years, the boundlessness of time, neither earlier nor too late, you happen to meet" />
+
+
+    <FrameLayout
+        android:id="@+id/common_feed_bottom_root_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_feed_card_bottom_line_height"
+        android:background="@color/common_color_f8f8f8"
+        android:foreground="@drawable/common_shadow_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

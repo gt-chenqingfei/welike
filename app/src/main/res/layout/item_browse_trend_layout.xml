@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/common_item_margin_6"
+    android:paddingLeft="@dimen/common_item_margin_12">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/tv_look_counts"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_trend_title"
+            style="@style/new_ui.text_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="# welike trends"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_trend_pic"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_trend_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_trend_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_trend_title"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_trend_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_item_margin_4"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingRight="@dimen/common_item_margin_12"
+        android:text="asadasda"
+        android:textColor="@color/main_grey"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintEnd_toStartOf="@+id/tv_look_counts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_title" />
+
+
+    <TextView
+        android:id="@+id/tv_look_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_item_margin_12"
+        android:background="@drawable/common_trends_views_bg"
+        android:paddingBottom="3dp"
+        android:paddingLeft="@dimen/common_item_margin_6"
+        android:paddingRight="@dimen/common_item_margin_6"
+        android:paddingTop="3dp"
+        android:text="100k views"
+        android:textColor="@color/main_grey"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_trend_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cl_title" />
+
+
+    <View
+        android:id="@+id/view2"
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/common_item_margin_6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trend_intro" />
+
+</android.support.constraint.ConstraintLayout>

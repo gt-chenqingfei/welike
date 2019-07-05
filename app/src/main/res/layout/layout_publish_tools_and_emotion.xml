@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/editor_bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editor_limit_layout"
+        android:orientation="vertical">
+
+        <com.redefine.commonui.widget.shadowlayout.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            app:is_draw_bottom="true" />
+
+        <RelativeLayout
+            android:id="@+id/editor_bottom_bar_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <com.redefine.welike.business.publisher.ui.component.BottomBehaviorView4Comment
+                android:id="@+id/editor_bottom_behavior_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/btn_editor_send"
+                style="@style/new_ui.button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/editor_post_send"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelRelativeLayout
+        android:id="@+id/editor_bottom_emoji_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editor_bottom_bar_layout"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.redefine.richtext.emoji.EmojiPanel
+            android:id="@+id/editor_emoji_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.redefine.commonui.widget.shadowlayout.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            app:is_draw_top="true" />
+    </cn.dreamtobe.kpswitch.widget.KPSwitchPanelRelativeLayout>
+
+</RelativeLayout>

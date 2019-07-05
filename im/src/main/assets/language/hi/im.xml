@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+  <string name="message_comment_reposted_you_post_text">&#160;ने&#160;आपकी&#160;पोस्ट&#160;साझा&#160;की</string>
+  <string name="message_comment_forward_text">रेपोस्ट</string>
+  <string name="message_comment_commented_you_post_text">&#160;ने&#160;आपकी&#160;पोस्ट&#160;पर&#160;टिप्पणी&#160;की</string>
+  <string name="message_comment_liked_your_post_text">&#160;ने&#160;आपकी&#160;पोस्ट&#160;को&#160;पसंद&#160;किया</string>
+  <string name="message_comment_reposted_you_comment_text">&#160;ने&#160;आपकी&#160;टिप्पणी&#160;साझा&#160;की</string>
+  <string name="message_comment_forward_you_text">&#160;&#160;ने&#160;आपकी&#160;पोस्ट&#160;साझा&#160;की</string>
+  <string name="message_comment_liked_your_reply_text">&#160;ने&#160;आपका&#160;रिप्लाई&#160;को&#160;पसंद&#160;किया</string>
+  <string name="message_comment_reply_you_text">&#160;ने&#160;आपकी&#160;टिप्पणी&#160;को&#160;रिप्लाई&#160;की</string>
+  <string name="message_like_text">लाइक्स</string>
+  <string name="chat_edit_text_hint">संदेश&#160;लिखें</string>
+  <string name="message_mention_text">@</string>
+  <string name="message_comment_mentioned_you">&#160;ने&#160;आपको&#160;मेंशन&#160;किया&#160;गया</string>
+  <string name="message_comment_text">टिप्पणी</string>
+  <string name="message_comment_like_text">लाइक</string>
+  <string name="im_content_text_over_limit">इनपुट&#160;अक्षर&#160;सीमा&#160;से&#160;अधिक&#160;है</string>
+  <string name="message_comment_dislike_text">डिसलाइक</string>
+  <string name="im_chat_loading_text">लोडिंग</string>
+  <string name="im_session_pic_message">[चित्र]</string>
+  <string name="im_feed_back_text">फ़ीडबैक</string>
+  <string name="message_comment_liked_your_comment_text">&#160;ने&#160;आपकी&#160;टिप्पणी&#160;को&#160;पसंद&#160;किया</string>
+  <string name="message_comment_reply_text">टिप्पणी</string>
+  <string name="message_no_information_text">कोई सूचना नहीं है</string>
+  <string name="im_chat_no_more_text">कोई&#160;संदेश&#160;नहीं&#160;है</string>
+  <string name="chat_sent_a_message">ने&#160;आपको&#160;एक&#160;संदेश&#160;भेज&#160;दिया&#160;है</string>
+  <string name="follow_you">ने&#160;आपको&#160;फॉलो&#160;किया&#160;है</string>
+  <string name="follower_new_post">ने&#160;एक&#160;नयी&#160;पोस्ट&#160;भेज&#160;दी&#160;है</string>
+
+</resources>

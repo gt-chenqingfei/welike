@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/feed_detail_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:background="@color/main_title_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <LinearLayout
+            android:id="@+id/head_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/common_more_btn"
+            app:layout_constraintStart_toEndOf="@id/common_back_btn"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/title_user_header"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                app:actualImageScaleType="centerCrop"
+                app:placeholderImage="@drawable/user_default_head"
+                app:roundAsCircle="true"
+                tools:background="@drawable/user_default_head" />
+
+            <TextView
+                android:id="@+id/common_feed_name"
+                style="@style/new_ui.text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                tools:text="common_ common_ common_ common_ common_ common_ " />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/common_more_btn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_more_btn" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/new_ui.div"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_divider_px1"
+            android:layout_below="@id/feed_detail_title_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feed_detail_title_view">
+
+        <LinearLayout
+            android:id="@+id/feed_detail_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/feed_detail_bottom_comment"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/feed_detail_bottom_comment_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/feed_detail_bottom_forward_text_color"
+                android:textSize="@dimen/feed_detail_bottom_forward_text_size" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/detail_quick_share"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:padding="9dp"
+                app:srcCompat="@drawable/ic_post_detail_share" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/feed_detail_bottom_forward"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="9dp"
+                app:srcCompat="@drawable/feed_detail_bottom_forward" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/feed_detail_bottom_like"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="6dp"
+                android:gravity="center"
+                android:padding="12dp"
+                app:srcCompat="@drawable/feed_detail_like1" />
+
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/feed_detail_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/feed_detail_bottom_bar"
+            app:srlEnableLoadMore="false">
+
+            <com.redefine.welike.commonui.view.ClassicsHeader1
+                android:id="@+id/feed_detail_refresh_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                app:srlClassicsSpinnerStyle="FixedBehind"
+                app:srlDrawableArrowSize="15dp"
+                app:srlDrawableMarginRight="5dp"
+                app:srlDrawableProgress="@drawable/common_feed_refresh_loading"
+                app:srlDrawableProgressSize="15dp"
+                app:srlEnableLastTime="false"
+                app:srlFinishDuration="1500"
+                app:srlTextSizeTitle="14dp" />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/feed_detail_app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_behavior="com.redefine.welike.commonui.view.FlingBehavior">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <LinearLayout
+                            android:id="@+id/feed_detail_top_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <FrameLayout
+                                android:id="@+id/feed_detail_top_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.design.widget.CollapsingToolbarLayout>
+
+                    <LinearLayout
+                        android:id="@+id/feed_detail_tab_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/feed_detail_head_tab_forward_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/feed_detail_head_tab_forward"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:textColor="@color/common_feed_bottom_text_color"
+                                android:textSize="@dimen/common_text_size_13" />
+
+                            <View
+                                android:layout_width="32dp"
+                                android:layout_height="@dimen/common_divider_dp2"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/feed_detail_tab_selector" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/feed_detail_head_tab_comment_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/feed_detail_head_tab_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:textColor="@color/common_feed_bottom_text_color"
+                                android:textSize="@dimen/common_text_size_13" />
+
+                            <View
+                                android:layout_width="32dp"
+                                android:layout_height="@dimen/common_divider_dp2"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/feed_detail_tab_selector" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/feed_detail_head_tab_like_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/feed_detail_head_tab_like"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:textColor="@color/common_feed_bottom_text_color"
+                                android:textSize="@dimen/common_text_size_13" />
+
+                            <View
+                                android:layout_width="32dp"
+                                android:layout_height="@dimen/common_divider_dp2"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/feed_detail_tab_selector" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/new_ui.div"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_divider_px1" />
+
+                </android.support.design.widget.AppBarLayout>
+
+                <FrameLayout
+                    android:id="@+id/feed_detail_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.redefine.commonui.widget.shadowlayout.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_above="@id/feed_detail_bottom_bar"
+            app:is_draw_bottom="true" />
+
+        <com.redefine.commonui.widget.EmptyView
+            android:id="@+id/common_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.redefine.commonui.widget.ErrorView
+            android:id="@+id/common_error_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.redefine.commonui.widget.LoadingView
+            android:id="@+id/common_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

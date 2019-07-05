@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/push_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/notification_push_item_head"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundAsCircle="true"
+        fresco:backgroundImage="@drawable/notification_message_head" />
+
+    <TextView
+        android:id="@+id/notification_push_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/notification_push_item_head"
+        tools:text="11:30" />
+
+    <TextView
+        android:id="@+id/notification_push_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="12dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/common_feed_name_text_color"
+        android:textSize="@dimen/common_text_size_14"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toRightOf="@+id/notification_push_item_head"
+        app:layout_constraintRight_toLeftOf="@id/notification_push_item_time"
+        app:layout_constraintTop_toTopOf="@id/notification_push_item_head"
+        tools:text="Jane James" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/notification_push_item_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notification_push_item_time"
+        fresco:fadeDuration="0"
+        fresco:failureImage="@drawable/pic_preview_error"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@drawable/pic_preview_default"
+        fresco:placeholderImageScaleType="centerInside"
+        tools:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/notification_push_item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/text_feed_content_text_color"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/notification_push_item_icon"
+        app:layout_constraintTop_toBottomOf="@id/notification_push_item_title"
+        tools:text="action on your post: I have been questioned by many people to disclose some of the greatest trader" />
+
+    <View
+        android:id="@+id/notification_push_item_div"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:background="@color/common_div_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notification_push_item_icon"
+
+        />
+
+</android.support.constraint.ConstraintLayout>

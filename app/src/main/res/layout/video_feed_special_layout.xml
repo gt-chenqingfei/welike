@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/common_feed_head_root_view"
+            layout="@layout/video_feed_head"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/video_feed_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/video_thumb_image_size"
+            android:background="@drawable/ripple1"
+            app:layout_constraintTop_toBottomOf="@id/common_feed_head_root_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <FrameLayout
+                android:id="@+id/video_feed_video_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <com.redefine.welike.commonui.view.FeedListVideoController
+                android:id="@+id/video_controller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/common_feed_bottom_root_view"
+            layout="@layout/common_feed_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_feed_container"
+            app:layout_goneMarginTop="@dimen/common_item_margin_8" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

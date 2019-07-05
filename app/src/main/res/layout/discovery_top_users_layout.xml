@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/discover_top_user_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_31"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        tools:text="Trending people"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+    <LinearLayout
+        android:layout_marginRight="12dp"
+        android:gravity="right"
+        android:id="@+id/discover_top_user_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/discover_top_no1_user_item"
+            layout="@layout/discover_top_no1_user_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <include
+            android:layout_marginLeft="15dp"
+            android:id="@+id/discover_top_no2_user_item"
+            layout="@layout/discover_top_no2_user_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+
+
+        <include
+            android:layout_marginLeft="15dp"
+            android:id="@+id/discover_top_no3_user_item"
+            layout="@layout/discover_top_no3_user_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_common_dialog_top_radius_bg">
+
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/common_item_margin_12"
+        android:background="@drawable/app_common_dialog_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_campaign_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_item_margin_8"
+        android:paddingBottom="@dimen/common_item_margin_4"
+        android:paddingTop="@dimen/common_item_margin_6"
+        app:layout_constraintBottom_toTopOf="@+id/ll_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_verify_title"
+            app:layout_constraintRight_toLeftOf="@+id/tv_verify_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_verify_title"
+            app:srcCompat="@drawable/ic_browse_trend_topic_mark" />
+
+        <TextView
+            android:id="@+id/tv_verify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/common_item_margin_12"
+            android:paddingRight="@dimen/common_item_margin_12"
+            android:text="@string/register_verify_account"
+            android:textColor="@color/color_31"
+            android:textSize="@dimen/common_item_margin_24"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_verify_title"
+            app:layout_constraintLeft_toRightOf="@+id/tv_verify_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_verify_title"
+            app:srcCompat="@drawable/ic_browse_trend_topic_mark" />
+
+
+        <TextView
+            android:id="@+id/tv_verify_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/common_item_margin_12"
+            android:paddingRight="@dimen/common_item_margin_12"
+            android:text="@string/register_verify_account_intro"
+            android:textColor="@color/main_grey"
+            android:textSize="@dimen/common_item_margin_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_verify_title" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_item_margin_16"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.redefine.welike.commonui.thirdlogin.ThirdLoginLayout
+            android:id="@+id/third_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="24dp"
+            app:textStyle="false"
+            app:textSize="12"
+            app:textColor="@color/color_62" />
+
+        <TextView
+            android:id="@+id/login_with_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/register_verify_with_phone"
+            android:textColor="@color/common_text_color_48779D"
+            android:textSize="@dimen/common_text_size_14"
+            tools:text="or Login with Mobile Phone" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

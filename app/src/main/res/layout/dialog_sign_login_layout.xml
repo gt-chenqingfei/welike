@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/common_item_margin_12"
+        android:background="@drawable/app_common_dialog_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_welike"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+        app:srcCompat="@drawable/ic_splash_welike_logo" />
+
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_common_bg"
+        android:foreground="@drawable/ripple1"
+        android:gravity="center"
+        android:text="@string/register_sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_log_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_log_in"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_shape_register_login"
+        android:foreground="@drawable/ripple1"
+        android:gravity="center"
+        android:text="@string/register_log_in"
+        android:textColor="@color/main_orange_dark"
+        android:textSize="@dimen/common_text_size_14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/user_terms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/user_terms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="@dimen/common_text_size_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="By continuing, I accept the Terms of Service" />
+
+
+</android.support.constraint.ConstraintLayout>

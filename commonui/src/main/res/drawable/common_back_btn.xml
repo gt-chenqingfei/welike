@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18dp"
+    android:height="18dp"
+    android:viewportWidth="18"
+    android:viewportHeight="18">
+
+    <group
+        android:translateX="-3.000000"
+        android:translateY="-3.000000">
+        <path
+            android:fillColor="#313131"
+            android:strokeWidth="1"
+            android:pathData="M 21 10.8187266 L 7.53969543 10.8187266 L 13.666614 4.68448506 L 11.9947038 3 L 3 12.0053024 L 3.01059234 12.0053024 L 3 12.0053024 L 11.9947038 21 L 13.666614 19.3261198 L 7.53969543 13.1918783 L 21 13.1918783 Z" />
+    </group>
+</vector>

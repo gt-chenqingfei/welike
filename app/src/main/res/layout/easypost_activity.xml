@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerEasyPost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        tools:visibility="visible" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/title_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivEasyPostBackBtn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/tvEasyPostTitle"
+            style="@style/new_ui.title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/image_status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivEasyPostEditorBtn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_edit" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.welike.emoji.SoftKeyboardSizeWatchLayout
+        android:id="@+id/easyPostEmojiContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.redefine.richtext.emoji.EmojiPanel
+            android:id="@+id/easyPostEmojiPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </com.welike.emoji.SoftKeyboardSizeWatchLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/clEasyPostEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        tools:visibility="visible">
+
+        <com.redefine.richtext.RichEditText
+            android:id="@+id/etStatusContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:maxLength="300"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="HAHAHAHA HAHAHA HAHAHAHA HAHAHAHA HAHAHAHA HAHAHAHA" />
+
+        <TextView
+            android:id="@+id/tvRandomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_easy_post_change_text"
+            android:paddingLeft="29dp"
+            android:paddingTop="8dp"
+            android:paddingRight="29dp"
+            android:paddingBottom="8dp"
+            android:text="@string/random_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="Random Text" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/easy_post_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/easyPostEmojiContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.redefine.welike.business.easypost.ui.view.CategoryThumbView
+                android:id="@+id/easyPostThumbView"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="12dp" />
+
+            <com.redefine.welike.business.easypost.ui.view.CategoryTabView
+                android:id="@+id/easyPostCategoryTabView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="12dp"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#7FAFB0B1" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clEasyPostToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/ivEmoji"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_vector_easy_status_emoji" />
+
+            <ImageView
+                android:id="@+id/ivEasyPostImageReplace"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivEmoji"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_vector_easy_status_img" />
+
+
+            <ImageView
+                android:id="@+id/ivEasyPostDownload"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivEasyPostImageReplace"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_vector_easy_status_download" />
+
+            <ImageView
+                android:id="@+id/ivEasyPostFontChange"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivEasyPostDownload"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_vector_easy_status_font" />
+
+            <TextView
+                android:id="@+id/tvEastPostSend"
+                style="@style/new_ui.button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingTop="4dp"
+                android:paddingRight="14dp"
+                android:paddingBottom="4dp"
+                android:text="@string/editor_post_send"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Send" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clEasyPostTip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/easy_post_tip_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_layout"
+        tools:visibility="gone">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lavEasyPostTip"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEasyPostTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="139dp"
+            android:gravity="center"
+            android:text="@string/easy_post_swipe_tip"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            tools:text="Slide right back to the previous step" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.redefine.commonui.widget.LoadingView
+        android:id="@+id/common_loading_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/easy_post_bottom_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        tools:visibility="invisible" />
+</android.support.constraint.ConstraintLayout>
+

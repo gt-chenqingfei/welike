@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/head_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/referrer_top"
+            layout="@layout/layout_referrer_top" />
+
+        <include
+            android:id="@+id/common_action_bar"
+            layout="@layout/common_action_bar"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/head_ll" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_common_interest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp" />
+
+
+    <com.redefine.commonui.widget.ErrorView
+        android:id="@+id/common_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="20dp"
+        android:visibility="invisible" />
+
+    <com.redefine.commonui.widget.EmptyView
+        android:id="@+id/common_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="50dp"
+        android:visibility="invisible" />
+
+    <com.redefine.commonui.widget.LoadingView
+        android:id="@+id/common_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:paddingTop="50dp"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_common_interests_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_common_interests_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/common_item_margin_16"
+            android:background="@drawable/common_appcolor_btn_new_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

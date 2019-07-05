@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/topic_search_hot_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/common_text_color_31"
+        android:textSize="14dp"
+        app:layout_constrainedWidth="true"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ic_trending"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ABC ASSADASD ABC ASSADASD ABC ASSADASD ABC ASSADASD " />
+
+    <ImageView
+        android:id="@+id/ic_trending"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintLeft_toRightOf="@id/topic_search_hot_item_text"
+        app:layout_constraintRight_toLeftOf="@id/filling"
+        app:layout_constraintTop_toTopOf="@id/topic_search_hot_item_text"
+        app:layout_constraintBottom_toBottomOf="@id/topic_search_hot_item_text"
+        app:srcCompat="@drawable/ic_trending"
+
+        />
+
+    <View
+        android:id="@+id/filling"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toRightOf="@id/ic_trending"
+        app:layout_constraintRight_toLeftOf="@+id/padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="1dp" />
+
+    <View
+        android:id="@+id/padding"
+        android:layout_width="12dp"
+        android:layout_height="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/topic_search_hot_item_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="1"
+
+        android:textColor="@color/main_grey"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_search_hot_item_text"
+        tools:text="ABC ASSADASD ABC ASSADASD ABC ASSADASD ABC ASSADASD " />
+
+    <View
+        style="@style/new_ui.div"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/topic_search_hot_item_text"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

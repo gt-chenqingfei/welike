@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="session_group_name_text_color">#464646</color>
+    <color name="session_message_content_text_color">#73000000</color>
+    <color name="session_message_time_text_color">#5C000000</color>
+    <color name="session_message_red_point_text_color">@color/white</color>
+    <color name="chat_list_item_bg_pressed_color">#F5F5F5</color>
+    <color name="chat_divider_color">#F5F5F5</color>
+    <color name="im_chat_item_text_color">#423D2D</color>
+    <color name="chat_input_text_color">#5F5F5F</color>
+    <color name="chat_input_text_hint_color">#D7D7D7</color>
+    <color name="im_chat_list_bg">#F6F6F6</color>
+    <color name="im_chat_load_more_text_color">#B4B4B4</color>
+    <color name="im_time_section_time_text_color">#B4B4B4</color>
+
+    <color name="chat_pic_bg_color">#F7F7F7</color>
+    <color name="chat_msg_bg_left">#F2F4F8</color>
+    <color name="chat_input_bg">#F2F4F8</color>
+    <color name="chat_msg_bg_right">#FFFACD</color>
+
+</resources>

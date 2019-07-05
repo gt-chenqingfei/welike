@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RichEditText">
+        <attr name="richMaxLength" format="integer" />
+        <attr name="richIconSize" format="dimension" />
+        <attr name="editTextAtUtilJumpListener" format="reference" />
+        <attr name="richEditTopicList" format="reference" />
+        <attr name="richEditNameList" format="reference" />
+        <attr name="richEditColorAtUser" format="string" />
+        <attr name="richEditColorTopic" format="string" />
+    </declare-styleable>
+    <declare-styleable name="EmojiLayout">
+        <attr name="richIndicatorFocus" format="integer|reference" />
+        <attr name="richIndicatorUnFocus" format="integer|reference" />
+        <attr name="richDeleteIconName" format="string" />
+        <attr name="richMarginBottom" format="dimension" />
+        <attr name="richMarginTop" format="dimension" />
+        <attr name="richLayoutNumColumns" format="integer|reference" />
+        <attr name="richLayoutNumRows" format="integer|reference" />
+    </declare-styleable>
+    <declare-styleable name="RichTextView">
+        <attr name="needNumberShow" format="boolean" />
+        <attr name="needUrlShow" format="boolean" />
+        <attr name="richText" format="string" />
+        <attr name="topicList" format="reference" />
+        <attr name="nameList" format="reference" />
+        <attr name="atColor" format="color" />
+        <attr name="topicColor" format="color" />
+        <attr name="linkColor" format="color" />
+        <attr name="emojiSize1" format="integer|reference" />
+        <attr name="emojiVerticalAlignment" format="integer|reference" />
+        <attr name="spanUrlCallBackListener" format="reference" />
+        <attr name="spanAtUserCallBackListener" format="reference" />
+        <attr name="spanTopicCallBackListener" format="reference" />
+        <attr name="spanCreateListener" format="reference" />
+    </declare-styleable>
+
+    <!--自定义关注人列表-->
+    <declare-styleable name="IndexBar">
+        <attr name="letterSize" format="dimension" />
+        <attr name="letterColor" format="color" />
+        <attr name="focusLetterColor" format="color" />
+        <attr name="letterSpacingExtra" format="float" />
+    </declare-styleable>
+    <!--自定义关注人列表-->
+
+    <declare-styleable name="NoScrollViewPager">
+        <attr name="scrollable" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MultiGridView">
+        <attr name="num_column" format="integer" />
+        <attr name="row_count" format="integer" />
+        <attr name="child_margin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ThirdLoginLayout1">
+        <attr name="layoutType" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ThirdLoginLayout">
+        <attr name="textColor" format="color" />
+        <attr name="textStyle" format="boolean" />
+        <attr name="textSize" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="SearchBar">
+        <attr name="icon" format="reference" />
+        <attr name="hint" format="string" />
+    </declare-styleable>
+</resources>

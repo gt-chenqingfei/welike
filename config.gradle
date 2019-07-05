@@ -1,0 +1,21 @@
+ext {
+
+    android = [
+            compileSdkVersion: 27,
+            minSdkVersion    : 16,
+            targetSdkVersion : 26,
+            versionCode      : 2100000,
+            versionName      : "2.11.0"
+
+    ]
+
+//    supportLibraryVersion = '27.0.2'
+//    leakCanaryVersion = '1.5.1'
+
+//    testing = [
+//            junit             : 'junit:junit:4.12',
+//            robolectric       : 'org.robolectric:robolectric:3.5.1',
+//            privateConstructor: 'com.pushtorefresh.java-private-constructor-checker:checker:1.2.0',
+//            assertJ           : 'org.assertj:assertj-core:3.8.0'
+//    ]
+}

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_invite_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:text="InviteCode"
+        android:textColor="#6495ed"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/et_regist_invite_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_invite_code"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="please input inviteCode"
+        android:inputType="number"
+        android:maxLength="6"
+        android:maxLines="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btn_regist_invite_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="#6495ed"
+            android:padding="10dp"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_regist_invite_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_regist_invite_code"
+        android:layout_marginRight="20dp"
+        android:padding="4dp"
+        android:text="Terms and Conditions Of Use" />
+
+
+</RelativeLayout>

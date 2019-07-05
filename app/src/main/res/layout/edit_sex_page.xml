@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_action_bar" />
+
+    <View
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:id="@+id/tv_edit_sex_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:drawableLeft="@drawable/mine_edit_person_name_attention"
+        android:drawablePadding="6dp"
+        android:textColor="@color/mine_user_host_personal_edit_nickName"
+        android:visibility="gone" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_item_margin_12"
+        android:layout_marginRight="@dimen/common_item_margin_12"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_edit_sex_boy"
+            style="@style/new_ui.text_2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/tv_edit_sex_boy_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/setting_language_checked" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_item_margin_12"
+        android:layout_marginRight="@dimen/common_item_margin_12">
+
+        <TextView
+            android:id="@+id/tv_edit_sex_girl"
+            style="@style/new_ui.text_2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/tv_edit_sex_girl_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/setting_language_checked" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/user_edit_sex_save_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/common_item_margin_12"
+        android:background="@drawable/common_gray_btn_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/main_grey"
+        android:textSize="@dimen/common_text_size_16"
+        android:textStyle="bold" />
+</LinearLayout>

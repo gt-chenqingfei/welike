@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/topic_head"
+    android:visibility="gone"
+    >
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/down_flag"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/ic_topic_host_header_flag" />
+
+    <RelativeLayout
+        android:background="@drawable/topic_header_layout"
+        android:id="@+id/header_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center">
+        <com.redefine.welike.commonui.widget.VipAvatar
+            android:id="@+id/topic_user_head"
+            android:layout_width="@dimen/common_feed_head_size"
+            android:layout_height="@dimen/common_feed_head_size"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@drawable/user_default_head"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/topic_host_layout"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="122dp"
+        android:layout_height="29dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+    <TextView
+        tool:text="How to apply?"
+        android:id="@+id/topic_host_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/common_left_arrow_icon"
+        android:textColor="@color/location_passer_by_nick_text_color"
+        android:drawablePadding="10dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/header_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topic_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            tool:text="name"
+            android:textColor="@color/location_passer_by_nick_text_color"
+            android:textSize="@dimen/common_text_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/topic_user_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            tool:text="posttime"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/location_passer_by_time_text_color"
+            android:textSize="@dimen/common_text_size_12" />
+
+        <TextView
+            android:id="@+id/topic_user_introduction"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            tool:text="profiledfjslkdjfsjkdfskdjfsdkjfsdjfdjjfkfjkjfjjjffff"
+            android:textColor="@color/location_passer_by_introduction_text_color"
+            android:textSize="@dimen/common_text_size_12" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/search_user_item_divider"
+        />
+
+</RelativeLayout>

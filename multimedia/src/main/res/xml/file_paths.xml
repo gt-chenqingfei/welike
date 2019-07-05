@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path
+            name="Photo"
+            path="Welike" />
+    </paths>
+    <external-path
+        name="share"
+        path="Android/data/com.redefine.welike/cache" />
+    <cache-path
+        name="share"
+        path="share" />
+</resources>

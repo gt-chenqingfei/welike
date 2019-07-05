@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/user_edit_brief_top"
+        layout="@layout/common_action_bar" />
+
+    <View
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/user_edit_brief_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_user_edit_brief"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_below="@+id/user_edit_brief_top"
+        android:layout_marginTop="1px">
+
+        <EditText
+            android:id="@+id/edit_user_edit_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/transparent"
+            android:maxLength="175"
+            android:maxLines="15"
+            android:textColor="@color/color_62"
+            android:textSize="@dimen/common_text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_user_info_edit_brief"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_edit_brief_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/mine_user_host_setting_logout"
+            android:textSize="@dimen/common_text_size_14" />
+
+        <TextView
+            android:id="@+id/edit_user_edit_brief_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:text="175"
+            android:textColor="@color/main_grey"
+            android:textSize="@dimen/common_text_size_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_user_info_edit_brief"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/common_item_margin_16"
+        android:background="@drawable/common_gray_btn_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/main_grey"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</RelativeLayout>

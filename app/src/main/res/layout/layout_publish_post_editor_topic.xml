@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/publish_add_topic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/publish_add_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:drawableEnd="@drawable/right_arrow_selector"
+        android:drawableRight="@drawable/right_arrow_selector"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="5dp"
+        android:text="@string/public_add_topic"
+        android:textColor="@color/add_topic_selector"
+        android:textSize="@dimen/common_text_size_14"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/publish_add_topic_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:background="@drawable/publish_add_topic_tip"
+        android:gravity="start"
+        android:paddingLeft="10dp"
+        android:paddingTop="18dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/chosen_topic_tip"
+        android:textColor="@color/main_orange_dark"
+        android:visibility="gone"
+        tools:text="Reach more people and get amazing response with likes and comments by choosing right hashtag."
+        tools:visibility="visible" />
+</LinearLayout>

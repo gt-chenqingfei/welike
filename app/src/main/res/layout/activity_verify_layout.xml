@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="22dp"
+        android:background="@drawable/ripple1"
+        app:srcCompat="@drawable/common_btn_close" />
+
+
+    <TextView
+        android:id="@+id/tv_verify_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_half_verify_title"
+        android:textColor="@color/color_31"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/iv_close"
+        tools:text="Verify your account. Save what you like" />
+
+
+    <TextView
+        android:id="@+id/tv_verify_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/main_grey"
+        android:textSize="@dimen/common_text_size_16"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify_title"
+        tools:text="What should we call you?" />
+
+    <com.redefine.welike.commonui.thirdlogin.ThirdLoginLayout1
+        android:id="@+id/third_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="40dp"
+        app:layoutType="1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify_info" />
+
+
+    <View
+        android:id="@+id/divider0"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginRight="@dimen/common_item_margin_16"
+        android:background="@color/color_ed"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_or"
+        app:layout_constraintRight_toLeftOf="@+id/tv_or"
+        app:layout_constraintTop_toTopOf="@+id/tv_or" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textColor="@color/main_grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_login_layout" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/common_item_margin_16"
+        android:background="@color/color_ed"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_or"
+        app:layout_constraintLeft_toRightOf="@+id/tv_or"
+        app:layout_constraintTop_toTopOf="@+id/tv_or" />
+
+
+    <TextView
+        android:id="@+id/tv_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_stroke_main_color"
+        android:gravity="center"
+        android:text="@string/register_verify_with_phone_title"
+        android:textColor="@color/main_orange_dark"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_or" />
+
+    <TextView
+        android:id="@+id/user_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="By continuing, I accept the Terms of Service" />
+
+
+</android.support.constraint.ConstraintLayout>

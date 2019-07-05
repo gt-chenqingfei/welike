@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/common_color_fa"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/header_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/common_title_view"
+            style="@style/new_ui.title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Connect contacts" />
+
+        <View
+            android:id="@+id/bottom_line"
+            style="@style/new_ui.div"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/main_title_view"-->
+    <!--style="@style/new_ui.title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/common_title_bar_height"-->
+    <!--android:background="@color/main_title_bg"-->
+    <!--android:gravity="center" />-->
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/main_home_refresh_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout"
+        app:srlEnableLoadMore="true">
+
+        <com.redefine.welike.commonui.view.ClassicsHeader1
+            android:id="@+id/main_home_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="5dp"
+            app:srlDrawableProgress="@drawable/common_feed_refresh_loading"
+            app:srlDrawableProgressSize="15dp"
+            app:srlEnableLastTime="false"
+            app:srlFinishDuration="1500"
+            app:srlTextSizeTitle="14dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_home_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.redefine.commonui.widget.ErrorView
+        android:id="@+id/common_error_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout" />
+
+    <com.redefine.commonui.widget.EmptyView
+        android:id="@+id/common_empty_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout" />
+
+    <com.redefine.commonui.widget.LoadingView
+        android:id="@+id/common_loading_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout" />
+
+    <!--<View-->
+    <!--android:id="@+id/home_notify_bg"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="36dp"-->
+    <!--android:background="@drawable/shape_notify_bg"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/home_notify_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="14dp"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/home_notify_bg"-->
+    <!--tools:text="Personalize your content" />-->
+
+    <!--<com.airbnb.lottie.LottieAnimationView-->
+    <!--android:id="@+id/home_notify_anim"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--app:layout_constraintLeft_toLeftOf="@+id/home_notify_tv"-->
+    <!--app:layout_constraintRight_toRightOf="@+id/home_notify_tv"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/home_notify_tv"-->
+    <!--app:lottie_loop="true"-->
+    <!--app:lottie_autoPlay="true"-->
+    <!--/>-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@color/main_home_bg_color"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/header_layout">-->
+    <!--</FrameLayout>-->
+</android.support.constraint.ConstraintLayout>

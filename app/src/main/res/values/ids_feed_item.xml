@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ad_head-->
+    <item name="header_card_layout" type="id" />
+    <item name="iv_common_feed_ad_icon" type="id" />
+    <item name="tv_common_feed_ad_title" type="id" />
+
+
+    <!-- common feed  head  -->
+    <item name="common_feed_head_root_view" type="id" />
+    <item name="top_post_flag" type="id" />
+    <item name="common_trending_layout" type="id" />
+    <item name="common_trending_image" type="id" />
+    <item name="common_trending_value" type="id" />
+    <item name="tv_common_feed_operation" type="id" />
+    <item name="common_feed_head" type="id" />
+    <item name="common_feed_name" type="id" />
+    <item name="header_flag" type="id" />
+    <item name="common_hot" type="id" />
+    <item name="common_hot_text" type="id" />
+    <item name="common_top" type="id" />
+    <item name="common_top_text" type="id" />
+    <item name="common_feed_time" type="id" />
+    <item name="common_feed_event_mark" type="id" />
+    <item name="common_feed_empty" type="id" />
+    <item name="common_feed_follow_btn" type="id" />
+    <item name="common_feed_read_count" type="id" />
+    <item name="common_feed_arrow_btn" type="id" />
+
+    <!-- common feed  content  -->
+    <item name="text_feed_content" type="id" />
+
+    <!-- ad_card_layout   -->
+    <item name="iv_ad_pic" type="id" />
+    <item name="tv_post_status" type="id" />
+    <item name="common_feed_active_title" type="id" />
+    <item name="common_feed_active_desc" type="id" />
+    <item name="tv_common_feed_active_join" type="id" />
+
+    <!-- active_card_layout   -->
+    <item name="active_card_layout" type="id" />
+    <item name="bg_lg_active_card" type="id" />
+    <item name="cl_common_feed_active_post" type="id" />
+    <item name="nums_flag" type="id" />
+    <item name="active_nums_tv" type="id" />
+
+    <!-- topic card  -->
+
+    <item name="topic_card_layout" type="id" />
+    <item name="bg_lg_topic_card" type="id" />
+    <item name="card_info" type="id" />
+    <item name="super_topic_flag" type="id" />
+    <item name="topic_name_tv" type="id" />
+    <item name="card_info_with_introduce" type="id" />
+    <item name="ll_title" type="id" />
+    <item name="topic_name_tv_with_introduce" type="id" />
+    <item name="topic_introduce_tv" type="id" />
+    <item name="nums_flag_with_introduce" type="id" />
+    <item name="topic_nums_tv_with_introduce" type="id" />
+    <item name="post_info" type="id" />
+    <item name="topic_nums_tv" type="id" />
+
+
+    <!-- common  bottom-->
+    <item name="common_feed_bottom_root_view" type="id" />
+    <item name="feed_location_view" type="id" />
+    <item name="common_feed_top_divider" type="id" />
+    <item name="common_feed_bottom_content" type="id" />
+    <item name="common_feed_center_share_view" type="id" />
+    <item name="common_feed_share_tab" type="id" />
+    <item name="common_feed_share_icon" type="id" />
+    <item name="common_feed_share" type="id" />
+    <item name="common_feed_forward_tab" type="id" />
+    <item name="common_feed_forward_icon" type="id" />
+    <item name="common_feed_forward_count" type="id" />
+    <item name="common_feed_comment_tab" type="id" />
+    <item name="common_feed_comment_count_icon" type="id" />
+    <item name="common_feed_comment_count" type="id" />
+    <item name="common_feed_like_tab" type="id" />
+    <item name="common_feed_like_icon" type="id" />
+    <item name="common_feed_like_count" type="id" />
+    <item name="common_feed_divider" type="id" />
+
+
+    <!-- video conetnt -->
+    <item name="video_feed_container" type="id" />
+    <item name="video_feed_video_player" type="id" />
+    <item name="video_controller" type="id" />
+
+    <!--VIDEO CONTROLLER-->
+    <item name="video_cover" type="id" />
+    <item name="video_progress_bar" type="id" />
+    <item name="video_feed_play_image" type="id" />
+    <item name="video_post_content" type="id" />
+    <item name="video_voice_switch" type="id" />
+
+    <!-- iamge conetnt -->
+    <item name="image_feed_root_view" type="id" />
+    <item name="pic_feed_multi_grid_view" type="id" />
+
+    <!--link -->
+    <item name="link_feed_container" type="id" />
+    <item name="linked_feed_thumb_image" type="id" />
+    <item name="linked_feed_title" type="id" />
+
+
+    <!--vote -->
+    <item name="common_vote_header" type="id" />
+    <item name="common_feed_bottom_cb" type="id" />
+    <item name="iv_vote_check_2_post" type="id" />
+    <item name="tv_vote_check_2_post_info" type="id" />
+    <item name="tv_right_text" type="id" />
+    <item name="vote_text_multi_view" type="id" />
+
+    <!--art-->
+    <item name="art_card_contain" type="id" />
+    <item name="art_bg" type="id" />
+    <item name="bottom_gradient_view" type="id" />
+    <item name="art_card_head_image" type="id" />
+    <item name="ard_card_name" type="id" />
+    <item name="art_card_title_flag" type="id" />
+    <item name="art_title" type="id" />
+
+
+    <!--follow -->
+    <item name="tv_item_title" type="id" />
+    <item name="tv_more_recommend" type="id" />
+    <item name="rv_follow" type="id" />
+
+    <!--forward-->
+    <item name="forward_feed_nick_name" type="id" />
+    <item name="forward_feed_text_content" type="id" />
+    <item name="forward_follow_btn" type="id" />
+    <item name="forward_pic_feed_multi_grid_view" type="id" />
+    <item name="vote_pic_feed_multi_grid_view" type="id" />
+    <item name="forward_feed_delete_img" type="id" />
+    <item name="forward_feed_delete_content" type="id" />
+
+    <!--link -->
+    <item name="forward_feed_root_view" type="id" />
+    <item name="link_feed_content" type="id" />
+
+
+    <!-- interest -->
+    <item name="iv_cancel" type="id" />
+    <item name="fl_interest" type="id" />
+    <item name="tv_item_confirm" type="id" />
+    <item name="lv_bottom_line" type="id" />
+    <item name="common_feed_bottom_root_shadow" type="id" />
+
+
+    <!--gp-->
+
+    <item name="cl_content" type="id" />
+    <item name="tv_gp_score_title" type="id" />
+    <item name="tv_gp_score_description" type="id" />
+    <item name="lv_gp_score_expression" type="id" />
+    <item name="lv_gp_score_expression1" type="id" />
+    <item name="lv_gp_score_edit_expression" type="id" />
+    <item name="ll_gp_score_star" type="id" />
+    <item name="tv_gp_score_description1" type="id" />
+    <item name="tv_gp_score_feedback" type="id" />
+
+
+    <!--image item-->
+
+    <item name="feed_nine_grid_item" type="id" />
+    <item name="longImg" type="id" />
+    <item name="gif_tag" type="id" />
+
+
+</resources>

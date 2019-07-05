@@ -1,0 +1,1 @@
+include ':app', ':weLikeGreenDaoGenerator', ':richtext', ':pageindicator', ':xtablayoutlibrary', ':gifemotion', 'luban', ':commonui', ':base', ':frameworkmvp', ':multimedia', ':guide', ':frameworkmvvm', ':im2', ':sunny', ':shortcutbadger', ":ucrop", ":foundation", ":systembartint", ":framework", ":refresh-layout",':init',":oss",':emoji'

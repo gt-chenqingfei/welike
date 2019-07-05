@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_color_f8f8f8"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/discover_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:elevation="0dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/discovery_search_layout_in"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/discovery_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/discover_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_color_f8f8f8">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_browse"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/common_item_margin_6"
+                android:paddingRight="@dimen/common_item_margin_6"
+                android:visibility="visible"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    style="@style/new_ui.title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:scaleType="center"
+                    android:text="@string/common_login"
+                    android:textColor="@color/main"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Login" />
+
+                <ImageView
+                    android:id="@+id/iv_choose_language"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ripple1"
+                    android:padding="6dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_language_en_icon" />
+
+                <TextView
+                    android:id="@+id/tv_browse_title"
+                    style="@style/new_ui.title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="@string/discover_hot"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ripple1"
+                    android:padding="9dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_browse_search" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/cl_browse">
+
+                <com.androidkun.xtablayout.XTabLayout
+                    android:id="@+id/tl_interest_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@color/common_color_fa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:xTabDividerWidthWidthText="true"
+                    app:xTabIndicatorColor="@color/main_orange_dark"
+                    app:xTabMode="scrollable"
+                    app:xTabSelectedTextColor="@color/main_orange_dark"
+                    app:xTabSelectedTextSize="@dimen/common_text_size_12"
+                    app:xTabTextBold="true"
+                    app:xTabTextColor="@color/color_31"
+                    app:xTabTextSelectedBold="true"
+                    app:xTabTextSize="@dimen/common_text_size_12" />
+
+
+                <View
+                    android:id="@+id/bottom_line"
+                    style="@style/new_ui.div1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/common_transition_t_b_bg" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>

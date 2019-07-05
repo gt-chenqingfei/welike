@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editor_root_view_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_publish_common" />
+
+    <include
+        layout="@layout/layout_publish_post_editor_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editor_bottom_container"
+        android:layout_below="@+id/title_layout" />
+
+    <com.redefine.commonui.widget.shadowlayout.ShadowView
+        android:id="@+id/editor_container_bottom_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/editor_bottom_container"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:is_draw_bottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/editor_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.redefine.welike.business.publisher.ui.component.BottomBehaviorView4Post
+            android:id="@+id/editor_bottom_behavior_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editor_limit_layout"
+            android:orientation="horizontal" />
+
+
+        <cn.dreamtobe.kpswitch.widget.KPSwitchPanelRelativeLayout
+            android:id="@+id/editor_bottom_emoji_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editor_bottom_behavior_view"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.redefine.richtext.emoji.EmojiPanel
+                android:id="@+id/editor_emoji_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.redefine.commonui.widget.shadowlayout.ShadowView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                app:is_draw_top="true" />
+        </cn.dreamtobe.kpswitch.widget.KPSwitchPanelRelativeLayout>
+    </RelativeLayout>
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout>

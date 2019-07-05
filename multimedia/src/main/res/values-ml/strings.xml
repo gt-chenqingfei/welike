@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 录制的滤镜的文字 -->
+    <string name="string_next">അടുത്തത്</string>
+    <string name="string_preview">പ്രിവ്യൂ</string>
+</resources>

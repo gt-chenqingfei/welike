@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- button color -->
+    <color name="main">#FF9300</color>
+
+    <color name="main_title_bg">#FFFFFF</color>
+
+    <color name="main_bg">#FFFFFF</color>
+
+    <color name="main_orange_dark">#FF9300</color>
+    <color name="color_fff9ef">#FFF9EF</color>
+
+    <color name="main_color_disable">#F4F4F4</color>
+
+    <color name="main_orange">#64FF9300</color>
+
+    <color name="main_orange_light">#33FF9300</color>
+
+    <color name="main_error">#FF6A49</color>
+
+    <color name="color_ff9e9e">#FF9E9E</color>
+
+    <color name="color_ff9300">#FF9300</color>
+
+    <color name="common_div_color">#EEEEEE</color>
+
+    <color name="common_setting_div_color">#EEEEEE</color>
+
+    <color name="color_21">#212121</color>
+
+    <color name="color_31">#313131</color>
+
+    <color name="color_62">#626262</color>
+
+    <color name="color_97">#979797</color>
+
+
+    <color name="color_45">#454545</color>
+
+    <color name="color_f6">#F6F6F6</color>
+    <color name="color_f0">#F0F0F0</color>
+    <color name="white_color_70">#B2ffffff</color>
+    <color name="main_grey">#AFB0B1</color>
+
+    <color name="main_blue">#48779D</color>
+
+    <color name="profile_influence_blue">#48779D</color>
+
+    <color name="color_53D0FF">#53D0FF</color>
+
+    <color name="common_feed_div_color">#EDF1F5</color>
+
+    <color name="feed_card_back_ground">#FFFFFF</color>
+
+    <color name="search_back_ground">#f8f8f8</color>
+
+
+    <color name="color_f4">#f4f4f4</color>
+
+    <color name="color_3B6393">#3B6393</color>
+
+    <color name="color_F2F5F8">#F2F5F8</color>
+
+    <color name="color_ddd">#dddddd</color>
+
+    <color name="color_859EBC">#859EBC</color>
+     <color name="color_interest_un_select">#859EBC</color>
+
+    <color name="color_interest_select">#3B6393</color>
+
+    <color name="color_fff5e6">#FFF5E6</color>
+
+    <color name="color_fffaf4">#FFFAF4</color>
+
+    <color name="color_ff6a49">#FF6A49</color>
+
+    <color name="color_44B3FF">#44B3FF</color>
+
+    <color name="color_48779D">#48779D</color>
+
+    <color name="color_FFF6E9">#FFF6E9</color>
+
+    <color name="color_ed">#ededed</color>
+
+    <color name="color_99_dark">#99000000</color>
+
+    <color name="color_64_dark">#64979797</color>
+
+</resources>

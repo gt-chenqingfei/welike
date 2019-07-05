@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="BaseAppTheme.Transparent" parent="BaseAppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="BaseAppTheme.FullScreen" parent="BaseAppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="BaseAppTheme.Dialog" parent="android:Theme.Dialog" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BaseAppTheme.Dialog1" parent="android:Theme.Dialog" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="BaseAppTheme.Dialog.Transparent" parent="BaseAppTheme.Dialog" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BaseAppTheme.SHortDialog.Transparent" parent="BaseAppTheme.Dialog" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BaseAppTheme.TextView" >
+
+    </style>
+
+
+    <style name="BaseAppTheme.TextView.CommonTitle" parent="BaseAppTheme.TextView" >
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/common_title_view_text_color</item>
+        <item name="android:textSize">@dimen/common_text_size_16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BaseAppTheme.AppColorButton" >
+        <item name="android:background">@drawable/common_appcolor_btn_bg</item>
+    </style>
+
+    <style name="BaseAppTheme.TopicColorButton" >
+        <item name="android:background">@drawable/topic_bottom</item>
+    </style>
+
+    <style name="BaseAppTheme.NewAppColorButton" >
+        <item name="android:background">@drawable/common_appcolor_btn_new_bg</item>
+    </style>
+
+    <style name="BaseAppTheme.RedColorButton" >
+        <item name="android:background">@drawable/common_red_btn_bg</item>
+    </style>
+
+    <style name="BaseAppTheme.GrayColorButton" >
+        <item name="android:background">@drawable/common_gray_btn_bg</item>
+    </style>
+
+    <style name="BaseAppTheme.AppColorButtonSelector" >
+        <item name="android:background">@drawable/common_button_selector</item>
+        <item name="android:textColor">@color/common_color_button_text</item>
+    </style>
+
+    <style name="MyTranslucent" parent="BaseAppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="loading_theme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/loading_corner_bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="loading_theme1" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/loading_corner_bg1</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="loading_theme2" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/loading_corner_bg1</item>
+
+    </style>
+</resources>

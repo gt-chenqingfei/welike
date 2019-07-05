@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageScaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/black" />
+
+    <com.redefine.commonui.widget.loading.ProgressView
+        android:id="@+id/video_progress_bar"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_close_btn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:padding="6dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_close_btn_white" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_close_btn_h"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="6dp"
+        android:padding="6dp"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_close_btn_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_video_gradient_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_rotate_btn"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="6dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/video_land_rotate" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_rotate_btn_h"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="35dp"
+        android:scaleType="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/video_portrait_rotate" />
+
+    <FrameLayout
+        android:id="@+id/video_media_controller_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/video_play_btn"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/video_play_btn" />
+
+        <FrameLayout
+            android:id="@+id/video_seek_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/video_controller_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/video_player_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="--:--"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_size_12"
+                tools:text="00:00" />
+
+            <SeekBar
+                android:id="@+id/video_player_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:enabled="false"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:paddingBottom="13dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="13dp"
+                android:progressDrawable="@drawable/video_player_seek_bar"
+                android:splitTrack="false"
+                android:thumb="@drawable/video_seek_thumb"
+                android:thumbOffset="5.5dp" />
+
+            <TextView
+                android:id="@+id/video_player_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="--:--"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_size_12"
+                tools:text="00:08" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/video_player_mini_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progressDrawable="@drawable/video_player_mini_progress_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:progress="50" />
+
+</android.support.constraint.ConstraintLayout>

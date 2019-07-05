@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+
+    <string name="user_sex_boy">पुरुष</string>
+    <string name="refresh_header_default_finish">रिफ्रेश&#160;सफ़ल&#160;है</string>
+    <string name="refresh_header_release">रिफ़्रेश&#160;के&#160;लिए&#160;रिलीज़&#160;करें</string>
+    <string name="user_sex_girl">स्त्री</string>
+    <string name="refresh_header_failed">रिफ़्रेश&#160;फ़ैल&#160;है</string>
+    <string name="common_error_text">नेटवर्क एरर. कृप्या दोबारा कोशिशि करें</string>
+    <string name="refresh_header_refreshing">रिफ़्रेश&#160;हो&#160;रहा&#160;है</string>
+    <string name="refresh_header_pulldown">रिफ़्रेश&#160;के&#160;किए&#160;नीचे&#160;खींचें</string>
+    <string name="common_reload_text">रिफ्रेश</string>
+    <string name="common_ok">ठीक&#160;है</string>
+    <string name="common_cancel">रद्द&#160;करें</string>
+    <string name="common_me_share_content_two">&#160;फॉलोअर्स&#160;प्राप्त&#160;लिया&#160;है,&#160;और&#160;मेरे&#160;कुल&#160;रैंकिंग&#160;है&#160;NO.</string>
+    <string name="common_me_share_content_four">&#160;के&#160;उपयोगकर्ताओं&#160;को&#160;पार&#160;हुआ.Welike&#160;में&#160;मेरी&#160;दिलचस्प&#160;पोस्ट&#160;देख&#160;चाहते&#160;हैं?&#160;आओ!&#160;मेरा&#160;नाम&#160;है&#160;</string>
+    <string name="common_me_out_three_hundred_share_content_one">Welike&#160;में&#160;मेरी&#160;दिलचस्प&#160;पोस्ट&#160;देख&#160;चाहते&#160;हैं?&#160;आओ,&#160;हम&#160;दोस्त&#160;बनें</string>
+    <string name="common_feed_detail_share_content">Welike&#160;में&#160;बहुत&#160;दिलचस्प&#160;पोस्ट&#160;हैं,मैं&#160;आपको&#160;साझा&#160;कर&#160;रहा(रही)हूँ</string>
+    <string name="common_share_content_copyed">क्लिपबोर्ड&#160;पर&#160;कॉपी&#160;किया&#160;गया</string>
+    <string name="common_confirm">पुष्टि&#160;करें</string>
+    <string name="common_me_share_content_three">&#160;Welike&#160;में,और&#160;</string>
+    <string name="common_me_share_content_one">मैं&#160;ने&#160;</string>
+    <string name="common_me_out_three_hundred_share_content_two">और&#160;एक&#160;दुसरे&#160;से&#160;दिलचस्प&#160;पोस्ट&#160;साझा&#160;करें.&#160;Welike&#160;में&#160;मेरा&#160;नाम&#160;है&#160;</string>
+
+    <string name="common_error_ssl_cert_invalid">इस&#160;वेबसाइट&#160;पर&#160;सुरक्षा&#160;जोखिम&#160;हो&#160;सकता&#160;है|&#160;क्या&#160;आप&#160;जारी&#160;रखना&#160;चाहते&#160;हैं?</string>
+    <string name="no_more">और&#160;कुछ&#160;नहीं</string>
+    <string name="load_error">लोडिंग&#160;फ़ैल&#160;.कृपया&#160;पुनः&#160;कोशिशि&#160;करें</string>
+    <string name="loading">लोंडिंग</string>
+    <string name="all">सब</string>
+    <string name="post">पोस्ट</string>
+    <string name="go_back">लौटें</string>
+    <string name="topic">टॉपिक</string>
+
+    <string name="follow_btn_text">फॉलो</string>
+    <string name="friends_btn_text">दोस्त</string>
+    <string name="following_btn_text">फ़ॉलोइंग</string>
+    <string name="back_to_top">शीर्ष&#160;पर&#160;वापस&#160;जाएँ</string>
+    <string name="refreshed">रिफ्रेश&#160;हो&#160;गया</string>
+    <string name="sort_hot_text">टॉप कमेंट्स</string>
+    <string name="sort_created_text">ताज़ा</string>
+    <string name="stranger">अजनबी</string>
+    <string name="or">या</string>
+    <string name="click_back_again">लौटने&#160;के&#160;लिए&#160;दोबारा&#160;बेक&#160;क्लिक&#160;करें</string>
+    <string name="copy_to_clipboard">क्लिपबोर्ड में कॉपी किया</string>
+    <string name="max_following_limitation">आप दूसरों को फॉलो  करने की अधिकतम संख्या पार कर चुके हैं</string>
+
+    <string name="common_join">जुड़ें</string>
+    <!--share-->
+    <string name="share_title_post">%s की Welike पोस्ट</string>
+    <string name="share_title_post_whatsapp">\@%s की Welike पोस्ट देखें</string>
+    <string name="share_title_profile">%s के Welike प्रोफाइल</string>
+    <string name="share_title_profile_whatsapp">Welike पर इस व्यक्ति की अमेजिंग प्रोफाइल चेक करें</string>
+    <string name="share_title_topic">Welike में %s# की चर्चा करें</string>
+    <string name="share_title_topic_whatsapp">बहुत लोग इस %s# पर बात कर रहे हैं, इसकी चर्चा करें</string>
+    <string name="share_title_app">Welike पर इस व्यक्ति के अमेजिंग प्रोफाइल चेक करें</string>
+    <string name="share_desc_post">यह Welike पर एक दिलचस्प पोस्ट है, इसे चेक करें</string>
+    <string name="share_desc_profile">Welike पर इस व्यक्ति के अमेजिंग प्रोफाइल चेक करें</string>
+    <string name="share_desc_topic">%s ने आपको Welike में चर्चा करने केलिए आमंत्रित किया है</string>
+    <string name="share_desc_app">Welike भारतीय का सोशल मीडिया प्लेटफार्म है. अपनी पसंद और जीवन को बनाएं, दिस्कावर करें और साझा करें.</string>
+    <string name="share_topic_pic_text">%s पोस्ट्स Welike के चर्चित विषय पर बात कर रही है</string>
+    <string name="share_post_download">ज्यादा मुफ्त HD वीडियोस के लिए डाउनलोड करें: https://welike.in/download</string>
+    <string name="share_post_pic_download">और HD पिक्चर्स देखने और ढूंढने के लिए डाउनलोड करें: https://welike.in/download</string>
+    <string name="share_profile_download">Welike पर दिलचस्प लोगों को ढूंढें: https://welike.in/download</string>
+    <string name="share_topic_download">Welike पर और ज्यादा चर्चित विषयों को देखें: https://welike.in/download</string>
+
+
+    <string name="block">ब्लॉक</string>
+    <string name="unblock">अनब्लॉक</string>
+    <string name="shake">दोस्त बनाओ</string>
+
+    <string name="message_box_new">नया</string>
+    <string name="earlier">पूर्व</string>
+
+    <string name="notification_setting">नोटिफिकेशन</string>
+    <string name="notification_reminder">नोटिफिकेशन अनुस्मारक</string>
+    <string name="mute_at">\@</string>
+    <string name="mute_comment">टिप्पणी</string>
+    <string name="mute_like">लाइक</string>
+    <string name="mute_follow">नए पोस्ट</string>
+    <string name="mute_stranger">अजनबी</string>
+    <string name="mute_im_message_tips">जिनसे मैं संदेश प्राप्त करूंगा</string>
+    <string name="mute_im_message">दोस्तों से संदेश</string>
+    <string name="mute_new_post_tips">जिजिन लोग मैं फॉलो कर रहा/रही है,उनके संदेश प्राप्त करूंगा</string>
+    <string name="mute_new_post">नयी पोस्ट</string>
+    <string name="mute_scheduled_tips">डिस्टर्ब न करें</string>
+    <string name="mut_scheduled">तैयार समय</string>
+    <string name="mute_start">कब से</string>
+    <string name="mute_end">कब तक</string>
+
+    <string name="Quiet_Hours">चुप हुए समय</string>
+
+    <string name="splash_jump">%s स्किप</string>
+    <string name="splash_slogan">Desh Ka Social Media</string>
+
+    <string name="more">पूरा</string>
+    <string name="more_upper">पूरा</string>
+
+    <string name="days">d&#160;</string>
+    <string name="hour">h</string>
+    <string name="hot">हॉट</string>
+
+    <!--contacts-->
+    <string name="contact_title">नए दोस्त</string>
+    <string name="contact_connect">कॉन्टेक्ट्स जोड़ें</string>
+    <string name="in_your_contacts">आपके कॉन्टेक्ट्स में हैं</string>
+    <string name="contact_invite">इनविटे करें</string>
+    <string name="contact">कॉन्टेक्ट्स</string>
+    <string name="contacts">कॉन्टेक्ट्स</string>
+    <string name="contact_invite_friends">दोस्तों को इनविटे करें</string>
+    <string name="contact_follow_all">सबको फॉलो करें</string>
+    <string name="contact_header1">ये लोग Welike पे पहले से ही हैं</string>
+    <string name="contact_header2">जितने ज़्यादा दोस्त, उतना ज़्यादा मज़ा. अपने दोस्तों को आमंत्रित करें</string>
+    <string name="contact_share_pre">Welike पर मेरे साथ दोस्त बनें जिससे मैं आपके साथ अपने नए पोस्ट, फोटो और वीडियो आपके साथ साझा कर सकूँ</string>
+    <string name="contact_empty">आपके फ़ोन पे कोई कॉन्टेक्ट्स नहीं हैं</string>
+    <string name="contact_invite_friend_by">दोस्तों को ऐसे इनवाइट करें</string>
+
+    <string name="common_privacy">प्राइवेसी</string>
+    <string name="common_contact">कॉन्टेक्ट्स</string>
+    <string name="common_mobile_model">मोबाइल मॉडल</string>
+    <string name="common_display_mobile_model">मोबाइल मॉडल दिखाएँ</string>
+    <string name="common_display_mobile_model_info">फ़ोन मॉडल फीड और पोस्ट में दिखेगा. यदि आप आज्ञा नहीं देते हैं तो फ़ोन मॉडल नहीं दिखाया जायेगा.</string>
+    <string name="common_privacy_info">और अधिक जानें अपनी प्राइवेसी के बारे में : प्राइवेसी पॉलिसी</string>
+    <string name="common_privacy_match">प्राइवेसी पॉलिसी</string>
+    <string name="common_find_contacts">मोबाइल कॉन्टेक्ट्स को नोटिफाई करें</string>
+    <string name="common_find_contacts_info">यदि खुला हो, आप Welike में अपने फ़ोन कॉन्टेक्ट्स के दोस्तों को ढूंढ सकते हैं.</string>
+    <string name="common_follow_by_phone">फ़ोन नंबर से मुझे ढूंढें</string>
+    <string name="common_follow_by_phone_info">आपके दोस्त आपके फ़ोन नंबर से आपको Welike में फॉलो कर सकता है.</string>
+
+
+    <string name="common_continue">जारी करें</string>
+    <string name="later">एक्सिट</string>
+    <string name="common_quit">छोड़ें</string>
+
+    <string name="new_task_title_welcome">Welike में आपका स्वागत है</string>
+    <string name="new_task_content_welcome">कूल Weliker बनने के लिए, क्या करें</string>
+    <string name="new_task_button_welcome">चलिये</string>
+    <string name="new_task_title_like">Weliker बनिए</string>
+    <string name="new_task_content_like">बहुत अच्छा! टास्क पूरा हुआ</string>
+    <string name="new_task_title_discover">Weliker बनिए</string>
+    <string name="new_task_content_discover">टास्क पूरा हुआ</string>
+    <string name="new_task_title_hot_post">Weliker बनिए</string>
+    <string name="new_task_content_hot_post">टास्क पूरा हुआ</string>
+    <string name="new_task_title_rank">Weliker बनिए</string>
+    <string name="new_task_content_rank">टास्क पूरा हुआ</string>
+    <string name="new_task_title_activity">आइरन मेडल जीतने के लिए बधाई हो</string>
+    <string name="new_task_content_activity">जारी रखें</string>
+    <string name="new_task_title_avatar">Welike प्रो बनें</string>
+    <string name="new_task_content_avatar">टास्क पूरा हुआ</string>
+    <string name="new_task_title_introduction">Welike प्रो बनें</string>
+    <string name="new_task_content_introduction">टास्क पूरा हुआ</string>
+    <string name="new_task_title_new_weliker_post">Welike प्रो बनें</string>
+    <string name="new_task_content_new_weliker_post">टास्क पूरा हुआ</string>
+    <string name="new_task_title_task_list">कॉपर मेडल जीतने के लिए बधाई हो</string>
+    <string name="new_task_content_task_list">चेक करें</string>
+
+    <string name="picture_camera_audio_permission">पोस्ट बनाने के लिए कैमरा/माइक्रोफोन के प्रयोग की अनुमति Welike को दें</string>
+    <string name="picture_camera_permission">पोस्ट बनाने के लिए कैमरा के प्रयोग की अनुमति Welike को दें</string>
+
+    <string name="sd_write_permission">Welike को SD कार्ड राइटिंग की अनुमति नहीं है,कृपया सेटिंग्स से पहुँच प्रदान करें.</string>
+    <string name="sd_read_permission">Welike को SD कार्ड रीडिंग की अनुमति नहीं है,कृपया सेटिंग्स से पहुँच प्रदान करें.</string>
+    <string name="camera_permission">Welike को आपके कैमरा प्रयोग करने की अनुमति नहीं है,कृपया सेटिंग्स से पहुँच प्रदान करें.</string>
+    <string name="gallery_permission">Welike को आपकी फ़़़ो ो प्रयोग करने की अनुमति नहीं है,कृपया सेटिंग्स से पहुँच प्रदान करें.</string>
+    <string name="record_audio_permission">Welike को आपके माइक्रोफ़ोन प्रयोग करने की अनुमति नहीं है,कृपया सेटिंग्स से पहुँच प्रदान करें.</string>
+    <string name="location_permission">Welike को आपके लोकेशन प्रयोग करने की अनुमति नहीं है,कृपया सेटिंग्स से पहुँच प्रदान करें.</string>
+    <string name="read_contact_permission">Welike को आपके कॉन्टेक्ट्स प्रयोग करने की अनुमति नहीं है,कृपया सेटिंग्स से पहुँच प्रदान करें.</string>
+
+    <string name="common_permissions_denied">आपकी अनुमति के बिना, Welike आपको इस सुविधा पर बेहतर अनुभव नहीं दे सकता.</string>
+    <string name="common_share_no_app">कृपया पहले %s को इनस्टॉल करें.</string>
+
+
+    <string name="vote_numbers">%s ने वोट किया</string>
+
+    <string name="follower_vote_numbers">और %s बाकी लोगों ने वोट किया</string>
+    <string name="vote_now">अभी वोट करें</string>
+    <string name="more_poll">और देखें</string>
+    <string name="voted">ने वोट किया है</string>
+
+    <string name="common_browse_title">Welike</string>
+    <string name="common_browse_info">गोपनीय ब्राउज़िंग</string>
+    <string name="common_continue_by_login">लॉग इन करके आगे बढें</string>
+    <string name="common_continue_by_login1">लॉग इन और एक्स्प्लोर करें</string>
+    <string name="common_continue_follow_by_login0">फ़़ॉलोड, और पोस्ट्स देखने के लिए लॉगिन के</string>
+    <string name="common_continue_follow_by_login1">ओह! अपने "फॉलो" को सेव करने के लिए लॉगिन करें</string>
+    <string name="common_continue_like_by_login">पसंद आया? लाइक को सेव करने के लिए लॉगिन करें</string>
+    <string name="common_login">लॉग इन</string>
+    <string name="common_login_title">अधिक के लिए लॉग इन</string>
+
+    <string name="video_player_net_error">खराब नेटवर्क कनेक्शन</string>
+
+    <string name="tab_home">होम</string>
+    <string name="tab_discovery">डिस्कवर</string>
+    <string name="tab_message">मेसेज</string>
+    <string name="tab_me">प्रोफाइल</string>
+    <string name="tab_refresh">रिफ्रेश</string>
+
+    <string name="recent_people">रीसेंट कॉन्टेक्ट्स</string>
+
+
+    <string name="week_monday">सोम</string>
+    <string name="week_tueday">मंगल</string>
+    <string name="week_wedday">बुध</string>
+    <string name="week_thurday">गुरु</string>
+    <string name="week_friday">शुक्र</string>
+    <string name="week_satday">शनि</string>
+    <string name="week_sunday">रवि</string>
+
+
+    <string name="mon_Jan">जनवरी</string>
+    <string name="mon_Feb">फ़रवरी</string>
+    <string name="mon_Mar">मार्च</string>
+    <string name="mon_Apr">अप्रैल</string>
+    <string name="mon_May">मई</string>
+    <string name="mon_June">जून</string>
+    <string name="mon_July">जुलाई</string>
+    <string name="mon_Aug">अगस्त</string>
+    <string name="mon_Sep">सितंबर</string>
+    <string name="mon_Oct">अक्टूबर</string>
+    <string name="mon_Nov">नवंबर</string>
+    <string name="mon_Dec">दिसंबर</string>
+
+    <string name="day_Days">दिन</string>
+    <string name="day_yesterday">कल</string>
+
+
+    <string name="fix_info">चुनिए आपकी रुजी</string>
+    <string name="cleared">साफ़ हुआ</string>
+
+    <string name="interest_select">अपनी फीड को निजी बनाइए</string>
+    <string name="interest_select_title">अपना इंटरेस्ट चुनिए</string>
+    <string name="trending_topic">ट्रेंडिंग टॉपिक</string>
+
+
+    <!-- error -->
+
+    <string name="error_nickname_already_exists">यह&#160;नाम&#160;का&#160;प्रयोग&#160;किया&#160;गया&#160;है</string>
+    <string name="error_message_attachment_invalid">इनवैलिड&#160;अटैचमेंट</string>
+    <string name="error_regist_verification_incorrect">अवैध&#160;वेरिफ़िकेशन&#160;कोड</string>
+    <string name="error_api_version_not_exist">गलत&#160;वर्शन&#160;है,&#160;उसका&#160;प्रयोग&#160;नहीं&#160;कर&#160;सकता</string>
+    <string name="error_nickname_cannot_used">यह&#160;नाम&#160;का&#160;प्रयोग&#160;नहीं&#160;किया&#160;जा&#160;सकता</string>
+    <string name="error_can_not_follow_yourself">अपने&#160;आप&#160;को&#160;फॉलो&#160;करने&#160;में&#160;मना&#160;है</string>
+    <string name="error_regist_verification_application_frequently">वेरिफ़िकेशन&#160;कोड&#160;को&#160;कई&#160;बार&#160;भेजा&#160;गया&#160;है</string>
+    <string name="error_network_poor">नेटवर्क&#160;कोई&#160;त्रुटी&#160;है</string>
+    <string name="error_api_force_update">अभी&#160;नया&#160;वर्शन&#160;मिल&#160;सकता&#160;है,&#160;कृपया&#160;नया&#160;वर्शन&#160;का&#160;अपग्रेड&#160;करें</string>
+    <string name="error_authorization_invalid">प्राधिकरण&#160;फ़ैल&#160;है</string>
+    <string name="error_introduction_format">कृपया&#160;संशोधित&#160;करें&#160;और&#160;फ़िर&#160;सहेज&#160;करें</string>
+    <string name="error_regist_Login_failed">लॉगइन&#160;फ़ैल&#160;है</string>
+    <string name="error_nickname_too_short">कम से कम 6 अक्षर चाहिए</string>
+    <string name="error_nickname_too_long">अधिकतम&#160;30&#160;अक्षर</string>
+    <string name="error_nickname_cannot_empty">नाम&#160;खाली&#160;नहीं&#160;हो&#160;सकता</string>
+    <string name="error_post_deleted">यह&#160;पोस्ट&#160;एक्सिस्ट&#160;नहीं&#160;है</string>
+    <string name="error_sex_modify_count_out">आपका&#160;लिंग&#160;अभी&#160;बलता&#160;जा&#160;नहीं&#160;सकता</string>
+    <string name="error_not_support_service">अज्ञात&#160;सर्विस&#160;त्रुटी</string>
+    <string name="error_nickname_invalid">उपनाम&#160;में&#160;विशेष&#160;अक्षर&#160;केवल&#160;./,/_/&#160;(spaces)&#160;का&#160;प्रयोग&#160;कर&#160;सकें</string>
+    <string name="error_upLoad_failed">अपलोड&#160;फ़ैल&#160;है</string>
+    <string name="error_nickname_modify_count_out">आपका&#160;उपनाम&#160;अभी&#160;बदला&#160;जा&#160;नहीं&#160;सकता</string>
+    <string name="error_user_block_me">प्राइवेसी सेटिंग्स के कारण, आप यह नहीं कर सकते.</string>
+    <string name="error_user_block_user">आपने इस यूजर को ब्लॉक किया है, कृपया पहले अनब्लॉक करें.</string>
+    <string name="user_deactivate_message_info">यह यूजर अभी  Welike पर नहीं हैं. इनके लौटने की प्रतीक्षा करें</string>
+    <string name="user_blocked">्राइवेसी सेटिंग्स के कारण, आप यह नहीं कर सकते.</string>
+    <string name="user_half_error_not_found">कुछ त्रुटी है. कृपया अगली बार कोशिश करें</string>
+    <string name="successful">सफल</string>
+    <string name="failed">असफल</string>
+    <string name="album_is_empty">एल्बम खाली है.</string>
+    <string name="album">एल्बम</string>
+    <string name="user_illegal_operation">Illegal operation.</string>
+    <string name="user_login_frequently"> हे Weliker! फ़िलहाल और एकाउंट्स नहीं बनाए जा सकते। कृप्या, कुछ देर बाद दोबारा कोशिश करें</string>
+    <string name="error_user_was_used">वेरिफिकेशन रद्द हो गया. ये दूसरे अकाउंट के साथ वेरीफाई किया गया है </string>
+    <string name="error_follow_limit">आप दूसरों को फॉलो करने की अधिकतम संख्या पार कर चुके हैं.</string>
+
+
+    <!-- feed -->
+
+    <string name="feed_detail_no_like">कोई&#160;लाइक&#160;नहीं&#160;है</string>
+    <string name="feed_summary_more">&#160;पूरा</string>
+    <string name="feed_home_empty_note">आपने&#160;अभी&#160;भी&#160;किसी&#160;व्यक्ति&#160;को&#160;फॉलो&#160;नहीं&#160;किया&#160;है,&#160;अपनी&#160;दिलचस्पी&#160;के&#160;व्यक्ति&#160;को&#160;&#160;खोजने&#160;के&#160;लिए&#160;\'डिस्कवर\'&#160;टैप&#160;करें</string>
+    <string name="comment_menu_forward">रेपोस्ट</string>
+    <string name="main_tab_message">संदेश</string>
+    <string name="feed_delete_confirm">डिलीट</string>
+    <string name="feed_detail_comments_ranking_hot">हॉट</string>
+    <string name="main_tab_home">होम</string>
+    <string name="feed_detail_no_forward">कोई&#160;रेपोस्ट&#160;नहीं&#160;है</string>
+    <string name="feed_detail_comments_ranking_latest">लेटेस्ट</string>
+    <string name="feed_from">फ़ोन:</string>
+    <string name="feed_from_upper">फ़ोन:</string>
+    <string name="feed_detail_see_him">देखें</string>
+    <string name="comment_detail_no_reply">कोई&#160;रिप्लाई&#160;नहीं&#160;है</string>
+    <string name="now">अभी</string>
+    <string name="feed_foot_no_more_text">और&#160;कुछ&#160;नहीं</string>
+    <string name="feed_discover_empty_refresh">रिफ्रेश&#160;करें</string>
+    <string name="feed_refresh_header_finish_new_posts">नई&#160;पोस्ट</string>
+    <string name="feed_foot_loading_text">लोडिंग</string>
+    <string name="feed_foot_load_error_text">लोडिंग&#160;फ़ैल&#160;है</string>
+    <string name="feed_delete_query">क्या&#160;आप&#160;इस&#160;पोस्ट&#160;को&#160;हटाना&#160;चाहते&#160;हैं?</string>
+    <string name="main_tab_me">मैं</string>
+    <string name="feed_detail_multi_comment_more">&#160;टिप्पणियां</string>
+    <string name="feed_detail_no_comment">कोई&#160;टिप्पणी&#160;नहीं&#160;है</string>
+    <string name="hot_feed_title">24hrs&#160;Welike</string>
+    <string name="feed_refresh_header_finish_none">कोई&#160;नई&#160;पोस्ट&#160;नहीं&#160;है</string>
+    <string name="main_tab_discover">डिस्कवर</string>
+    <string name="comment_detail">टिप्पणी&#160;विवरण</string>
+    <string name="comment_detail_input_placeholder">टिप्पणी&#160;दे&#160;कीजिए</string>
+    <string name="feed_home_empty_button">डिस्कवर</string>
+    <string name="comment_detail_view_blog">मूल&#160;पोस्ट&#160;देखें</string>
+    <string name="feed_detail_input_placeholder">टिप्पणी&#160;दे&#160;कीजिए</string>
+    <string name="comment_menu_like">लाइक्स</string>
+    <string name="unkonw_from">अनजान&#160;वाला</string>
+    <string name="forward_feed_delete_content">यह&#160;पोस्ट&#160;पाया&#160;जा&#160;नहीं&#160;सकता,शायद&#160;वह&#160;यूजर&#160;से&#160;हटाया&#160;गया</string>
+    <string name="feed_detail">पोस्ट&#160;विवरण</string>
+    <string name="comment_menu_reply">रिप्लाई</string>
+    <string name="feed_detail_dialog_share_text">साझा&#160;करें</string>
+    <string name="common_feed_list_title">इंटरैक्टिव</string>
+    <string name="feed_unlike">अनडू&#160;लाइक</string>
+    <string name="feed_share">साझा&#160;करें</string>
+    <string name="feed_top">इस पोस्ट को  अपने प्रोफाइल फीड पर पिन करें</string>
+    <string name="un_feed_top">इस पोस्ट को ऊपर से छोलें</string>
+    <string name="feed_top_limit">ओह, आपने पिनिंग पोस्ट की सब संख्या की गई है.</string>
+    <string name="feed_top_error">असफ़ल,कृपया दोबारा करें</string>
+    <string name="feed_picture_view_full">पूरा देखें</string>
+
+    <string name="feed_comment">&#160;टिप्पणी&#160;</string>
+    <string name="feed_repost"> रिपोस्ट </string>
+    <string name="feed_like">&#160;लाइक&#160;</string>
+    <string name="comment_count">&#160;टिप्पणी&#160;%s</string>
+    <string name="repost_count"> रिपोस्ट %s</string>
+    <string name="like_count">&#160;लाइक&#160;%s</string>
+
+    <string name="post_detail_repost_count">%s रिपोस्ट</string>
+    <string name="post_detail_like_count">%s लाइक</string>
+
+    <string name="report">रिपोर्ट</string>
+    <string name="report_reason">रिपोर्ट का कारण</string>
+    <string name="report_detail">रिपोर्ट डिटेल</string>
+    <string name="report_post">%s&#160;का&#160;पोस्ट&#160;रिपोर्ट&#160;करता(कराती)&#160;हूँ</string>
+    <string name="report_select_reason">आपका&#160;कारण&#160;चुनें</string>
+    <string name="report_reason1">पोर्न &#38; अश्लील</string>
+    <string name="report_reason2">हिंसा &#38; हानि</string>
+    <string name="report_reason3">परेशान या अरुचिकर</string>
+    <string name="report_reason4">अपमान &#38; उल्लंघन</string>
+    <string name="report_reason5">कॉपीराइट समस्या</string>
+    <string name="report_reason_others">अन्य</string>
+    <string name="report_success_toast">आपका&#160;फ़ीडबैक&#160;से&#160;धन्यवाद.हम&#160;जल्दी&#160;से&#160;इसे&#160;संभाल&#160;करें</string>
+    <string name="discover_empty_text">अरे&#160;कोई&#160;त्रुटी&#160;है&#160;कृप्या&#160;ताज़ा&#160;के&#160;फीड&#160;में&#160;चेक&#160;करें</string>
+
+    <string name="copy">कॉपी</string>
+
+    <string name="poll_about_info_1">रेपोस्ट और कमेंट करें</string>
+    <string name="poll_end_info">पोल समाप्त हो गया · %s वोट्स </string>
+    <string name="poll_reset_info">&#160;शेष हैं · %s वोट्स </string>
+    <string name="poll_no_limit_info"> %s वोट्स</string>
+    <string name="poll_comment_default_content">मैंने %s चुन लिया है, अपनी पसंद का चुनाव करें</string>
+    <string name="poll_cannot_vote_yourself">आप अनपे पोल को वोट कर नहीं सकते, कृप्या अन्य पोल कोशिशि करें.</string>
+
+    <string name="feed_views">ने देखा</string>
+    <string name="discover_hot">ट्रेंडिंग</string>
+    <string name="discover_For_You">आपके लिए</string>
+    <string name="discover_latest">लेटेस्ट</string>
+    <string name="discover_rising">बढ़ता हुआ</string>
+    <string name="trending_flag">ट्रेंडिंग</string>
+    <string name="top_flag">Top</string>
+    <string name="trending_people">ट्रेंडिंग व्यक्ति</string>
+
+    <string name="discover_status_video">विडियो</string>
+    <string name="download">डाउनलोड</string>
+    <string name="video_guide_hint">अगला विडियो देखने के लिए ऊपर स्क्रॉल करें</string>
+
+    <string name="feed_gp_score_title">शानदार, अब हमें रेटिंग दीजिये</string>
+    <string name="feed_gp_score_description">थोडा प्यार डिखाये  हमें 1&#8211;5 पर रेटिंग करें</string>
+    <string name="feed_gp_score_description1">कन्फर्म करने के लिए स्टार पर क्लिक करें </string>
+    <string name="feed_gp_score_feedback">आपके विचार</string>
+    <string name="feed_gp_score_feedback_title">कोई सुझाव ?</string>
+    <string name="feed_gp_score_feedback_description">आपका राय हमारे लिए महत्वपूर्ण है</string>
+    <string name="feed_gp_score_gp_toast">हमें रेट करने के लिए ऊपर स्लाइड करें ↑ ↑ </string>
+    <string name="share_link">शेयर वीडियो</string>
+
+    <string name="downloading">डाउनलोड हो रहा है</string>
+
+    <!-- location -->
+    <string name="location_search_edit_text_hint">नज़दीक&#160;स्थान&#160;की&#160;खोज&#160;करें</string>
+    <string name="location_passer_by">यहाँ&#160;आने&#160;वाले&#160;लोग</string>
+    <string name="location_select_title">लोकेशन</string>
+    <string name="no_location_found">यह जगह नहीं मिली</string>
+    <string name="location_empty_view">यहाँ&#160;पोस्ट&#160;करने&#160;का&#160;पहला&#160;वाला&#160;बनें</string>
+    <string name="location_has_user">%s&#160;लोग&#160;यहाँ&#160;आए&#160;हैं</string>
+    <string name="location_no_user">यहाँ&#160;कोई&#160;लोग&#160;नहीं&#160;आया</string>
+    <string name="location_pass_by_time">%s&#160;में&#160;यहाँ&#160;आए&#160;हैं</string>
+    <string name="location_pass_by_hour">24&#160;घंटों&#160;में&#160;यहाँ&#160;आए&#160;हैं</string>
+    <string name="location_pass_by_minute">कई&#160;मिनट&#160;में&#160;यहाँ&#160;आए&#160;हैं</string>
+    <string name="location_pass_by_here">यहाँ&#160;आए&#160;हैं</string>
+
+    <!-- pic_sel -->
+
+    <string name="picture_message_max_num">अधिकतम&#160;%1$s&#160;फ़ोटो&#160;चुनें</string>
+    <string name="picture_save_success">सफ़ल&#160;से&#160;सहेजा&#160;गया</string>
+    <string name="picture_prompt">सेव</string>
+    <string name="video_message_max_num">1&#160;ही&#160;वीडियो&#160;पोस्ट&#160;होगा </string>
+    <string name="picture_done_front_num">%1$d/%2$d&#160;अगला</string>
+    <string name="gif_tag">GIF</string>
+    <string name="picture_min_img_num">कम&#160;से&#160;कम&#160;%1$s&#160;फ़ोटो&#160;चाहिए</string>
+    <string name="picture_save_error">इमेज&#160;सहेज&#160;के&#160;लिए&#160;विफ़ल&#160;है</string>
+    <string name="picture_quit_audio">छोड़ें</string>
+    <string name="picture_photograph">फ़ोटो&#160;खींचें</string>
+    <string name="picture_empty_audio_title">कोई&#160;ऑडियो&#160;नहीं&#160;है</string>
+    <string name="picture_completed">हो&#160;गया&#160;</string>
+    <string name="picture_record_video">विडियो&#160;&#160;रिकॉर्ड&#160;करें</string>
+    <string name="picture_camera_roll">कैमरा&#160;रोल</string>
+    <string name="picture_all_audio">सभी&#160;ऑडियो</string>
+    <string name="picture_play_audio">प्ले</string>
+    <string name="picture_audio">रिकॉर्डिंग&#160;प्रयोग&#160;का&#160;अनुमति&#160;चाहिए</string>
+    <string name="picture_camera">कैमरा&#160;प्रयोग&#160;का&#160;अनुमति&#160;चाहिए</string>
+    <string name="picture_confirm">ठीक&#160;है</string>
+    <string name="picture_empty">आप&#160;फ़ोटो&#160;या&#160;विडियो&#160;लेना&#160;कर&#160;सकें</string>
+    <string name="picture_please_select">कृपया&#160;चुननें</string>
+    <string name="picture_empty_title">कोई&#160;विडियो&#160;या&#160;फ़ोटो&#160;नहीं&#160;है</string>
+    <string name="picture_error">तस्वीर&#160;दूषित&#160;है</string>
+    <string name="picture_pause_audio">ठहरें</string>
+    <string name="picture_min_video_num">कम&#160;से&#160;कम&#160;%1$d&#160;विडियो&#160;चुनें</string>
+    <string name="video_too_large">फ़ाइल&#160;आकार&#160;अधिक&#160;बड़ा&#160;है</string>
+    <string name="picture_preview">प्रीव्यू</string>
+    <string name="picture_rule">फ़ोटो&#160;और&#160;विडियो&#160;एक&#160;साथ&#160;चुनने&#160;पर&#160;मना&#160;है.</string>
+    <string name="picture_long_chart">लंबी&#160;तस्वीरें</string>
+    <string name="picture_audio_empty">आप&#160;रिकॉर्डिंग&#160;कर&#160;सकते&#160;हैं</string>
+    <string name="picture_prompt_content">फ़ोटो को आपके कैमरा रोल में सहेजा जाएगा?</string>
+    <string name="picture_message_video_max_num">अधिकत&#160;एक&#160;विडियो&#160;चुनें</string>
+    <string name="picture_jurisdiction">बाहरी&#160;संग्रहण&#160;प्रयोग&#160;का&#160;अनुमति&#160;चाहिए</string>
+    <string name="picture_cancel">रद्द&#160;करें</string>
+    <string name="picture_stop_audio">रोक&#160;करें</string>
+
+    <string name="ucrop_label_original">मूल टाइप</string>
+    <string name="ucrop_label_edit_photo">कट</string>
+    <string name="ucrop_menu_crop">कट</string>
+
+    <string name="picture_mime_unsupport">इस फ़ाइल का सपोर्ट नहीं होता.कृप्या दूसरा फ़ाइल को अपलोड करें.</string>
+    <string name="video_at_least_time">एक विडियो में कम से कम 2 सेकंड्स चाहिए</string>
+
+    <string name="download_failed">डाउनलोड फ़ैल है</string>
+
+
+    <!-- publish -->
+
+    <string name="editor_discard_query">यदि&#160;आप&#160;अभी&#160;वापस&#160;लौटते&#160;हैं,&#160;तो&#160;पोस्ट&#160;को&#160;त्याग&#160;दिया&#160;जाएगा</string>
+    <string name="editor_send_successed">सफ़ल&#160;से&#160;भेज&#160;दिया</string>
+    <string name="add_link_error">गलत यूआरएल</string>
+    <string name="contacts_search_hint">खोज&#160;करें</string>
+    <string name="publish_share_video_empty_content">विडियो&#160;साझा&#160;करें</string>
+    <string name="editor_discard_confrim">डिस्कार्ड</string>
+    <string name="publish_mention_online_list_title">ऑनलाइन&#160;खोज</string>
+    <string name="editor_edit_text_hint">क्या&#160;विचार&#160;है&#160;आपका?&#160;इसे&#160;शेयर&#160;करें</string>
+    <string name="publish_mention_online_list_empty">कोई&#160;परिणाम&#160;नहीं&#160;है</string>
+    <string name="editor_also_commit">टिप्पणी&#160;भी&#160;करें</string>
+    <string name="contacts_search_contacts_search_online">ऑनलाइन&#160;खोज&#160;करें</string>
+    <string name="content_null">कंटेंट&#160;खाली&#160;नहीं&#160;हो&#160;सकता</string>
+    <string name="editor_also_repost">रिपोस्ट भी करें</string>
+    <string name="editor_link_note">यहाँ&#160;यूआरएल&#160;टाइप&#160;करें</string>
+    <string name="editor_post_location">स्थान</string>
+    <string name="editor_discard_cancel">रद्द&#160;करें</string>
+    <string name="editor_link_submit">सबमिट</string>
+    <string name="editor_post_send">पोस्ट</string>
+    <string name="editor_repost_title">रिपोस्ट</string>
+    <string name="editor_comment_title">टिप्पणी</string>
+    <string name="editor_post_title">पोस्ट</string>
+    <string name="editor_topic_post_title">सुपर हैश टैग पर पोस्ट करें</string>
+    <string name="editor_link_hint">कृपया&#160;सही&#160;लिंक&#160;यूआरएल&#160;टाइप&#160;करें</string>
+    <string name="publish_share_picture_empty_content">फ़ोटो&#160;साझा&#160;करें</string>
+    <string name="publish_reply_post_empty_content">रिपोस्ट</string>
+    <string name="editor_discard_save">ड्राफ्ट&#160;बॉक्स&#160;में&#160;सहेज&#160;करें</string>
+    <string name="clear_draft_title">क्या आप ड्राफ्ट बॉक्स को साफ़ करना चाहते हैं ?</string>
+    <string name="publish_draft_title">ड्राफ्ट</string>
+    <string name="editor_discard_discard">डिस्कार्ड</string>
+    <string name="draft_empty_text">अभी&#160;ड्राफ्ट&#160;बॉक्स&#160;खाली&#160;है,&#160;विफ़ल&#160;भेजी&#160;वाली&#160;पोस्ट&#160;ड्राफ्ट&#160;बॉक्स&#160;में&#160;सहेज&#160;जाएगा</string>
+    <string name="editor_location_null">लोकेशन</string>
+    <string name="editor_resend_btn">पुनः&#160;भेजें</string>
+
+    <string name="topic_search_tips">हर टॉपिक कम से कम 2 अक्षर</string>
+    <string name="recent_topic_title_text">टॉपिक दोबार भेजें</string>
+    <string name="new_topic_title">नया टॉपिक जोड़ें</string>
+    <string name="recommend_topic_title">सिफारिश</string>
+    <string name="topic_search_hint">टॉपिक जोड़ें या टॉपिक खोज करें</string>
+    <string name="topic_count_over_limit">ज्यादा से ज्यादा तीन टॉपिक आप चुन सकते हैं</string>
+
+    <string name="campaign_title">इवेंट्स</string>
+
+    <string name="poll_validity_time">पोल टाइम</string>
+
+    <string name="one_day">1 दिन</string>
+    <string name="three_day">3 दिन</string>
+    <string name="seven_day">1 सप्ताह</string>
+    <string name="one_month">1 महीना</string>
+    <string name="no_time_limit">समय की कोई सीमा नहीं है</string>
+    <string name="option_num">ऑप्शन%d</string>
+    <string name="suggest_topic">सग्जेस्ट #टॉपिक</string>
+
+    <string name="short_cut_video_name">विडीओ</string>
+    <string name="short_cut_alumb_name">एलबम</string>
+    <string name="short_cut_post_name">टेक्स्ट</string>
+    <string name="short_cut_poll_name">पोल</string>
+    <string name="short_cut_snapshot_name">कैमरा</string>
+    <string name="short_cut_topic_name">हैशटैग</string>
+    <string name="image_status">स्टैटस</string>
+    <string name="random_text">मिश्रण टेक्स्ट</string>
+    <string name="random_image">मिश्रण इमेज</string>
+    <!--<string name="notify_easy_post1">अपना पहला</string>-->
+    <!--<string name="notify_easy_post2">पोस्ट बनाएं</string>-->
+    <string name="publish">प्रकाशित करें</string>
+    <string name="exit_tip">इस एडिट को छोड़ें?</string>
+    <string name="easy_post_swipe_tip">अगली इमेज देखने के लिए बाईं ओर स्लाइड करें</string>
+
+    <string name="article">लेख</string>
+    <string name="title">टाइटल</string>
+    <string name="content">कंटेंट</string>
+    <string name="publish_title_hint">अच्छा सा नाम दें</string>
+    <string name="publish_content_hint">अपना कंटेंट यहाँ लिखें</string>
+    <string name="next">अगला</string>
+    <string name="publish_pic_too_much">आप 9 फोटो डाल सकते हैं</string>
+    <string name="publish_cant_mix_video_pic">वीडियो और फोटो मिक्स नहीं हो सकते</string>
+    <string name="publish_title_too_long">टाइटल इस टू लॉन्ग</string>
+    <string name="publish_title_is_empty">शीर्षक खाली नहीं हो सकता है</string>
+    <string name="publish_content_is_empty">कंटेंट खाली नहीं हो सकता है</string>
+    <string name="add_link_name_note">नाम (ऐच्छिक)</string>
+    <string name="article_preview">लेख पहले देखें</string>
+    <string name="done">हो गागा</string>
+    <string name="share_to">साझा करें</string>
+    <string name="share_video">वीडियो शेयर करें</string>
+    <string name="article_publish">मेरा नया पोस्ट देखिए:</string>
+    <string name="publish_post_error">पोस्ट असफल, आपका पोस्ट ड्राफ्टबॉक्स में है </string>
+    <string name="publish_post_success">सफलतापूर्वक पोस्ट किया </string>
+    <string name="publish_post_uploading">पोस्ट हो रहा है </string>
+    <string name="publish_post_over_limit">काफी ज़्यादा पोस्ट्स हो रहे हैं, कृप्या प्रतीक्षा करें </string>
+    <!-- register -->
+
+    <string name="regist_user_head_choose_def_window_title">प्रोफ़ाइल&#160;फ़ोटो&#160;जोड़ें</string>
+    <string name="regist_user_head_choose_def_window_sum">गैलरी&#160;से&#160;चुनें/फ़ोटो&#160;खींचें</string>
+    <string name="regist_choose_language_english">English</string>
+    <string name="regist_choose_language_hindi">हिंदी</string>
+    <string name="regist_choose_language_gujarati">ગુજરાતી</string>
+    <string name="regist_choose_language_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="regist_choose_language_kannada">ಕನ್ನಡ</string>
+    <string name="regist_choose_language_bengali">বাংলা</string>
+    <string name="regist_choose_language_marathi">मराठी</string>
+    <string name="regist_choose_language_telugu">తెలుగు</string>
+    <string name="regist_choose_language_malayalam">മലയാളം</string>
+
+    <string name="regist_suggest_interests_title">आपकी&#160;दिलचस्प&#160;चुनें</string>
+    <string name="regist_suggest_interests_sub_title">एक टॉपिक या और ज्यादा चुनिए</string>
+    <string name="regist_next_btn">आगे बढें</string>
+    <string name="regist_enter_code_resend">दोबारा&#160;भेजें</string>
+    <string name="error_regist_user_head_reupload_avatar">अपलोड&#160;विफ़ल&#160;है</string>
+    <string name="regist_enter_code_title">कृपया&#160;वेरिफ़िकेशन&#160;कोड&#160;दर्ज&#160;करें</string>
+    <string name="regist_choose_language_title">भाषा</string>
+    <string name="regist_suggest_persons_title">जअपने&#160;का&#160;टाइमलाइन&#160;बनें</string>
+    <string name="regist_suggest_persons_title_sub">जिन&#160;लोगों&#160;में&#160;आप&#160;रुचि&#160;रखते&#160;हैं&#160;उन्हें&#160;चुनें</string>
+    <string name="error_regist_user_head_too_large_reupload_avatar">छवि&#160;अपलोड&#160;करने&#160;में&#160;विफल&#160;है,आकार&#160;बहुत&#160;बड़ा&#160;है</string>
+    <string name="regist_user_info_nickname">नाम</string>
+    <string name="regist_user_terms_services">उपयोगकर्ता&#160;के&#160;नियम&#160;और&#160;सेवाएं</string>
+    <string name="regist_user_info_input_nickname">आपका&#160;नाम&#160;दर्ज&#160;करें</string>
+
+    <string name="regist_jion_weLike">हो&#160;गया</string>
+    <string name="regist_input_mobile">अपना&#160;फोन&#160;नंबर&#160;दर्ज&#160;करें</string>
+    <string name="regist_user_head_choose_def_window_next_confirm">पुष्टि&#160;करें</string>
+    <string name="regist_input_phonenumber_district">भारत(91)</string>
+    <string name="error_regist_input_phonenumber_not_empty">मोबाइल&#160;नंबर&#160;खाली&#160;नहीं&#160;हो&#160;सकता</string>
+    <string name="regist_system_back_note">मुख्य&#160;पृष्ठ&#160;पर&#160;वापस&#160;जाने&#160;के&#160;लिए&#160;एक&#160;बार&#160;फिर&#160;वापस&#160;क्लिक&#160;करें</string>
+    <string name="error_regist_input_phonenumber_incorrect">गलत&#160;नंबर</string>
+    <string name="regist_phone_num_title">फ़ोन&#160;नंबर</string>
+    <string name="regist_choose_language_welcome_title">आपका&#160;स्वागत</string>
+    <string name="regist_recommond_follower">फॉलोआर&#160;की&#160;सिफ़ारिशी</string>
+    <string name="regist_welcome_text_four">अपनी&#160;दिलचस्प&#160;बातें&#160;पोस्ट&#160;कर&#160;साझा&#160;करें</string>
+    <string name="regist_welcome_text_three">सुपरलाइक&#160;देने&#160;केलिए&#160;यहाँ&#160;लॉन्ग&#160;प्रेस&#160;करें&#160;यदि&#160;यह&#160;पोस्ट&#160;बहुत&#160;पसंद&#160;है</string>
+    <string name="regist_welcome_text_two">अपनी&#160;टिप्पणी&#160;लिखें</string>
+    <string name="regist_welcome_text_one">इसे&#160;साझा&#160;करें&#160;यदि&#160;पसंद&#160;है</string>
+
+    <string name="regist_select_language">भाषा&#160;चुनें</string>
+    <string name="regist_get_start">शुरू&#160;करें</string>
+    <string name="regist_terms_service_ex">जारी&#160;रखने&#160;से&#160;मैं&#160;स्वीकार&#160;करता&#160;हूं</string>
+    <string name="regist_terms_service">सेवा की शर्तें</string>
+
+    <string name="regist_sms_code_hint">ओटीपी कोड %s पर भेजा गया है&#x000A;कृपया इसे यहाँ दर्ज करें</string>
+    <string name="regist_sms_code_back">नंबर&#160;बदलें </string>
+    <string name="regist_sms_code_toast">कृप्या&#160;आराम&#160;करें&#160;और&#160;बादमें&#160;दोबारा&#160;कोशिशि&#160;करें</string>
+    <string name="regist_user_info_name">आप&#160;का&#160;नाम&#160;क्या&#160;है?&#160;कृप्या&#160;लिखें</string>
+    <string name="regist_user_info_name_hint">आपका नाम लिखें</string>
+    <string name="regist_user_info_error_message">हर&#160;उपनाम&#160;अद्वितीय&#160;है.&#160;आप&#160;अपना&#160;उपनाम&#160;बदल&#160;सकते&#160;हैं</string>
+    <string name="regist_login_facebook">Facebook से आगे बढें</string>
+    <string name="regist_otp_resent">%ss&#160;बाद&#160;OTP&#160;दोबारा&#160;भेजें</string>
+    <string name="regist_otp_resent_key">बाद OTP दोबारा भेजें</string>
+    <string name="regist_change_to_voice">कॉल द्वाराओटीपी प्राप्त करें</string>
+    <string name="regist_change_to_sms">एसएमएस द्वारा ओटीपी प्राप्त करें</string>
+    <string name="regist_voice_code_hint">कृपया प्रतीक्षा करें! हम आपको %s पर कॉल कर रहे हैं&#x000A;कृपया नीचे ओटीपी कोड दर्ज करें</string>
+
+    <string name="login_block_title">आपके अकाउंट का प्रयोग कर नहीं सकता.यदि आपके कोई समस्या है, आप क्लिक करके अपील सबमिट करें.</string>
+    <string name="login_block_appeal">अपील करें</string>
+
+    <string name="login_with_facebook">Facebook से लॉग इन करें</string>
+    <string name="login_with_google">Google से लॉग इन करें</string>
+    <string name="canceled">रद्द हुआ</string>
+
+    <string name="regist_guide1">आपका लेवल Welike 2.0 के साथ बढ़ गया है. जीतने के लिए तैयार हो जाएँ</string>
+    <string name="regist_guide2">ढूंढे और &#x000A;शेयर करें</string>
+    <string name="regist_guide3">चुनें जो आपको&#x000A;पसंद हैं</string>
+    <string name="regist_guide4">अपनी फीड को&#x000A;निजी बनाए </string>
+    <string name="regist_guide5">व्हॉट्सएप्प पर&#x000A;शेयर करें</string>
+    <string name="regist_guide6">अपने विचार को&#x000A;प्रकट करें</string>
+
+    <string name="login_with_mobile">या फ़ोन नंबर से लॉग इन करें</string>
+
+    <string name="regist_username_intro">बाद में आप अपने नाम बदल सकते हैं.</string>
+    <string name="regist_user_info_skip">छोड़ें</string>
+
+    <string name="register_dialog_login_title">लॉग इन नहीं किया?</string>
+    <string name="register_dialog_login_info">लॉग इन करके मज़ेदार ढूंढें</string>
+    <string name="register_nickname_title">हम आपको क्या बुलाएं?</string>
+    <string name="register_nickname_title1">और भी ज़्यादा मस्ती और मज़े के लिए अभी रजिस्टर करें</string>
+    <string name="register_nickname_title2">आगे बढ़ने के लिए रजिस्टर करें</string>
+    <string name="register_nickname_unique">वाह, सिर्फ आपने ये नाम चुना है, बढ़िया !</string>
+    <string name="register_nickname_use_less">%d से कम लोगों ने ये नाम चुना है, अच्छा है </string>
+    <string name="register_nickname_use_more">%d से ज़्यादा लोग इसका प्रयोग कर रहे हैं, कुछ और नाम सोचा जाए ?</string>
+    <string name="register_half_verify_title">अपना अकाउंट वेरीफाई करें, और देखें आपको जो भी पसंद है </string>
+    <string name="register_login_title">या लॉग इन करें </string>
+    <string name="register_login_with_phone_title">फ़ोन से आगे बढ़ें</string>
+    <string name="register_verify_with_phone_title">फ़ोन से आगे बढ़ें</string>
+    <string name="register_already_has_account">पहले से आपके पास अकाउंट है?</string>
+
+
+    <string name="register_sign_up">साइन अप करें</string>
+    <string name="register_log_in">लॉग इन करें</string>
+    <string name="register_login_this_account">इस अकाउंट से लॉग इन करें</string>
+    <string name="register_login_to_continue">आगे चलने केलिए लॉग इन करें</string>
+    <string name="register_verify_account">आपके अकाउंट को लिंक करें</string>
+    <string name="register_login_with_phone_number">फ़ोन नंबर का ही प्रयोग करें </string>
+    <string name="register_verify_with_phone">फ़ोन नंबर से लॉग इन करें</string>
+    <string name="register_verify_account_intro">अगली बार आसानी से लॉगिन करने के लिए अपने अकाउंट को लिंक कीजिये </string>
+    <!-- search -->
+
+    <string name="search_user_all_btn">सब</string>
+    <string name="search_item_like_text">%1$s&#160;लाइक्स</string>
+    <string name="search_user_tab">लोग</string>
+    <string name="search_latest_people_title">लोग</string>
+    <string name="discover_search_default">खोज&#160;करें</string>
+    <string name="search_post_tab">पोस्ट</string>
+    <string name="search_latest_tab">लेटेस्ट</string>
+    <string name="search_item_follower_text">%1$s&#160;फॉलोअर्स</string>
+    <string name="search_all_history_text">सब&#160;खोज&#160;इतिहास</string>
+    <string name="recent_search">हाल&#160;की&#160;खोज</string>
+    <string name="search_no_result">कोई&#160;डेटा&#160;नहीं&#160;मिला,&#x000A; दूसरे&#160;कीवर्ड&#160;के&#160;प्रयोग&#160;का&#160;प्रयास&#160;करें</string>
+    <string name="discover_top_user">लीडरबोर्ड</string>
+
+    <!-- topic -->
+
+    <string name="post_on_this_topic">इस&#160;टॉपिक&#160;में&#160;पोस्ट&#160;करें</string>
+    <string name="topic_offline_error_text">अरे&#160;लागता&#160;है&#160;कि&#160;आप&#160;खो&#160;गया&#160;है</string>
+    <string name="topic_empty_text">इस टॉपिक में पहला पोस्ट करने वाला बनें</string>
+    <string name="user_has_post_on_this_topic">%sलोगों ने इस टॉपिक में पोस्ट किया है</string>
+    <string name="post_nums_on_this_topic">%s&#160;पोस्ट्स</string>
+    <string name="topic_user_title">संबंधित लोग</string>
+    <string name="topic_user_publish_just_now">ने अभी इस टॉपिक में पोस्ट किया है</string>
+    <string name="topic_user_publish_minutes">ने कई मिनट पहले  इस टॉपिक में पोस्ट किया है</string>
+    <string name="topic_user_publish_hours">ने 24 के भीतर में इस टॉपिक में पोस्ट किया है  </string>
+    <string name="topic_user_publish_day">ने %s पर  इस टॉपिक में पोस्ट किया है</string>
+    <string name="with_text_numbers_and_spaces">केबल टेक्स्ट,संख्या और स्पेस का प्रयोग</string>
+    <string name="new_topic">नया टॉपिक</string>
+    <string name="topic_choice_empty_text">नया टॉपिक जोड़ें,केबल टेक्स्ट,संख्या और स्पेस का प्रयोग हर टॉपिक कम से कम 2 अक्षर</string>
+    <string name="topic_user_host_header">कैसे अप्लाई करें</string>
+    <string name="topic_list_tip">डेटा हर 6 घंटों में अपडेट किया जाता है.</string>
+
+    <string name="topic_join_now">भाग लें</string>
+    <string name="topic_latest_campaign">लेटेस्ट कैंपेन</string>
+    <string name="topic_welike_trends">Welike ट्रेंड्स</string>
+    <string name="topic_trending_people">ट्रेंडिंग यूजर</string>
+    <string name="topic_trend_topic_views">%s views</string>
+    <string name="topic_trending_topic">ट्रेंडिंग विषय</string>
+    <string name="topic_trending_search">ट्रेंडिंग खोज</string>
+
+    <string name="super_topic_info_tab">इंफो</string>
+    <string name="super_topic_trending_tab">ट्रेडिंग</string>
+    <string name="super_topic_latest_tab">लेटेस्ट</string>
+    <string name="super_topic_empty">ओह, यह इनफार्मेशन एलियंस के द्वरा अपहरण कर लिया गया है.</string>
+
+    <!-- user -->
+    <string name="user_follow_dialog_title">क्या&#160;इस&#160;उपयोगकर्ता&#160;को&#160;अनफॉलो&#160;करेंगे&#160;?</string>
+    <string name="mine_check_the_update_version_latest">अभी&#160;सबसे&#160;नया&#160;वर्शन&#160;है</string>
+    <string name="user_host_page_posts_list_btn">&#160;पोस्ट</string>
+    <string name="user_host_page_likes_list_btn">&#160;लाइक&#160;</string>
+    <string name="user_my_like_page_empty_text_next">हॉट&#160;पोस्ट&#160;देखें</string>
+    <string name="mine_setting_clear_cache_pop_loading_text">साफ़&#160;हो&#160;रहा&#160;है&#160;</string>
+    <string name="user_following_page_empty">आपने&#160;किसी&#160;को&#160;फॉलो&#160;नहीं&#160;किया</string>
+    <string name="mine_user_host_gender_title">लिंग</string>
+    <string name="user_followed_btn_text">फॉलो&#160;कर&#160;रहें&#160;हैं</string>
+    <string name="mine_check_the_update_version">V&#160;</string>
+    <string name="user_my_post_page_empty_text_next">आपने&#160;पोस्ट&#160;करें</string>
+    <string name="mine_following_num_text">फॉलोइंग</string>
+    <string name="mine_invite_friends_text">मेरे&#160;लाइक्स</string>
+    <string name="mine_follower_num_text">फॉलोअर्स</string>
+    <string name="mine_user_host_personal_edit_name_attention">नाम&#160;के&#160;वर्ण&#160;6&#160;~30&#160;के&#160;बीच&#160;होना&#160;चाहिए</string>
+    <string name="user_follow_page_friend_btn">दोस्त</string>
+    <string name="mine_liked_num_text">प्राप्त&#160;हुए&#160;लाइक्स</string>
+    <string name="mine_user_host_bottom_message">संदेश</string>
+    <string name="mine_rate_us_text">एप्प&#160;साझा&#160;करें</string>
+    <string name="mine_user_edit_sex_slogen">आपने&#160;लिंग&#160;को&#160;केवल&#160;एक&#160;बार&#160;में&#160;बदला&#160;सकते&#160;हैं</string>
+    <string name="mine_user_host_personal_edit_name_slogen">हर&#160;छह&#160;महीने&#160;में&#160;एक&#160;बार&#160;संशोधित&#160;कर&#160;सकते&#160;हैं . नाम&#160;के&#160;वर्ण&#160;2&#160;~20&#160;के&#160;बीच&#160;होना&#160;चाहिए</string>
+    <string name="user_follow_page_title">फॉलो</string>
+    <string name="user_follow_page_follow_btn">फॉलो</string>
+    <string name="mine_user_host_brief_title">मेरा&#160;परिचय</string>
+    <string name="mine_setting_message_text">नोटिफिकेशन&#160;सेटिंग</string>
+    <string name="mine_feed_back_text">सहायता और सुझाव</string>
+    <string name="mine_setting_clear_cache_pop_cancel">रद्द&#160;करें</string>
+    <string name="user_host_follow_following_success">फॉलो&#160;सफ़ल</string>
+    <string name="mine_setting_draft_text">ड्राफ्ट&#160;बॉक्स</string>
+    <string name="mine_setting_clear_cache_pop_title">क्या&#160;आप&#160;कैश&#160;साफ़&#160;करना&#160;चाहते&#160;हैं?</string>
+    <string name="mine_user_host_personal_edit_name_canot_modify_slogen">केवल&#160;%1$s&#160;के&#160;बाद&#160;ही&#160;बदला&#160;जा&#160;सकता&#160;है</string>
+    <string name="mine_setting_exit_app_pop_title">क्या&#160;आप&#160;लॉगआउट&#160;चाहते&#160;हैं?</string>
+    <string name="mine_check_the_update">चेक&#160;फॉर&#160;अपडेट</string>
+    <string name="mine_setting_log_out_text">लॉगआउट</string>
+    <string name="create_chat_failed">नेटवर्क एरर</string>
+    <string name="user_follower_page_empty">आपके&#160;अकाउंट&#160;अभी&#160;कोई&#160;फॉलोआर&#160;नहीं&#160;है</string>
+    <string name="user_following_page_empty_btn">हॉट&#160;पोस्ट&#160;देखें</string>
+    <string name="mine_setting_clear_cache_text">कैश&#160;को&#160;साफ़&#160;करें</string>
+    <string name="mine_user_host_personal_info_page_title">प्रोफाइल</string>
+    <string name="mine_user_host_personal_edit_name_save">सेव&#160;करें</string>
+    <string name="user_follower_page_empty_btn">पोस्ट&#160;करें</string>
+    <string name="mine_setting_clear_cache_pop_confirm">पुष्टि&#160;करें</string>
+    <string name="user_host_liked_list_empty">अभी&#160;तक&#160;आपने&#160;किसी&#160;पोस्ट&#160;को&#160;पसंद&#160;नहीं&#160;किया&#160;है</string>
+    <string name="mine_user_host_update_photo_title">प्रोफाइल&#160;फ़ोटो&#160;अपडेट&#160;करें</string>
+    <string name="mine_setting_text">सेटिंग्स</string>
+    <string name="mine_setting_language_text">भाषा</string>
+    <string name="user_host_follow_following_failed">फॉलो&#160;विसफ़ल</string>
+    <string name="user_host_post_list_empty">जब पोस्ट बनाए जाते हैं, तो वे यहां दिखाई देंगे.</string>
+    <string name="mine_check_the_update_update">अपडेट&#160;करें</string>
+    <string name="mine_check_the_update_title">वर्शन&#160;अपडेट</string>
+    <string name="user_host_page_albums_list_btn">&#160;मेरे&#160;लाइक्स</string>
+    <string name="choice_interest_title">कम से कम तीन केटेगरी चुनें</string>
+    <string name="setting_hide_mobile_model_text">अपना मोबाइल मॉडल हाइड करें</string>
+    <string name="guide_1">ददिलचस्प लोग खोजें या यहाँ देखें कि क्या हो रहा है</string>
+    <string name="guide_2">जो उपयोगकर्ता आपको पसंद हैं, उन्हें फॉलो करें</string>
+    <string name="guide_3">सुपरलाइक के लिए  बटन को देर तक दबाएं</string>
+    <string name="guide_4">आपकी पहली  पोस्ट  शुरू करें</string>
+    <string name="guide_5">कुछ  चित्रें जोड़ें</string>
+    <string name="guide_6">नए विकप्ल जोड़ने के लिए क्लिक करें</string>
+    <string name="user_main_verify">वेरिफिकेशन</string>
+    <string name="view_my_profile">प्रोफाइल</string>
+    <string name="mine_post_num_text">पोस्ट</string>
+    <string name="mine_verified_ex">वेरिफ़िएड इंफो</string>
+    <string name="mine_influence_ex">इन्फ्लुएंस क्षेत्र</string>
+    <string name="mine_interest_ex">दिलचस्पी</string>
+    <string name="profile_me">प्रोफाइल</string>
+    <string name="user_edit_profile">प्रोफाइल एडिट करें</string>
+    <string name="user_edit">एडिट करें</string>
+    <string name="block_user_list_title">ब्लॉक गए यूजर</string>
+    <string name="un_block">अनब्लॉक</string>
+    <string name="empty_block_users">कोई ब्लॉक्ड यूजर नहीं हैं</string>
+    <string name="block_user_confirm_title">%s आपको टिप्पणी या संदेश भेज नहीं सकते &#x000A; और आप उनकी पोस्ट नहीं देखेंगे</string>
+    <string name="block_success">ब्लॉक सफ़क गया!</string>
+    <string name="un_block_success">अनब्लॉक हो गया</string>
+    <string name="un_block_user_confirm_title">क्या आप इस यूजर को अनब्लॉक करना चाहते हैं?</string>
+    <string name="setting_notification_mute_time">नोटिफिकेशन</string>
+    <string name="user_interest_info_title">कम से कम 1 कैतेगोरी चुनें</string>
+    <string name="user_interest_title">अपनी रुचि चुनें</string>
+
+    <string name="user_deactivate_account">अकाउंट बंद करें</string>
+    <string name="user_deactivate_info_title">क्या आप अपना अकाउंट बंद करना चाहते हैं ?</string>
+    <string name="user_deactivate_info_0">सबसे पहले आपको अपने अकाउंट को वेरीफाई करना होगा </string>
+    <string name="user_deactivate_info_2">अपने अकाउंट को बंद करने का कारण हमें बताइए</string>
+    <string name="user_deactivate_wrong_number">नंबर गलत है. कृप्या आपके फ़ोन नंबर को चेक करें</string>
+    <string name="user_deactivate_wrong_fb">कृप्या आपका Facebook अकाउंट चेक  करें</string>
+    <string name="user_deactivate_info_4">यदि आप आगे बढे तो आपके कोई फॉलोअर्स नहीं होंगे और आपकी सभी सामग्री हटा दी जाएगी </string>
+    <string name="user_reactivate">रिएक्टिवेट</string>
+    <string name="user_register">रजिस्टर</string>
+    <string name="user_has_deact">आपका अकाउंट डीएक्टिवेट किया गया है</string>
+    <string name="user_reactivate_info">आप लॉग इन के माध्मय से अपने अकाउंट को दोबारा चालू कर सकते हैं.</string>
+    <string name="user_reactivate_0">अकाउंट को दोबारा चालू</string>
+    <string name="user_reactivate_info1">या एक नया अकाउंट केलिए रजिस्टर करें</string>
+    <string name="user_reactivate_info3">एक नया अकाउंट</string>
+    <string name="user_reactivate_info2">जल्दी ही आपसे मिलने की आश है</string>
+    <string name="user_restore_info">आपने आपना अकाउंट को डीएक्टिवेट किया गया है. आप ये कर सकते हैं:</string>
+    <string name="user_restore_title">अकाउंट रेएक्टिवेट करें</string>
+    <string name="user_register_title">यदि आप आगे बढ़े तो आप अपना बंद किया हुआ अकाउंट दोबारा चालू नहीं कर सकेंगे </string>
+    <string name="user_deactivate_xxx">\&#064;%s डीएक्टिवेट करें</string>
+    <string name="user_reactivate_xxx">रिएक्टिवेट &#064;%s</string>
+    <string name="following_and_follower">फॉलोइंग %s&#160;&#160;&#160;फॉलोवर्स %s</string>
+    <string name="follow_someone_on_welie">फॉलो @%s नाम Welike पर। </string>
+
+    <string name="add_user">यूजर जोड़ें</string>
+    <string name="block_following_user">फ़ॉलोइंग</string>
+
+    <string name="user_verify_title">क्लिक करके अकाउंट लिंक करें</string>
+
+    <!-- Guides -->
+
+    <string name="guide_like">अपना पहला लाइक दे दें</string>
+    <string name="guide_forward">अपने फॉलोअर्स को साझा करने केलिए  रेपोस्ट करें</string>
+    <string name="guide_rank">Welike सुपरस्टार यहाँ ढूंढें</string>
+    <string name="guide_banner">क्या Welike कैंपेन चल रहा है देखें</string>
+    <string name="guide_avatar">अपना प्रोफाइल इमेज बदलें</string>
+    <string name="guide_introduce">बाइओ  को बदलने से अपना परीजय दें</string>
+    <string name="guide_task_list">यहाँ एक प्रसिद्ध Welike बनें</string>
+    <string name="guide_comment_new_weliker">अपने पसंद पोस्ट को टिप्पणी दें </string>
+    <string name="guide_share_post">अपने दोस्तों से मज़ेदार जीचें शेयर करें</string>
+    <string name="guide_hot_feed">ऊपर स्क्रॉल करें ↑</string>
+
+    <string name="tip_vote">कॉमेंट और रेपोस्ट करने के लिए क्लिक करें</string>
+    <string name="tip_share">यदि इस पोस्ट को लाइक करते हैं? इसे WhatsApp पे शेयर करें!</string>
+
+    <!--<string name="guide_cover_1_1">जो आपको अद्वितीय बनाता है उसे साझा करें</string>-->
+    <!--<string name="guide_cover_1_2">आज क्या नया है?</string>-->
+    <!--<string name="guide_cover_1_3">अपनी बसंद चित्र साझा करें</string>-->
+    <!--<string name="guide_cover_1_4">ताज़ा जीचें आपके आसपास साझा करें</string>-->
+    <string name="guide_cover_1_1">जो आपको &lt;b&gt;&lt;font color=\'#FFE200\'&gt;अद्वितीय बनाता&lt;/font&gt;&lt;/b&gt; है उसे साझा करें</string>
+    <string name="guide_cover_1_2">आज क्या &lt;b&gt;&lt;font color=\'#FFE200\'&gt;नया&lt;/font&gt;&lt;/b&gt; है?</string>
+    <string name="guide_cover_1_3">अपनी बसंद &lt;b&gt;&lt;font color=\'#FFE200\'&gt;चित्र&lt;/font&gt;&lt;/b&gt; साझा करें</string>
+    <string name="guide_cover_1_4">ताज़ा जीचें &lt;b&gt;&lt;font color=\'#FFE200\'&gt;आपके आसपास&lt;/font&gt;&lt;/b&gt; साझा करें</string>
+
+    <string name="guide_cover_2_1">आधिकारी कैंपेन  क्षेत्र</string>
+    <string name="guide_cover_2_2">मज़ेदार दोस्त ढूंढें</string>
+    <string name="guide_cover_2_3">मज़ेदार कंटेंट ढूंढें</string>
+
+    <string name="select_interest">अपनी रुचि चुनें</string>
+    <string name="select_interest_toast">हो गया ! आपकी रुजी अपडेट कर दी गई है.</string>
+
+    <string name="user_gender_title">आपका लिंक</string>
+    <string name="user_no_follow_title">अपनी टाइमलाइन बनाएं</string>
+    <string name="user_follow_recommend_title">आपके लिए सिफारिश</string>
+    <string name="follow_list_empty">रिफ्रेश केलिए कोशिशि करें</string>
+    <string name="follow_all_select">फॉलो करें</string>
+    <string name="follow_recommend_more">और ज्यादा</string>
+    <string name="follow_recommend_user_title">आपके लिए सिफारिश </string>
+
+    <string name="profile_growth_verification">Welike उस्ताद</string>
+    <string name="profile_apply_now">अभी अप्लाई करें</string>
+    <string name="profile_guru_permission">यह Welike गुरु के लिए है।</string>
+    <string name="profile_top">टॉप</string>
+    <string name="profile_untop">टॉप से हटाएँ</string>
+    <string name="profile_link_account">अपने अकाउंट से लिंक करें</string>
+    <string name="profile_update_nick_count_pro">%s बदलने की संभावना है</string>
+    <string name="profile_update_nick_count_common">हर छह महीने में एक बार बदल किया जा सकता है</string>
+    <string name="profile_link">लिंक</string>
+    <string name="profile_input_social_host">अपना %s प्रोफाइल यूआरएल दर्ज करें</string>
+    <string name="profile_invalid_url">गलत यूआरएल</string>
+    <string name="profile_social_instagram">इंस्टाग्राम</string>
+    <string name="profile_social_facebook">फेसबुक</string>
+    <string name="profile_social_youtube">यूट्यूब</string>
+    <string name="profile_social_example_link">उदाहरण लिंक</string>
+
+
+    <!-- im -->
+
+    <string name="message_comment_reposted_you_post_text">&#160;ने&#160;आपकी&#160;पोस्ट&#160;साझा&#160;की</string>
+    <string name="message_comment_forward_text">रेपोस्ट</string>
+    <string name="message_comment_commented_you_post_text">&#160;ने&#160;आपकी&#160;पोस्ट&#160;पर&#160;टिप्पणी&#160;की</string>
+    <string name="message_comment_liked_your_post_text">&#160;ने&#160;आपकी&#160;पोस्ट&#160;को&#160;पसंद&#160;किया</string>
+    <string name="message_comment_reposted_you_comment_text">&#160;ने&#160;आपकी&#160;टिप्पणी&#160;साझा&#160;की</string>
+    <string name="message_comment_forward_you_text">&#160;&#160;ने&#160;आपकी&#160;पोस्ट&#160;साझा&#160;की</string>
+    <string name="message_comment_liked_your_reply_text">&#160;ने&#160;आपका&#160;रिप्लाई&#160;को&#160;पसंद&#160;किया</string>
+    <string name="message_comment_reply_you_text">&#160;ने&#160;आपकी&#160;टिप्पणी&#160;को&#160;रिप्लाई&#160;की</string>
+    <string name="message_like_text">लाइक्स</string>
+    <string name="message_push_text">सूचना</string>
+    <string name="chat_edit_text_hint">संदेश&#160;लिखें</string>
+    <string name="message_mention_text">\@</string>
+    <string name="message_comment_mentioned_you">&#160;ने&#160;आपको&#160;मेंशन&#160;किया&#160;गया</string>
+    <string name="message_comment_text">टिप्पणी</string>
+    <string name="message_comment_like_text">लाइक</string>
+    <string name="im_content_text_over_limit">इनपुट&#160;अक्षर&#160;सीमा&#160;से&#160;अधिक&#160;है</string>
+    <string name="message_comment_dislike_text">डिसलाइक</string>
+    <string name="im_chat_loading_text">लोडिंग</string>
+    <string name="im_session_pic_message">[चित्र]</string>
+    <string name="im_feed_back_text">फ़ीडबैक</string>
+    <string name="message_comment_liked_your_comment_text">&#160;ने&#160;आपकी&#160;टिप्पणी&#160;को&#160;पसंद&#160;किया</string>
+    <string name="message_comment_reply_text">टिप्पणी</string>
+    <string name="message_no_information_text">कोई सूचना नहीं है</string>
+    <string name="im_chat_no_more_text">कोई&#160;संदेश&#160;नहीं&#160;है</string>
+    <string name="chat_sent_a_message">ने&#160;आपको&#160;एक&#160;संदेश&#160;भेज&#160;दिया&#160;है</string>
+    <string name="follow_you">ने&#160;आपको&#160;फॉलो&#160;किया&#160;है</string>
+    <string name="follower_new_post">ने&#160;एक&#160;नयी&#160;पोस्ट&#160;भेज&#160;दी&#160;है</string>
+
+    <string name="session_greetings">संदेश अनुरोध</string>
+    <string name="public_add_topic">हैशटैग चुनें</string>
+    <string name="chosen_topic_tip">अधिक लोगों तक पहुंचें और सही हैशटैग चुन कर लाइक्स और कमैंट्स के ज़रिये शानदार प्रतिक्रिया प्राप्त करें.</string>
+    <string name="super_topic_over_limit">केवल एक सुपर हैशटैग चुन सकते हैं.</string>
+    <!-- end -->
+    <string name="self_start_yes">Gसेट पर जाइये</string>
+    <string name="self_start_no">नहीं, धन्यवाद</string>
+    <string name="self_start_oppo">अगर आप दिलचस्प जानकारी मिस नहीं करना चाहते तो कृपया अपने Welike नोटिफिकेशन ऑन करें.\nफ़ोन मैनेजर पर जाएं -> गोपनीयता अनुमति.</string>
+    <string name="self_start_vivo">अगर आप दिलचस्प जानकारी मिस नहीं करना चाहते तो कृपया अपने Welike नोटिफिकेशन ऑन करें.\nसेटिंग्स पे जाएं->अतरिक्त सेटिंग्स->ऍप्लिकेशन्स->ऑटोस्टार्ट.</string>
+    <string name="str_write_a_comment">Write a comment</string>
+    <string name="str_comment_reply_hint">Reply@</string>
+    <string name="publish_add_more_option">Add more option</string>
+
+    <string name="recommend_verified">वेरिफ़िएड इंफो</string>
+    <string name="recommend_influence">इन्फ्लुएंस क्षेत्र</string>
+    <string name="recommend_find_friends">दोस्त खोजें</string>
+    <string name="recommend_contact_title">अपने जानने वाले को खोजें</string>
+    <string name="recommend_contact_desc">Welike पर अपने दोस्त से जुड़ें</string>
+
+
+    <string name="discover_trending_hashtag">Trending Hashtag</string>
+    <string name="discover_guide_tip">अधिक ट्रेंडिंग वाले विषयों, समाचार, वीडियो और वायरल कहानियों के लिए नीचे स्क्रॉल करें</string>
+
+
+    <string name="recommend_check_post">मेरी फॉलोविंग देखिये</string>
+    <string name="recommend_full_intro">इन लोगों का मज़ेदार और दिलचस्प कंटेंट खोजें और देखें </string>
+    <string name="recommend_more_friend">और दोस्त बनाइये </string>
+    <string name="recommend_go_explore">खोजने के लिए %s पर जाएं </string>
+
+
+    <string name="friend_face_to_face">आस पास के दोस्तों से जुड़ें</string>
+    <string name="friend_face_to_face_description">सिर्फ 200  मीटर के दायरे वाले दोस्त ही जुड़ सकते हैं</string>
+    <string name="authorization">सेटिंग्स में जाएं</string>
+    <string name="face_to_face_permission_title">आपने Welike को लोकेशन एक्सेस नहीं दिया है, हम आपके दोस्त नहीं ढूंढ सकते, सेटिंग्स में जाकर लोकेशन  एक्सेस दें</string>
+    <string name="face_to_face_tips">आपके आस पास के Welikers ढूंढ रहे हैं</string>
+    <string name="friend_face_to_face_location_permission">ये फंक्शन लोकेशन से जुड़ा है, आस पास के दोस्तों से जुड़ने के लिए लोकेशन एक्सेस दें</string>
+    <string name="face_to_face_permissions_denied">लोकेशन इनफार्मेशन नहीं मिली, दुबारा कोशिश करें</string>
+</resources>

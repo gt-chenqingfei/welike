@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editor_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/publish_toolbar_component"
+        layout="@layout/toolbar_publish_common"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/editor_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publish_toolbar_component"
+        android:background="@color/editor_root_view_bg"
+
+        android:clipToPadding="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/drag_view"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_bottom_sheet_dialog_drag" />
+
+            <com.redefine.welike.business.publisher.ui.component.EditorInputView
+                android:id="@+id/et_publish_editor_component"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_comment_input_state1"
+                android:paddingTop="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/publish_editor_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editor_scroll_view"
+
+        android:background="@color/editor_root_view_bg"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_publish_comment_check_and_limit_warn_popup" />
+
+        <include layout="@layout/layout_publish_tools_and_emotion_popup" />
+    </LinearLayout>
+
+
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout>

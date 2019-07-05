@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/push_layout"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/notification_item_head"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        fresco:fadeDuration="300"
+        fresco:backgroundImage="@drawable/notification_message_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/alien" />
+
+    <TextView
+        android:id="@+id/notification_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="@dimen/common_text_size_12"
+        android:layout_marginRight="12dp"
+        app:layout_constraintTop_toTopOf="@id/notification_item_head"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="11:30"/>
+
+    <TextView
+        android:id="@+id/notification_item_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/common_feed_name_text_color"
+        android:textSize="@dimen/common_text_size_14"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="12dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toRightOf="@+id/notification_item_head"
+        app:layout_constraintTop_toTopOf="@id/notification_item_head"
+        app:layout_constraintRight_toLeftOf="@id/notification_item_time"
+        tools:text="Jane James" />
+
+    <com.redefine.richtext.RichTextView
+        android:id="@+id/notification_item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textColor="@color/text_feed_content_text_color"
+        android:textSize="@dimen/common_text_size_12"
+        android:layout_marginTop="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+
+        app:layout_constraintTop_toBottomOf="@id/notification_item_nickname"
+        tools:text="action on your post: I have been questioned by many people to disclose some of the greatest trader"/>
+    
+
+
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@color/common_div_color"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/notification_item_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

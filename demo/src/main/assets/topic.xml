@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string name="post_on_this_topic">Post&#160;on&#160;this&#160;topic</string>
+    <string name="topic_offline_error_text">Oops..&#160;Looks&#160;like&#160;you&#160;got&#160;lost</string>
+    <string name="topic_empty_text">Be&#160;the&#160;first&#160;to&#160;post&#160;on&#160;this&#160;topic</string>
+    <string name="user_has_post_on_this_topic">%s&#160;people&#160;posted&#160;on&#160;this&#160;topic</string>
+    <string name="topic_user_title">Related&#160;people</string>
+    <string name="topic_user_publish_just_now">post&#160;on&#160;this&#160;topic&#160;just&#160;now</string>
+    <string name="topic_user_publish_minutes">posted&#160;a&#160;few&#160;minutes&#160;ago</string>
+    <string name="topic_user_publish_hours">posted&#160;within&#160;24&#160;hours</string>
+    <string name="topic_user_publish_day">posted&#160;in&#160;%s</string>
+    <string name="with_text_numbers_and_spaces">with&#160;text&#160;numbers&#160;and&#160;spaces</string>
+    <string name="new_topic">New topic</string>
+    <string name="topic_choice_empty_text">Add a topic with text numbers and spaces. At least 2 characters per topic.</string>
+    <string name="topic_choice_empty_text2">Add&#160;a&#160;topic&#160;with&#160;text&#160;numbers&#160;and&#160;spaces.&#160;At&#160;least&#160;2&#160;characters&#160;per&#160;topic.</string>
+</resources>

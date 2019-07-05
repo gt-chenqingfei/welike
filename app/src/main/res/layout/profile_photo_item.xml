@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.redefine.commonui.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/feed_nine_grid_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageScaleType="centerCrop"
+        app:failureImageScaleType="centerCrop"
+        app:placeholderImageScaleType="centerCrop"
+        android:background="@color/common_color_f8f8f8"/>
+
+    <TextView
+        android:id="@+id/gif_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="4dp"
+        android:background="@drawable/git_tag_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="@string/gif_tag_text"
+        android:textColor="@color/transparent_90_white"
+        android:textSize="8dp"
+        android:visibility="invisible" />
+
+</com.redefine.commonui.widget.SquareFrameLayout>

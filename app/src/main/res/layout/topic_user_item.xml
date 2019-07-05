@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/ripple3"
+    android:layout_height="76dp">
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/topic_user_head"
+        android:layout_width="@dimen/common_feed_head_size"
+        android:layout_height="@dimen/common_feed_head_size"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true" />
+
+    <com.redefine.welike.commonui.widget.UserFollowBtn
+        android:id="@+id/topic_user_follow_btn"
+        android:layout_width="76dp"
+        android:layout_height="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/topic_user_follow_btn"
+        android:layout_toRightOf="@id/topic_user_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topic_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/location_passer_by_nick_text_color"
+            android:textSize="@dimen/common_text_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/topic_user_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/location_passer_by_time_text_color"
+            android:textSize="@dimen/common_text_size_12" />
+
+        <TextView
+            android:id="@+id/topic_user_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/location_passer_by_introduction_text_color"
+            android:textSize="@dimen/common_text_size_12" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="74dp"
+        android:background="@color/search_user_item_divider" />
+
+</RelativeLayout>

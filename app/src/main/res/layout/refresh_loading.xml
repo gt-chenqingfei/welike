@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.redefine.multimedia.widget.CircleDownloadProgressBar
+        android:id="@+id/common_progressbar_0"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        app:circle_color="@color/main_orange_dark"
+        app:circle_stroke="3" />
+
+
+    <com.redefine.commonui.widget.progress.CircularProgressBar
+        android:id="@+id/common_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:cpb_cap_round="true"
+        app:cpb_color="@color/main_orange_dark"
+        app:cpb_max_sweep_angle="300"
+        app:cpb_min_sweep_angle="10"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_stroke_width="3dp"
+        app:cpb_sweep_speed="1.0" />
+
+
+</RelativeLayout>

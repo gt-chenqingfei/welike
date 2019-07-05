@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editor_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editor_root_view_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/common_title_view"
+            style="@style/new_ui.title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Post" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/common_draft_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/editor_post_send"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_draft_btn"
+            app:tint="@color/common_color_selector_action" />
+
+        <TextView
+            android:id="@+id/editor_post_send"
+            style="@style/new_ui.button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/editor_post_send"
+            android:textSize="14dp"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/bottom_line"
+            style="@style/new_ui.div"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/editor_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/editor_limit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/editor_post_check_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:button="@null"
+                android:drawableLeft="@drawable/editor_forward_selector"
+                android:drawablePadding="7dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/editor_post_check_btn_text_color"
+                android:textSize="@dimen/editor_post_check_btn_text_size"
+                tools:text="Also comment" />
+
+            <RelativeLayout
+                android:id="@+id/editor_location_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/editor_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/common_location_drawable"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingTop="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/main_blue"
+                    android:textSize="@dimen/editor_location_text_size"
+                    tools:text="aaaaa" />
+
+                <ImageView
+                    android:id="@+id/editor_location_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/editor_location"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:scaleType="center"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/editor_location_delete"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/editor_post_text_limit_warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/editor_post_check_btn"
+                android:layout_alignParentRight="true"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/main"
+                android:textSize="@dimen/common_text_size_15" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/editor_bottom_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editor_limit_layout"
+            android:orientation="vertical">
+
+            <com.redefine.commonui.widget.shadowlayout.ShadowView
+                android:id="@+id/editor_short_cut_entrances_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="8dp"
+                app:is_draw_bottom="true"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/editor_short_cut_entrances"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:fadingEdge="none"
+                android:overScrollMode="never" />
+
+            <RelativeLayout
+                android:id="@+id/editor_bottom_bar_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <com.redefine.commonui.widget.shadowlayout.ShadowView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    app:is_draw_bottom="true" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/editor_emoji"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/editor_selector_emoji" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/editor_photo"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    tools:visibility="gone"
+                    android:layout_toRightOf="@id/editor_emoji"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/editor_selector_photo"
+                    app:tint="@color/common_click_color" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/editor_at"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/editor_photo"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/editor_selector_at"
+                     />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/editor_topic"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/editor_at"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/editor_selector_hash"
+                     />
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/editor_link"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/editor_topic"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/editor_selector_link"
+                    />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/editor_poll"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/editor_link"
+                    android:scaleType="center"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/editor_selector_vote"
+                     />
+
+                <TextView
+                    android:id="@+id/editor_send"
+                    style="@style/new_ui.button_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14dp"
+                    tools:text="Send" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <cn.dreamtobe.kpswitch.widget.KPSwitchPanelRelativeLayout
+            android:id="@+id/editor_bottom_emoji_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editor_bottom_bar_layout"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.redefine.richtext.emoji.EmojiPanel
+                android:id="@+id/editor_emoji_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.redefine.commonui.widget.shadowlayout.ShadowView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                app:is_draw_top="true" />
+        </cn.dreamtobe.kpswitch.widget.KPSwitchPanelRelativeLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/editor_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editor_bottom_container"
+        android:layout_below="@+id/title_layout"
+        android:clipToPadding="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <com.redefine.richtext.RichEditText
+                android:id="@+id/editor_rich_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|top"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="50dp"
+                android:textColor="@color/editor_rich_edit_text_color"
+                android:textColorHint="@color/editor_rich_edit_text_hint_color"
+                android:textSize="@dimen/editor_rich_edit_text_size" />
+
+            <LinearLayout
+                android:id="@+id/editor_poll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/publish_poll_item_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/publish_poll_validity_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/common_text_black_62"
+                        android:textSize="@dimen/common_text_size_14" />
+
+                    <TextView
+                        android:id="@+id/publish_poll_validity_time_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignBaseline="@id/publish_poll_validity_time"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/publish_poll_validity_time"
+                        android:background="@drawable/publish_poll_text_bg"
+                        android:drawableRight="@drawable/publish_poll_validity_time_btn"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/common_text_black_62"
+                        android:textSize="@dimen/common_text_size_14" />
+
+                    <ImageView
+                        android:id="@+id/publish_poll_add_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/publish_poll_add_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.redefine.welike.commonui.view.PicMultiGridView
+                android:id="@+id/editor_photo_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <FrameLayout
+                android:id="@+id/editor_video_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_thumb_image_size"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginRight="15dp"
+                android:visibility="gone">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/editor_video_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent_40" />
+
+                <ImageView
+                    android:id="@+id/editor_video_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/video_feed_play" />
+
+                <ImageView
+                    android:id="@+id/editor_video_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/editor_delete_icon" />
+            </FrameLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/editor_forward_card_root_view"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="23dp"
+                android:background="@drawable/draft_shape_content_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/draft_resend_btn">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/video_draft_cover"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    fresco:failureImage="@drawable/draft_error_default_pic"
+                    fresco:failureImageScaleType="center"
+                    fresco:placeholderImage="@drawable/draft_shape_default_placeholder"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundBottomLeft="true"
+                    fresco:roundBottomRight="false"
+                    fresco:roundTopLeft="true"
+                    fresco:roundTopRight="false"
+                    fresco:roundedCornerRadius="5dp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/pic_draft_img_mask"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:background="@drawable/draft_shape_default_mask"-->
+                <!--android:scaleType="center"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/video_draft_cover"-->
+                <!--app:layout_constraintLeft_toLeftOf="@+id/video_draft_cover"-->
+                <!--app:layout_constraintRight_toRightOf="@+id/video_draft_cover"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/video_draft_cover"-->
+                <!--app:srcCompat="@drawable/draft_video_play_img" />-->
+
+                <TextView
+                    android:id="@+id/draft_item_nick"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/draft_item_nick_text_color"
+                    android:textSize="@dimen/draft_item_nick_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/video_draft_cover"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="asdasdasd" />
+
+                <com.redefine.richtext.RichTextView
+                    android:id="@+id/forward_text_draft_rich_text"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/draft_item_nick"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/forward_draft_text_color"
+                    android:textSize="@dimen/forward_draft_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/video_draft_cover"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/draft_item_nick"
+                    tools:text="asdasdasd" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/publish_add_topic_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/publish_add_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/round_rect_f4f6f9"
+                    android:drawableEnd="@drawable/right_arrow_selector"
+                    android:drawableRight="@drawable/right_arrow_selector"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/public_add_topic"
+                    android:textColor="@color/add_topic_selector"
+                    android:textSize="@dimen/common_text_size_14" />
+
+                <TextView
+                    android:id="@+id/publish_add_topic_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/publish_add_topic_tip"
+                    android:gravity="start"
+                    android:text="@string/chosen_topic_tip"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    tools:text="Reach more people and get amazing response with likes and comments by choosing right hashtag."
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/guide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:paddingTop="60dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/guide_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Share what makes you unique"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guide_tip2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/guide_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="What's new today?"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guide_tip3"
+            app:layout_constraintLeft_toLeftOf="@+id/guide_tip1"
+            app:layout_constraintTop_toBottomOf="@+id/guide_tip1" />
+
+        <TextView
+            android:id="@+id/guide_tip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Share your favorite picture"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guide_tip4"
+            app:layout_constraintLeft_toLeftOf="@+id/guide_tip1"
+            app:layout_constraintTop_toBottomOf="@+id/guide_tip2" />
+
+        <TextView
+            android:id="@+id/guide_tip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="What's happened arround you?"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintLeft_toLeftOf="@+id/guide_tip1"
+            app:layout_constraintTop_toBottomOf="@+id/guide_tip3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guide_tip4"
+            app:srcCompat="@drawable/guide_res_a" />
+
+        <TextView
+            android:id="@+id/guide_ok"
+            style="@style/new_ui.button_1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/imageView4"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="OK"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout>

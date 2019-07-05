@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_shape_white">
+
+
+    <include
+        android:id="@+id/common_feed_head_root_view"
+        layout="@layout/common_feed_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/text_feed_content"
+        layout="@layout/text_feed_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_feed_head_root_view" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/art_card_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_feed_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/art_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:actualImageScaleType="center"
+            app:fadeDuration="300"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholderImage="@drawable/art_card_default"
+            app:placeholderImageScaleType="fitXY"
+            tools:background="@drawable/art_card_default" />
+
+        <View
+            android:id="@+id/bottom_gradient_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/transparent40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/art_card_head_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:placeholderImage="@drawable/user_default_head"
+                app:placeholderImageScaleType="centerCrop"
+                app:roundAsCircle="true" />
+
+            <TextView
+                android:id="@+id/ard_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:paddingBottom="3dp"
+                android:shadowColor="#99000000"
+                android:shadowDx="0"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_size_12"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/art_card_head_image"
+                app:layout_constraintLeft_toRightOf="@+id/art_card_head_image"
+                app:layout_constraintTop_toTopOf="@+id/art_card_head_image"
+                tools:text="name name" />
+
+            <TextView
+                android:id="@+id/art_card_title_flag"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+
+                android:paddingBottom="3dp"
+                android:shadowColor="#99000000"
+                android:shadowDx="0"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_size_12"
+                app:layout_constraintBottom_toBottomOf="@+id/art_card_head_image"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/art_card_head_image"
+                tools:text="Article" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/art_card_head_image"
+                app:layout_constraintRight_toLeftOf="@+id/art_card_title_flag"
+                app:layout_constraintTop_toTopOf="@+id/art_card_head_image"
+                app:srcCompat="@drawable/ic_art_card_flag" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/art_title"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="2"
+            android:paddingBottom="3dp"
+            android:shadowColor="#99000000"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="title" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <include
+        android:id="@+id/ad_card_layout"
+        layout="@layout/common_forward_feed_ad_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/art_card_contain" />
+
+    <include
+        android:id="@+id/active_card_layout"
+        layout="@layout/common_feed_active_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad_card_layout" />
+
+    <include
+        android:id="@+id/topic_card_layout"
+        layout="@layout/common_feed_topic_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active_card_layout" />
+
+    <include
+        android:id="@+id/common_feed_bottom_root_view"
+        layout="@layout/common_feed_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_card_layout"
+        app:layout_goneMarginTop="@dimen/common_item_margin_8" />
+
+    <FrameLayout
+        android:id="@+id/common_feed_bottom_root_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_feed_card_bottom_line_height"
+        android:background="@color/common_color_f8f8f8"
+        android:foreground="@drawable/common_shadow_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_feed_bottom_root_view" />
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+        <com.redefine.welike.commonui.widget.VipAvatar
+            android:id="@+id/simpleView_user_follow_recycler"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            app:fadeDuration="300"
+            app:placeholderImage="@drawable/user_default_head"
+            app:placeholderImageScaleType="fitCenter"
+            app:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_user_follow_recycler_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/mine_user_follow_nickname_text_color"
+                    android:textSize="@dimen/common_text_size_14"
+                    android:textStyle="bold"
+                    tools:text="nick_name" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_user_sex"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:scaleType="centerInside" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_follow_verify_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ff9300"
+                android:textSize="@dimen/common_text_size_10"
+                tools:text="Verified info:" />
+
+            <TextView
+                android:id="@+id/tv_user_follow_recycler_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/main_grey"
+                android:textSize="@dimen/common_text_size_10"
+                tools:text="11111111" />
+
+        </LinearLayout>
+
+        <com.redefine.welike.commonui.widget.UserFollowBtn
+            android:id="@+id/iv_user_follow_followBtn"
+            android:layout_width="76dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dp" />
+
+    </LinearLayout>
+
+    <com.redefine.welike.commonui.view.MultiGridView
+        android:id="@+id/mgv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="@dimen/common_item_margin_12"
+        app:child_margin="6dp"
+        app:num_column="3"
+        app:row_count="1" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="@dimen/common_item_margin_12"
+        android:background="@drawable/linear_gradient_bottom" />
+
+</LinearLayout>

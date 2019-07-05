@@ -1,0 +1,169 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root_view"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/ripple1"
+        android:padding="22dp"
+        app:srcCompat="@drawable/common_btn_close" />
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_regist_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:text="@string/regist_user_info_name"
+            android:textColor="@color/color_31"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            tools:text="What should we call you?" />
+
+        <RelativeLayout
+            android:id="@+id/rl_regist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_regist_name_title"
+            android:layout_marginTop="59dp"
+            android:background="@color/white">
+
+
+            <EditText
+                android:id="@+id/et_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="bottom"
+                android:hint="@string/regist_user_info_name_hint"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="32dp"
+                android:paddingRight="42dp"
+                android:singleLine="true"
+                android:textColor="@color/color_31"
+                android:textColorHint="@color/color_ddd"
+                android:textSize="@dimen/common_text_size_16" />
+
+
+            <com.redefine.commonui.widget.progress.CircularProgressBar
+                android:id="@+id/iv_register_check_anim"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="32dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:cpb_cap_round="true"
+                app:cpb_color="@color/main_orange_dark"
+                app:cpb_max_sweep_angle="300"
+                app:cpb_min_sweep_angle="10"
+                app:cpb_rotation_speed="1.0"
+                app:cpb_stroke_width="1.7dp"
+                app:cpb_sweep_speed="1.0"
+                tools:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/iv_register_nick_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="32dp"
+                android:scaleType="center"
+                android:visibility="gone"
+                app:srcCompat="@drawable/search_sug_edit_text_delete_icon"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_edit_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rl_regist_name"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="@dimen/common_text_size_10"
+            android:background="@color/main_grey" />
+
+        <TextView
+            android:id="@+id/tv_register_username_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_regist_name"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/main_grey"
+            android:textSize="@dimen/common_text_size_13"
+            tools:text="Nickname is unique. You can change it later." />
+
+    </RelativeLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/btn_regist_pickPhoto_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/common_button_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/regist_next_btn"
+            android:textColor="@color/common_color_button_text"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

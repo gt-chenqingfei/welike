@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mine_check_update_dailog_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/app_color_top_corner_bg">
+
+        <TextView
+            android:id="@+id/mine_check_update_dailog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            tools:text="AAAA"
+            android:layout_marginTop="23dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mine_check_update_dailog_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_check_update_dailog_title"
+            android:layout_marginLeft="22dp"
+            tools:text="AAAA"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/mine_check_update_cloud" />
+
+            <TextView
+                android:id="@+id/first_upadte_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:background="@color/white"
+                android:paddingBottom="11dp"
+                android:paddingLeft="15dp"
+                tools:text="AAAA"
+                android:paddingRight="15dp"
+                android:textColor="@color/mine_check_update_text"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mine_check_update_dailog_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/mine_check_update_dailog_rl"
+        android:background="@drawable/app_color_bottom_corner_bg"
+        android:gravity="center"
+        tools:text="AAAA"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/mine_check_update_rocket" />
+
+    <ImageView
+        android:id="@+id/mine_check_update_dailog_back_iv"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:src="@drawable/mine_check_update_delete" />
+
+</RelativeLayout>

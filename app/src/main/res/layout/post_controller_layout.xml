@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/video_user_header"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="12dp"
+        app:srcCompat="@drawable/user_default_head"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:placeholderImage="@drawable/user_default_head"
+        app:actualImageScaleType="centerCrop"
+        app:roundAsCircle="true"
+        app:roundingBorderColor="@color/white"
+        app:roundingBorderWidth="1dp"
+        tools:background="@drawable/user_default_head"/>
+
+    <LinearLayout
+        android:id="@+id/video_nick_name_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="@id/video_user_header"
+        app:layout_constraintBottom_toBottomOf="@id/video_user_header"
+        app:layout_constraintLeft_toRightOf="@id/video_user_header">
+
+        <TextView
+            android:id="@+id/video_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size_14"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:shadowColor="@color/video_text_shadow_color"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            tools:text="Username Username Username Username Username Username"/>
+
+        <TextView
+            android:id="@+id/video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size_10"
+            android:textColor="@color/white"
+            android:shadowColor="@color/video_text_shadow_color"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="8"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            tools:text="5min"/>
+    </LinearLayout>
+
+    <!--运营需要使用的，显示测试内容，线上包不显示-->
+    <TextView
+        android:id="@+id/tv_common_feed_operation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="50dp"
+        android:maxLines="10"
+        android:textColor="@color/common_text_black_31"
+        android:background="@color/common_divider_color_dddddd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        tools:text="AAAAAAAAAA" />
+
+    <com.redefine.welike.commonui.widget.UserFollowBtn
+        android:id="@+id/video_follow_btn"
+        android:layout_width="64dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@id/video_nick_name_container"
+        app:layout_constraintTop_toTopOf="@id/video_user_header"
+        app:layout_constraintBottom_toBottomOf="@id/video_user_header"/>
+
+    <com.redefine.welike.commonui.view.ImageWithTextView
+        android:id="@+id/video_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.redefine.welike.commonui.view.ImageWithTextView
+        android:id="@+id/video_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintRight_toRightOf="@id/video_download"
+        app:layout_constraintLeft_toLeftOf="@id/video_download"
+        app:layout_constraintBottom_toTopOf="@id/video_download"/>
+
+    <com.redefine.welike.commonui.view.ImageWithTextView
+        android:id="@+id/video_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintRight_toRightOf="@id/video_download"
+        app:layout_constraintLeft_toLeftOf="@id/video_download"
+        app:layout_constraintBottom_toTopOf="@id/video_share"/>
+
+    <com.redefine.welike.commonui.view.ImageWithTextView
+        android:id="@+id/video_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintRight_toRightOf="@id/video_download"
+        app:layout_constraintLeft_toLeftOf="@id/video_download"
+        app:layout_constraintBottom_toTopOf="@id/video_comment"/>
+
+    <FrameLayout
+        android:id="@+id/video_post_content_container"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.redefine.richtext.RichTextView
+            android:id="@+id/video_post_content"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size_14"
+            android:textColor="@color/white"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Having someone to help you come to terms with this^^^  Having someone to help you come to terms with this Having someone to help you come to terms with this"/>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

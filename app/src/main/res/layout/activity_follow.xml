@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <!--<include-->
+    <!--android:id="@+id/headView_user_follow"-->
+    <!--layout="@layout/common_action_bar" />-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ll_common_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_title_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_common_title"
+            style="@style/new_ui.title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/common_title_view_text_color"
+            android:textSize="@dimen/common_text_size_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_common_next"
+            android:layout_width="24dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_contact" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/page_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/ll_common_layout"
+        android:background="@color/white"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/main_orange_dark"
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="@color/common_text_color_31"
+        app:xTabSelectedTextSize="@dimen/common_text_size_16"
+        app:xTabTextBold="true"
+        app:xTabTextColor="@color/black_transparent_30"
+        app:xTabTextSelectedBold="true"
+        app:xTabTextSize="@dimen/common_text_size_16" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_user_host_follow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/page_tab"
+        android:background="@color/common_color_f8f8f8"/>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/page_tab"
+        android:background="@drawable/common_transition_t_b_bg" />
+
+
+</RelativeLayout>

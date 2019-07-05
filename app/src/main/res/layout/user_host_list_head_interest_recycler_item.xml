@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp">
+
+    <TextView
+        android:id="@+id/tv_user_host_interestType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:background="@color/gray"
+        android:padding="6dp"
+        android:text="baseBall"
+        android:textColor="@color/blue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_user_host_interestType_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_user_host_interestType"
+        android:layout_marginRight="-14dp"
+        android:text="Delete"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

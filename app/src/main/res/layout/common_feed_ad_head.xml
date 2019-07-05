@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header_card_layout"
+    android:paddingLeft="@dimen/common_item_margin_12"
+    android:paddingRight="@dimen/common_item_margin_12">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_common_feed_ad_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/main_grey" />
+
+    <TextView
+        android:id="@+id/tv_common_feed_ad_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="@string/common_login"
+        android:textColor="@color/color_31"
+        android:textSize="@dimen/common_text_size_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_common_feed_ad_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        style="@style/new_ui.div1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

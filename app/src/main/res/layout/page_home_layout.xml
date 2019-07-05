@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_home_header"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/common_item_margin_6"
+        android:paddingRight="@dimen/common_item_margin_6"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_choose_language"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/ripple1"
+            app:srcCompat="@drawable/ic_language_en_icon" />
+
+        <com.redefine.welike.business.feeds.ui.widget.OnePlusFlipperView
+            android:id="@+id/badge_view"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toTopOf="@id/tab_main"
+            app:layout_constraintLeft_toLeftOf="@id/tab_main"
+            app:layout_constraintRight_toRightOf="@id/tab_main"/>
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_main"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintLeft_toRightOf="@+id/iv_choose_language"
+            app:layout_constraintRight_toLeftOf="@+id/iv_add_friends"
+            app:xTabDividerWidthWidthText="true"
+            app:xTabIndicatorColor="@color/discover_table_layout_indicator"
+            app:xTabMode="scrollable"
+            app:xTabPaddingEnd="14dp"
+            app:xTabPaddingStart="14dp"
+            app:xTabSelectedTextColor="@color/common_text_color_31"
+            app:xTabSelectedTextSize="@dimen/common_text_size_16"
+            app:xTabTextBold="true"
+            app:xTabTextColor="@color/common_text_color_afb0b1"
+            app:xTabTextSelectedBold="true"
+            app:xTabTextSize="@dimen/common_text_size_16" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_friends"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="9dp"
+            android:background="@drawable/ripple1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_browse_search" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_interest"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/common_color_fa"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_home_header"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/main_orange_dark"
+        app:xTabSelectedTextSize="@dimen/common_text_size_12"
+        app:xTabTextBold="true"
+        app:xTabTextColor="@color/color_31"
+        app:xTabTextSelectedBold="true"
+        app:xTabTextSize="@dimen/common_text_size_12"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/new_ui.div1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_interest" />
+
+
+    <com.redefine.welike.commonui.widget.SwitchViewPager
+        android:id="@+id/discovery_view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/common_color_f8f8f8"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/common_transition_t_b_bg"
+        app:layout_constraintTop_toBottomOf="@+id/tab_interest" />
+
+</android.support.constraint.ConstraintLayout>

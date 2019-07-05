@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comment_detail_main_comment_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_shape_white"
+    android:paddingTop="12dp">
+
+    <RelativeLayout
+        android:id="@+id/comment_detail_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.redefine.welike.commonui.widget.VipAvatar
+            android:id="@+id/comment_detail_main_user_header_view"
+            android:layout_width="@dimen/comment_detail_main_user_header_size"
+            android:layout_height="@dimen/comment_detail_main_user_header_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@drawable/user_default_head"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/comment_detail_main_user_header_view"
+            android:layout_alignBottom="@id/comment_detail_main_user_header_view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@id/comment_detail_main_user_header_view"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_detail_main_user_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/comment_detail_main_user_nick_text_color"
+                android:textSize="@dimen/common_text_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comment_detail_main_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/comment_detail_main_time_text_color"
+                android:textSize="@dimen/comment_detail_main_time_text_size" />
+        </LinearLayout>
+
+
+        <com.redefine.richtext.RichTextView
+            android:id="@+id/comment_detail_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_detail_main_user_header_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/comment_detail_main_content_text_color"
+            android:textSize="@dimen/common_text_size_14" />
+
+        <TextView
+            android:id="@+id/comment_detail_main_view_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_detail_main_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/color_normal_48779D"
+            android:textSize="@dimen/comment_detail_main_view_blog_text_size" />
+
+        <View
+            android:id="@+id/common_feed_divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/comment_detail_main_view_blog"
+            android:background="@color/common_color_fa"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/comment_detail_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/common_color_f8f8f8"
+        android:foreground="@drawable/common_shadow_icon"
+        fresco:layout_constraintTop_toBottomOf="@+id/comment_detail_main_layout" />
+</android.support.constraint.ConstraintLayout>

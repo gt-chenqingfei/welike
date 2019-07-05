@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="24dp"
+    android:paddingTop="@dimen/common_item_margin_8">
+
+    <LinearLayout
+        android:id="@+id/ll_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/common_snackbar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_item_margin_12"
+        android:paddingLeft="@dimen/common_item_margin_16"
+        android:paddingRight="@dimen/common_item_margin_16"
+        android:paddingTop="@dimen/common_item_margin_12">
+
+        <TextView
+            android:id="@+id/tv_snackbar_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/common_item_margin_8"
+            android:text="@string/gravity_center"
+            android:textSize="@dimen/common_text_size_16"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tv_snackbar_login"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/common_appcolor_btn_new_bg"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:paddingLeft="@dimen/common_item_margin_16"
+            android:paddingRight="@dimen/common_item_margin_16"
+            android:text="@string/gravity_center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

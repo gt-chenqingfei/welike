@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:paddingLeft="12dp">
+
+    <ImageView
+        android:id="@+id/feed_detail_like_item_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:scaleType="center" />
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/feed_detail_like_user_header"
+        android:layout_width="@dimen/feed_detail_head_size"
+        android:layout_height="@dimen/feed_detail_head_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/feed_detail_like_item_view"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/feed_detail_like_user_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/feed_detail_like_user_header"
+        android:gravity="center"
+        android:textColor="@color/feed_detail_like_user_nick_text_color"
+        android:textSize="@dimen/common_text_size_16"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="12dp"
+        android:scaleType="center"
+        android:src="@drawable/common_left_arrow_icon" />
+
+    <View
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_px1"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/feed_detail_like_item_view" />
+
+</RelativeLayout>

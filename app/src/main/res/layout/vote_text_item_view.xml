@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vote_text_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    >
+
+
+    <View
+        android:background="@drawable/vote_text_pro_bar_un_select"
+        android:id="@+id/vote_item_process_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.0" />
+
+    <TextView
+        android:id="@+id/vote_item_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1234"
+        android:textSize="14dp"
+        android:textColor="@color/vote_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vote_item_process_text"
+        app:layout_constraintStart_toStartOf="@+id/vote_item_process_bar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="14dp"
+        android:id="@+id/vote_item_process_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        tools:text="35%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/vote_text_color"
+        />
+
+    <View
+        android:id="@+id/hide_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vote_pic_checked_fg"
+        app:layout_constraintWidth_percent="0.96"
+        app:layout_constraintHeight_percent="0.96"
+        android:visibility="gone" />
+
+
+</android.support.constraint.ConstraintLayout>

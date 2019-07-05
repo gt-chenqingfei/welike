@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp">
+
+    <FrameLayout
+        android:id="@+id/message_state_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="50dp"
+        android:paddingRight="8dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/message_state_loading"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/message_state_error"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="center"
+            android:src="@drawable/message_state_error" />
+    </FrameLayout>
+
+
+    <com.redefine.richtext.RichTextView
+        android:id="@+id/chat_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/im_shape_msg_bg_right"
+        android:textColor="@color/im_chat_item_text_color"
+        android:textSize="@dimen/im_chat_item_text_size" />
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/chat_user_header"
+        android:layout_width="@dimen/im_chat_item_user_header_size"
+        android:layout_height="@dimen/im_chat_item_user_header_size"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        fresco:fadeDuration="300"
+        tools:background="@drawable/alien"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true" />
+
+</LinearLayout>

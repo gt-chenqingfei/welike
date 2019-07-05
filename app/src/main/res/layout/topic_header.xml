@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/topic_hot_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/topic_hot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/common_feed_detail_tab_text_color_selector"
+            android:textSize="@dimen/common_text_size_13"
+            tools:text="HOT" />
+
+        <View
+            android:id="@+id/topic_hot_indicator"
+            android:layout_width="74dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/feed_detail_tab_orange_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_latest_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/topic_latest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/common_feed_detail_tab_text_color_selector"
+            android:textSize="@dimen/common_text_size_13"
+            tools:text="LATEST" />
+
+        <View
+            android:id="@+id/topic_latest_indicator"
+            android:layout_width="74dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/feed_detail_tab_orange_selector" />
+    </RelativeLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp">
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/chat_user_header"
+        android:layout_width="@dimen/im_chat_item_user_header_size"
+        android:layout_height="@dimen/im_chat_item_user_header_size"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="10dp"
+        fresco:fadeDuration="300"
+        fresco:placeholderImage="@drawable/user_default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true"
+        tools:background="@drawable/alien"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/chat_card_container"
+        android:layout_width="224dp"
+        android:layout_height="72dp"
+        android:background="@drawable/shape_chat_card_bg">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/chat_card_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            fresco:roundedCornerRadius="3dp"
+            app:roundTopEnd="false"
+            app:roundTopStart="true"
+            app:roundBottomStart="true"
+            app:roundBottomEnd="false"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/shape_im_card_bg"
+            tools:background="@drawable/shape_im_card_bg"/>
+
+        <TextView
+            android:id="@+id/chat_card_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/common_text_color_afb0b1"
+            android:textSize="@dimen/common_text_size_14"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            fresco:layout_constrainedWidth="true"
+            fresco:layout_constraintLeft_toRightOf="@id/chat_card_image"
+            fresco:layout_constraintRight_toLeftOf="@id/empty_view"
+            fresco:layout_constraintTop_toTopOf="parent"
+            fresco:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Man can't throw a spiral to save his method invoke heiheihei wahahakakakak"/>
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            fresco:layout_constraintWidth_min="1dp"
+            fresco:layout_constraintTop_toTopOf="parent"
+            fresco:layout_constraintLeft_toRightOf="@id/chat_card_content"
+            fresco:layout_constraintRight_toRightOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/message_state_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="50dp"
+        android:paddingLeft="8dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/message_state_loading"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/message_state_error"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="center"
+            android:src="@drawable/message_state_error" />
+    </FrameLayout>
+
+
+</LinearLayout>

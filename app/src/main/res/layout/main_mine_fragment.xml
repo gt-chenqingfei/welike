@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_setting_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_b_t_shadow"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/ll_mine_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:background="@color/white"
+                    android:paddingTop="8dp">
+
+                    <com.redefine.welike.commonui.widget.VipAvatar
+                        android:id="@+id/simpleDraw_mine_headView"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:background="@drawable/default_head_boy1" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toTopOf="@id/tv_mine_MyProfile"
+                        app:layout_constraintLeft_toRightOf="@id/simpleDraw_mine_headView"
+                        app:layout_constraintRight_toLeftOf="@id/mine_medal_assignment"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        tools:text="Abishek Sharma Abishek Sharma Abishek Sharma" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_MyProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/mine_setting_text_color"
+                        android:textSize="15dp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_mine_name"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_mine_name"
+                        tools:text="To the wo To the wo To the wo To the wo " />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/mine_medal_assignment"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        app:actualImageScaleType="fitStart"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_mine_name"
+                        app:layout_constraintLeft_toRightOf="@id/tv_mine_name"
+                        app:layout_constraintRight_toLeftOf="@id/mine_medal_task"
+                        app:layout_constraintTop_toTopOf="@id/tv_mine_name" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/mine_medal_task"
+                        android:layout_width="42dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/tv_mine_name"
+                        app:actualImageScaleType="fitStart"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_mine_name"
+                        app:layout_constraintLeft_toRightOf="@id/mine_medal_assignment"
+                        app:layout_constraintRight_toLeftOf="@id/common_feed_empty"
+                        app:layout_constraintTop_toTopOf="@id/tv_mine_name" />
+
+                    <View
+                        android:id="@+id/common_feed_empty"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintLeft_toRightOf="@+id/mine_medal_task"
+                        app:layout_constraintRight_toLeftOf="@+id/main_mine_profile_container"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_min="5dp" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/main_mine_profile_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/common_feed_empty"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/main_mine_view_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="-2dp"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/main_orange_dark"
+                            android:textSize="@dimen/common_text_size_14"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="Profile" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="14dp"
+                            app:layout_constraintBottom_toBottomOf="@id/main_mine_view_profile"
+                            app:layout_constraintLeft_toRightOf="@id/main_mine_view_profile"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/main_mine_view_profile"
+                            app:srcCompat="@drawable/common_left_arrow_icon" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/temp_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/ll_main_mine_follow"
+                        layout="@layout/mine_follow_layout" />
+
+                    <include
+                        android:id="@+id/ll_main_mine_follower"
+                        layout="@layout/mine_follower_layout" />
+
+                    <include
+                        android:id="@+id/ll_main_mine_post"
+                        layout="@layout/mine_post_layout" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <View
+                    android:id="@+id/temp_layout2"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="@color/common_setting_bg"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    app:layout_constraintTop_toBottomOf="@+id/temp_layout2"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/common_b_t_shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/common_item_margin_12">
+
+
+                            <TextView
+                                android:id="@+id/tv_verify_title"
+                                style="@style/new_ui.text_1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/common_item_margin_12"
+                                android:layout_weight="1"
+                                android:text="@string/user_verify_title"
+                                android:textSize="@dimen/common_text_size_14"
+                                android:textStyle="bold" />
+
+
+                            <com.redefine.welike.commonui.thirdlogin.ThirdLoginLayout1
+                                android:id="@+id/third_login_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:layoutType="2" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/common_setting_bg" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_verify"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/common_b_t_shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/tv_gender_title"
+                                style="@style/new_ui.text_1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/common_item_margin_12"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/common_text_size_14"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/common_item_margin_12"
+                                android:layout_marginRight="@dimen/common_item_margin_12"
+                                android:background="@drawable/main_mine_male_bg"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/common_item_margin_16"
+                                android:paddingRight="18dp">
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_main_mine_male" />
+
+                                <TextView
+                                    android:id="@+id/tv_male"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="4dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/common_text_size_12"
+                                    tools:text="Male" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/common_item_margin_12"
+                                android:background="@drawable/main_mine_female_bg"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/common_item_margin_12"
+                                android:paddingRight="@dimen/common_item_margin_12">
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:layout_height="16dp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_main_mine_female" />
+
+                                <TextView
+                                    android:id="@+id/tv_female"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/common_item_margin_4"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/common_text_size_12"
+                                    tools:text="Female" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/common_setting_bg" />
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/task_system_container"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintRight_toRightOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/ll_gender"-->
+                <!--tools:visibility="visible">-->
+
+                <!--<android.support.constraint.ConstraintLayout-->
+                <!--android:id="@+id/task_title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:background="@color/white">-->
+
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                <!--android:id="@+id/task_icon"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:srcCompat="@drawable/user_main_task_icon" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/task_system_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="18dp"-->
+                <!--android:layout_marginStart="18dp"-->
+                <!--android:textColor="@color/common_text_color_31"-->
+                <!--android:textSize="@dimen/common_text_size_16"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintStart_toEndOf="@+id/task_icon"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:layout_constraintVertical_bias="0.5"-->
+                <!--tools:text="TextView" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/task_level"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:background="@drawable/bg_task_level"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/common_text_size_11"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintStart_toEndOf="@+id/task_system_title"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--tools:text="Lv2" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imageView3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginEnd="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:srcCompat="@drawable/common_left_arrow_icon" />-->
+
+                <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/task_medal"-->
+                <!--android:layout_width="17dp"-->
+                <!--android:layout_height="21dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--app:actualImageScaleType="fitXY"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toStartOf="@+id/imageView3"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:layout_constraintVertical_bias="0.5" />-->
+
+                <!--</android.support.constraint.ConstraintLayout>-->
+
+                <!--<View-->
+                <!--android:id="@+id/divider"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/common_divider_px1"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:background="@color/user_task_divider_color" />-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/sub_task_container"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/white"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="12dp"-->
+                <!--android:paddingLeft="14dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:paddingTop="12dp" />-->
+
+                <!--<View-->
+                <!--android:id="@+id/divider_strike"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:background="@color/user_task_divider_color" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.redefine.welike.commonui.widget.ArrowTextView-->
+                <!--android:id="@+id/guide"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="12dp"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:paddingRight="15dp"-->
+                <!--android:paddingTop="12dp"-->
+                <!--android:text="Long press to send a SUPERLIKE"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="16dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintBottom_toTopOf="@+id/task_system_container"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--tools:visibility="gone" />-->
+            </android.support.constraint.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_b_t_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/user_main_verify_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_main_verify_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_mine_growth_icon" />
+
+                    <TextView
+                        android:id="@+id/user_main_verify_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="16dp"
+                        tools:text="adasdasdas" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/common_left_arrow_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_divider_px1"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/user_task_divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_contract"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_new_friend" />
+
+                    <TextView
+                        android:id="@+id/contract_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/common_left_arrow_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_divider_px1"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/user_task_divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_main_mine_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_mine_level"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/mine_my_like_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_level_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/common_left_arrow_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_divider_px1"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/user_task_divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_main_mine_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_mine_share"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/mine_share_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_share"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/common_left_arrow_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_divider_px1"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/user_task_divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_main_mine_feedBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_mine_feedBack"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/mine_feedback_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_feedBack"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/common_left_arrow_icon" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_divider_px1"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/user_task_divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_main_mine_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_mine_setting"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/mine_setting_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_mine_setting_next"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="12dp"
+                        android:scaleType="center" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/common_left_arrow_icon" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--<include-->
+            <!--android:id="@+id/ll_main_mine_rateUs"-->
+            <!--layout="@layout/mine_setting_share"-->
+            <!--android:visibility="gone" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/common_setting_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_b_t_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_draft"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/main_mine_draft_btn" />
+
+                    <TextView
+                        android:id="@+id/main_mine_draft_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/mine_user_nickname_color"
+                        android:textSize="16dp" />
+
+                    <com.redefine.commonui.widget.CircleBgTextView
+                        android:id="@+id/main_mine_draft_count"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_12"
+                        android:visibility="invisible"
+                        app:circle_color="@color/main_draft_bg_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/common_left_arrow_icon" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/common_setting_bg" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

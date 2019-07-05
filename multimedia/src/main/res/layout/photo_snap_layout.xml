@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_recorder_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/camera_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/camera_recorder_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        app:srcCompat="@drawable/photo_snap_btn"
+        android:scaleType="center" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/camera_delete_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/camera_recorder_btn"
+        android:scaleType="center"
+        app:srcCompat="@drawable/video_recorder_reset_icon"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/camera_confirm_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/camera_recorder_btn"
+        android:scaleType="center"
+        app:srcCompat="@drawable/video_recorder_ok_btn"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/camera_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@drawable/common_white_close_btn" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/camera_flash_btn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/camera_flash_off"
+                android:visibility="invisible" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/camera_front_btn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                app:srcCompat="@drawable/camera_front_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

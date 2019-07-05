@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api deps.fastjson
+    api deps.okhttp3
+    api deps.greendao
+    api deps.rxjava2
+    api deps.rx_android
+    api deps.eventbus
+    implementation deps.stetho.base
+    implementation deps.stetho.support_okhttp3
+
+    implementation deps.kotlin.stdlib
+    api deps.gms.location
+    api group: 'org.apache.commons', name: 'commons-text', version: '1.2'
+//    api deps.walle {
+//        exclude group: 'com.meituan', module: 'annotations'
+//    }
+//    compile 'com.alibaba:fastjson:1.2.39'
+//    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+//    compile 'org.greenrobot:greendao:3.2.2'
+//    compile 'io.reactivex.rxjava2:rxjava:2.0.5'
+//    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+//    compile 'org.greenrobot:eventbus:3.1.1'
+//    implementation 'com.facebook.stetho:stetho:1.5.0'
+//    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+
+//    compile 'org.jsoup:jsoup:1.9.2'
+}
+repositories {
+    mavenCentral()
+}

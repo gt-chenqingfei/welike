@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/feed_nine_grid_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.redefine.multimedia.picturelooker.widget.longimage.SubsamplingScaleImageView
+        android:id="@+id/longImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/gif_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/common_item_margin_6"
+        android:layout_marginRight="@dimen/common_item_margin_6"
+        android:background="@drawable/app_common_btn_40_bark_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="@string/gif_tag_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_12"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_view_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/common_item_margin_6"
+        android:layout_marginRight="@dimen/common_item_margin_6"
+        android:background="@drawable/app_common_btn_40_bark_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="@string/feed_picture_view_full"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_12"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+
+</FrameLayout>

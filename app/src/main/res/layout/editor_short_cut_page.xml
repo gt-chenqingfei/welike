@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/editor_short_cut_suggest_topic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editor_short_cut_suggest_topic_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/common_bar_bg"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_text_color_626262"
+            android:textSize="@dimen/common_text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/editor_short_cut_suggest_topic_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/editor_short_cut_suggest_topic_img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@drawable/suggest_topic_default_img"
+                        fresco:placeholderImageScaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/editor_short_cut_suggest_topic_des1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_14" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/editor_short_cut_suggest_topic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/common_text_color_31"
+                    android:textSize="@dimen/common_text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editor_short_cut_suggest_topic_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/editor_short_cut_suggest_topic_img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@drawable/suggest_topic_default_img"
+                        fresco:placeholderImageScaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/editor_short_cut_suggest_topic_des2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_14" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/editor_short_cut_suggest_topic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/common_text_color_31"
+                    android:textSize="@dimen/common_text_size_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editor_short_cut_campaign_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editor_short_cut_suggest_topic_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editor_short_cut_campaign_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/common_bar_bg"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_text_color_626262"
+            android:textSize="@dimen/common_text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/editor_short_cut_campaign_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/editor_short_cut_campaign_tab_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/campaign_title_icon"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/common_text_color_31"
+                    android:textSize="@dimen/common_text_size_15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editor_short_cut_campaign_tab_des1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/common_text_color_afb0b1"
+                    android:textSize="@dimen/common_text_size_12" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/editor_short_cut_campaign_divider"
+                android:layout_width="@dimen/common_divider_dp1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/common_color_e3e5ea" />
+
+            <LinearLayout
+                android:id="@+id/editor_short_cut_campaign_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/editor_short_cut_campaign_tab_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/campaign_title_icon"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/common_text_color_31"
+                        android:textSize="@dimen/common_text_size_15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/editor_short_cut_campaign_tab_des2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/common_text_color_afb0b1"
+                        android:textSize="@dimen/common_text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/editor_short_cut_entrances"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:layoutAnimation="@anim/short_cut_layout_anim"
+            android:overScrollMode="never"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/editor_short_cut_close_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="23dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>

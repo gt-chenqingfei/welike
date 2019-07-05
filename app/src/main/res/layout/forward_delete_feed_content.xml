@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forward_feed_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/forward_feed_delete_img_size"
+    android:layout_marginLeft="@dimen/common_item_margin_12"
+    android:layout_marginRight="@dimen/common_item_margin_12"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="@dimen/common_feed_card_forward_margin"
+    android:background="@drawable/drawable_shape_forward_bg"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/forward_feed_delete_img"
+        android:layout_width="@dimen/forward_feed_delete_img_size"
+        android:layout_height="@dimen/forward_feed_delete_img_size"
+        android:background="@color/forward_feed_delete_img_bg"
+        android:scaleType="center"
+        android:src="@drawable/forward_card_delete_img" />
+
+    <com.redefine.richtext.RichTextView
+        android:id="@+id/forward_feed_delete_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/text_feed_content_text_color"
+        android:textSize="@dimen/text_feed_content_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+//            buildConfigField "String", "HOST_NAME", "\"http://dev-api.welike.in/\""
+//            buildConfigField "String", "UPLOAD_HOST_NAME", "\"http://dev-api.welike.in/\""
+//            buildConfigField "String", "DOWNLOAD_HOST_NAME", "\"http://dev-img.welike.in/\""
+        }
+        release {
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+//            buildConfigField "String", "HOST_NAME", "\"http://api.welike.in/\""
+//            buildConfigField "String", "UPLOAD_HOST_NAME", "\"http://api.welike.in/\""
+//            buildConfigField "String", "DOWNLOAD_HOST_NAME", "\"http://img.welike.in/\""
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':foundation')
+    //    compile 'com.google.android.gms:play-services-analytics:12.0.1'
+    //    compile 'org.jetbrains:annotations-java5:15.0'
+    // Room (use 1.1.0-beta3 for latest beta)
+    //    implementation "android.arch.persistence.room:runtime:1.1.0-beta3"
+    //    kapt "android.arch.persistence.room:compiler:1.1.0-beta3"
+    //    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation deps.room.runtime
+    kapt deps.room.compiler
+    api deps.easypermissions
+    implementation deps.kotlin.stdlib
+    implementation deps.gms.analytics
+    implementation deps.constraint_layout
+    implementation deps.appsflyer
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_browse"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="@dimen/common_item_margin_6"
+        android:paddingRight="@dimen/common_item_margin_6"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/new_ui.title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:scaleType="center"
+            android:text="@string/common_login"
+            android:textColor="@color/main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Login" />
+
+        <ImageView
+            android:id="@+id/iv_choose_language"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ripple1"
+            android:padding="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_language_en_icon" />
+
+        <TextView
+            android:id="@+id/tv_browse_title"
+            style="@style/new_ui.title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/discover_hot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ripple1"
+            android:padding="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_browse_search" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tl_interest_tab"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/common_color_fa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_browse"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/main_orange_dark"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/main_orange_dark"
+        app:xTabSelectedTextSize="@dimen/common_text_size_12"
+        app:xTabTextBold="true"
+        app:xTabTextColor="@color/color_31"
+        app:xTabTextSelectedBold="true"
+        app:xTabTextSize="@dimen/common_text_size_12" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/discovery_view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/common_color_f8f8f8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tl_interest_tab" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/common_transition_t_b_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tl_interest_tab" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/common_item_margin_8"
+        android:background="@drawable/bg_home_login_btn"
+        android:gravity="center"
+        android:paddingLeft="@dimen/common_item_margin_24"
+        android:paddingRight="@dimen/common_item_margin_16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_login_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/common_item_margin_4"
+            android:text="@string/common_continue_by_login1"
+            android:textColor="@color/main_orange_dark"
+            android:textSize="@dimen/common_text_size_14"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/ic_login_forward" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

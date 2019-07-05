@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.redefine.richtext.RichTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topic_detial_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="left"
+    android:lineSpacingMultiplier="1"
+    android:textColor="@color/text_feed_content_text_color"
+    android:textSize="@dimen/common_text_size_15"
+    android:padding="15dp"
+    tools:text="lalalala" />
+

@@ -1,0 +1,203 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId "com.redefine.welike"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    signingConfigs {
+        // WARNING do not modify
+        //#IF_DEFINE DEBUG_KEY_STORE
+        debug {
+            storeFile file('welike_debug.keystore')
+            storePassword "welike_debug"
+            keyAlias "welike_debug"
+            keyPassword "welike_debug"
+        }
+        //#END_DEFINE DEBUG_KEY_STORE
+        // WARNING do not modify
+        //#IF_DEFINE RELEASE_KEY_STORE
+        release {
+            storeFile file('welike_debug.keystore')
+            storePassword "welike_debug"
+            keyAlias "welike_debug"
+            keyPassword "welike_debug"
+        }
+        //#END_DEFINE RELEASE_KEY_STORE
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            manifestPlaceholders = [fabric_apikey  : "d8c5ad2265dee0b2ff1519d9e11a977d0d740219",
+                                    welike_app_type: "0",
+                                    truecall_id    : "KaV5fc02f813a97754899b06b02868e0d2e5d",
+                                    truecall_id_gp : "w5SFpff14cabc309c4c18a16ec2401871765c"
+            ]
+
+            debuggable false
+            jniDebuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            proguardFiles 'proguard-rules.pro'
+            proguardFiles 'proguard-ucrop.pro'
+            proguardFiles 'proguard-greenrobot.pro'
+            proguardFiles 'proguard-fresco.pro'
+            proguardFiles 'proguard-framework.pro'
+            proguardFiles 'proguard-net.pro'
+            proguardFiles 'proguard-rx.pro'
+            proguardFiles 'proguard-fastjson.pro'
+            proguardFiles 'proguard-banner.pro'
+            proguardFiles 'proguard-aac.pro'
+            proguardFiles 'proguard-crashlytics.pro'
+            proguardFiles 'proguard-jsoup.pro'
+            proguardFiles 'proguard-im.pro'
+            proguardFiles 'proguard-okdown.pro'
+            proguardFiles 'proguard-flexbox.pro'
+        }
+        debug {
+            minifyEnabled false
+            //ext.enableCrashlytics = false
+            manifestPlaceholders = [fabric_apikey  : "1e7227295fe02104c454a6ec0c169d2031018ce1",
+                                    welike_app_type: "0",
+                                    truecall_id    : "KaV5fc02f813a97754899b06b02868e0d2e5d",
+                                    truecall_id_gp : "w5SFpff14cabc309c4c18a16ec2401871765c"
+
+            ]
+
+            signingConfig signingConfigs.debug
+            debuggable true
+            jniDebuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            proguardFiles 'proguard-rules.pro'
+            proguardFiles 'proguard-ucrop.pro'
+            proguardFiles 'proguard-greenrobot.pro'
+            proguardFiles 'proguard-fresco.pro'
+            proguardFiles 'proguard-framework.pro'
+            proguardFiles 'proguard-net.pro'
+            proguardFiles 'proguard-rx.pro'
+            proguardFiles 'proguard-fastjson.pro'
+            proguardFiles 'proguard-banner.pro'
+            proguardFiles 'proguard-aac.pro'
+            proguardFiles 'proguard-crashlytics.pro'
+            proguardFiles 'proguard-jsoup.pro'
+            proguardFiles 'proguard-okdown.pro'
+            proguardFiles 'proguard-flexbox.pro'
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'android.arch.lifecycle:runtime:1.1.1'
+        force 'android.arch.lifecycle:livedata-core:1.1.1'
+        force 'android.arch.lifecycle:viewmodel:1.1.1'
+    }
+}
+
+kapt {
+    arguments {
+        arg("moduleName", project.getName())
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':foundation')
+    implementation project(':frameworkmvp')
+    implementation project(':frameworkmvvm')
+    implementation project(':base')
+    implementation project(':multimedia')
+    implementation project(':refresh-layout')
+    implementation project(':richtext')
+    implementation project(':framework')
+    implementation project(':commonui')
+    implementation project(':shortcutbadger')
+    implementation project(':init')
+    implementation project(':xtablayoutlibrary')
+    implementation project(path: ':guide')
+    implementation deps.kotlin.stdlib
+    implementation deps.lifecycle.extensions
+    implementation deps.room.rxjava2
+    implementation deps.room.runtime
+    kapt deps.room.compiler
+    implementation deps.constraint_layout
+    implementation deps.support.design
+    implementation deps.arouter.api
+    kapt deps.arouter.compiler
+    implementation deps.banner
+    implementation deps.appsflyer
+    implementation deps.installreferrer
+    implementation deps.stetho.base
+    implementation deps.stetho.support_okhttp3
+    implementation deps.facebook.login
+    implementation deps.materialdaterangepicker
+    implementation deps.multidex
+    implementation deps.firebase.core
+    implementation deps.firebase.messaging
+    implementation deps.firebase.jobdispatcher
+    implementation deps.firebase.dynamiclink
+    implementation deps.gms.analytics
+    implementation deps.gms.auth
+    implementation deps.jsoup
+    implementation deps.gson
+    //    implementation deps.xTablayout
+    implementation deps.flexbox
+    implementation(deps.crashlytics) {
+        transitive = true
+    }
+    implementation deps.pagerslidingtabstrip
+    implementation(deps.flowlayout) {
+        exclude group: 'com.intellij', module: 'annotations'
+    }
+    api project(path: ':sunny')
+    implementation project(':im2')
+    implementation(name: "truesdk-0.6", ext: "aar")
+    implementation project(path: ':oss')
+    implementation deps.retrofit.base
+    implementation deps.retrofit.gson
+    implementation deps.retrofit.rxjava2
+    implementation deps.workmanager
+
+    //anko
+    implementation deps.anko.commons
+    implementation deps.anko.sdk25
+    implementation deps.anko.appcompat_v7_commons
+    implementation deps.anko.appcompat_v7
+    implementation deps.anko.cardview
+    implementation deps.anko.design
+    implementation deps.anko.design_coroutines
+    implementation deps.anko.gridlayout
+    implementation deps.anko.recyclerview
+    implementation deps.anko.recyclerview_coroutines
+    implementation deps.anko.commons_v4
+    implementation deps.anko.support_v4
+    implementation deps.anko.constraint
+
+
+}
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}

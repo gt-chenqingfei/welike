@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:fresco="http://schemas.android.com/apk/res-auto"
+android:id="@+id/editor_forward_card_root_view"
+android:layout_width="match_parent"
+android:layout_height="96dp"
+android:layout_marginLeft="15dp"
+android:layout_marginRight="15dp"
+android:background="@color/editor_forward_card_bg">
+
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/editor_forward_feed_img"
+    android:background="@color/link_feed_thumb_bg_color"
+    fresco:placeholderImage="@drawable/link_feed_thumb_image"
+    fresco:placeholderImageScaleType="centerInside"
+    android:layout_width="@dimen/editor_forward_feed_thumb_size"
+    android:layout_height="@dimen/editor_forward_feed_thumb_size"
+    android:layout_alignParentLeft="true" />
+
+<TextView
+    android:id="@+id/editor_forward_user_nick"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:layout_toRightOf="@id/editor_forward_feed_img"
+    android:textColor="@color/editor_forward_user_nick_text_color"
+    android:textSize="@dimen/common_text_size_17" />
+
+<com.redefine.richtext.RichTextView
+    android:id="@+id/editor_forward_feed_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editor_forward_user_nick"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="4dp"
+    android:layout_toRightOf="@id/editor_forward_feed_img"
+    android:ellipsize="end"
+    android:maxLines="2"
+    android:textColor="@color/editor_forward_feed_text_color"
+    android:textSize="@dimen/common_text_size_15" />
+</RelativeLayout>

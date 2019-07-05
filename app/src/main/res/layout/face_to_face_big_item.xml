@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/white_round_shape_bg">
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/face_to_face_big_head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:actualImageScaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundAsCircle="true" />
+
+    <com.redefine.welike.commonui.widget.UserFollowBtn
+        android:id="@+id/face_to_face_big_follow_btn"
+        android:layout_width="76dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/face_to_face_big_nick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:singleLine="true"
+        android:textColor="@color/color_31"
+        android:textSize="@dimen/common_text_size_16"
+        app:layout_constraintEnd_toStartOf="@id/face_to_face_big_follow_btn"
+        app:layout_constraintStart_toEndOf="@id/face_to_face_big_head"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lew Silverton" />
+
+    <TextView
+        android:id="@+id/face_to_face_big_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:singleLine="true"
+        android:textColor="@color/common_text_color_afb0b1"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintEnd_toStartOf="@id/face_to_face_big_follow_btn"
+        app:layout_constraintStart_toEndOf="@id/face_to_face_big_head"
+        app:layout_constraintTop_toBottomOf="@id/face_to_face_big_nick"
+        tools:text="It's 1.5 kilometers away from you" />
+</android.support.constraint.ConstraintLayout>

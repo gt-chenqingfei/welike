@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_text_size_16">16dp</dimen>
+    <dimen name="common_text_size_18">18dp</dimen>
+    <dimen name="common_text_size_14">14dp</dimen>
+    <dimen name="common_text_size_15">15dp</dimen>
+    <dimen name="common_text_size_12">12dp</dimen>
+    <dimen name="common_text_size_11">11dp</dimen>
+    <dimen name="common_text_size_13">13dp</dimen>
+    <dimen name="common_text_size_17">17dp</dimen>
+    <dimen name="common_text_size_20">20dp</dimen>
+    <dimen name="common_text_size_22">22dp</dimen>
+    <dimen name="common_text_size_24">24dp</dimen>
+    <dimen name="common_padding">10dp</dimen>
+    <dimen name="load_more_text_size">14dp</dimen>
+    <dimen name="common_title_bar_height">48dp</dimen>
+    <dimen name="common_title_view_text_size">20dp</dimen>
+    <dimen name="common_divider_px1">1px</dimen>
+    <dimen name="common_divider_dp1">1dp</dimen>
+    <dimen name="common_divider_dp2">2dp</dimen>
+    <dimen name="common_divider_dp3">3dp</dimen>
+    <dimen name="common_error_view_text_size">16dp</dimen>
+    <dimen name="common_reload_text_size">18dp</dimen>
+    <dimen name="common_empty_text_size">16dp</dimen>
+    <dimen name="common_empty_btn_text_size">18dp</dimen>
+    <dimen name="simple_menu_item_text_size">16dp</dimen>
+    <dimen name="common_swipe_delete_width">84dp</dimen>
+    <dimen name="common_confirm_title_text_size">16dp</dimen>
+    <dimen name="common_menu_title_text_size">16dp</dimen>
+    <dimen name="common_confirm_cancel_text_size">16dp</dimen>
+    <dimen name="common_confirm_ok_text_size">16dp</dimen>
+    <dimen name="common_text_size_10">10dp</dimen>
+    <dimen name="common_text_size_8">8dp</dimen>
+
+
+    <dimen name="common_item_margin_4">4dp</dimen>
+    <dimen name="common_item_margin_6">6dp</dimen>
+    <dimen name="common_item_margin_8">8dp</dimen>
+    <dimen name="common_item_margin_12">12dp</dimen>
+    <dimen name="common_item_margin_15">15dp</dimen>
+    <dimen name="common_item_margin_16">16dp</dimen>
+    <dimen name="common_item_margin_18">18dp</dimen>
+    <dimen name="common_item_margin_24">24dp</dimen>
+    <dimen name="common_item_margin_32">32dp</dimen>
+    <dimen name="common_item_margin_40">40dp</dimen>
+
+    <!-- loadingView -->
+    <dimen name="loading_padding_width">6dp</dimen>
+    <dimen name="loading_padding_height">19dp</dimen>
+</resources>

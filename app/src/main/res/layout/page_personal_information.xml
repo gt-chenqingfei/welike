@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/common_action_bar" />
+
+    <View
+        style="@style/new_ui.div"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/user_host_header_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="148dp"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.redefine.welike.commonui.widget.VipAvatar
+                        android:id="@+id/simpleDraw_user_host_personInfo_headview"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="19dp"
+                        app:placeholderImage="@drawable/user_default_head"
+                        app:placeholderImageScaleType="fitCenter"
+                        app:roundAsCircle="true" />
+
+                    <TextView
+                        android:id="@+id/tv_user_host_personInfo_update_headview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/main_grey"
+                        android:textSize="@dimen/common_text_size_14" />
+
+                </LinearLayout>
+
+                <com.redefine.welike.commonui.widget.ArrowTextView
+                    android:id="@+id/guide_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="12dp"
+                    android:text="Long press to send a SUPERLIKE"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_host_header_layout"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:visibility="visible" />
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                style="@style/new_ui.div"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:id="@+id/user_certification_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp">
+
+                    <TextView
+                        android:id="@+id/user_identity_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:drawableLeft="@drawable/icon_vertical_certification"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/color_31"
+                        android:textSize="@dimen/common_text_size_14"
+                        tools:text="Identity authentication" />
+
+                    <TextView
+                        android:id="@+id/user_identity_detail_text"
+                        style="@style/new_ui.text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        tools:text="Comedy Guru" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/new_ui.div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/common_item_margin_12"
+                    android:layout_marginRight="@dimen/common_item_margin_12" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_user_host_personInfo_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_user_host_personInfo_nickname_title"
+                        style="@style/new_ui.text_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_user_host_personInfo_nickname_next"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/common_left_arrow_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_user_host_personInfo_nickname"
+                    style="@style/new_ui.text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_user_host_personInfo_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="75.5dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_user_host_personInfo_gender_title"
+                            style="@style/new_ui.text_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_user_host_personInfo_gender_next"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="center"
+                            android:src="@drawable/common_left_arrow_icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_user_host_personInfo_gender"
+                        style="@style/new_ui.text_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="@dimen/common_item_margin_12"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_user_host_personInfo_brief"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_user_host_personInfo_gender">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_user_host_personInfo_brief_title"
+                            style="@style/new_ui.text_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/iv_user_host_personInfo_brief_next"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="center"
+                            android:src="@drawable/common_left_arrow_icon" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_user_host_personInfo_brief"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/common_item_margin_16"
+                        android:layout_marginTop="@dimen/common_item_margin_16"
+                        android:textColor="@color/color_45"
+                        android:textSize="@dimen/common_text_size_14" />
+
+                </LinearLayout>
+
+                <com.redefine.welike.commonui.widget.ArrowTextView
+                    android:id="@+id/guide_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="12dp"
+                    android:text="Long press to send a SUPERLIKE"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/ll_user_host_personInfo_brief"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:visibility="visible" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <View
+                style="@style/new_ui.div"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/common_item_margin_12"
+                android:layout_marginRight="@dimen/common_item_margin_12" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="12dp">
+
+                <TextView
+                    android:id="@+id/tv_interest_title"
+                    style="@style/new_ui.text_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    tools:text="Select your interest"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/common_left_arrow_icon" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/tv_social_title"
+                style="@style/new_ui.text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                tools:text="Link to your account"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/profile_facebook_host"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    app:srcCompat="@drawable/profile_facebook_host_no"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/profile_instgram_host"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    app:srcCompat="@drawable/profile_instgram_host_no"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/profile_youtube_host"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    app:srcCompat="@drawable/profile_youtube_host_no"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

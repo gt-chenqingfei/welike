@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/discover_top_user_view"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/discover_top_user_layout"
+            layout="@layout/discover_top_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="11dp"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/discover_shake_item_layout"
+            layout="@layout/discover_shake_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.redefine.commonui.widget.fixed.FixedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_pick_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:placeholderImage="@color/image_pick_item_default_color"
+        fresco:placeholderImageScaleType="center" />
+
+    <TextView
+        android:id="@+id/image_pick_isGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/gif_tag"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_11"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/image_pick_long_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/gif_tag"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_11"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/image_pick_duration"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/media_item_shadow"
+        android:drawableLeft="@drawable/video_icon"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:text="@string/recorder_time"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_11"
+        android:visibility="gone" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/image_pick_check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent_60"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/item_filter_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vector_filter_select" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/item_preview_image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color_70"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</com.redefine.commonui.widget.fixed.FixedFrameLayout>

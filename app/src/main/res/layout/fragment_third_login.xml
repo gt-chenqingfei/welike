@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_intro_bg"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="166dp"
+        android:background="@drawable/intro_bg1" />
+
+    <LinearLayout
+        android:id="@+id/guide_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_view"
+        android:layout_marginBottom="56dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="22dp"
+        app:srcCompat="@drawable/common_btn_close" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.redefine.welike.commonui.thirdlogin.ThirdLoginLayout
+            android:id="@+id/third_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:id="@+id/login_with_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="or Login with Phone"
+            android:textColor="@color/color_48779D"
+            android:textSize="@dimen/common_text_size_14"
+            tools:text="or Login with Mobile Phone" />
+
+        <TextView
+            android:id="@+id/user_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:textColor="@color/common_text_color_afb0b1"
+            android:textSize="@dimen/common_text_size_10"
+            tools:text="By continuing, I accept the Terms of Service" />
+
+    </LinearLayout>
+
+</RelativeLayout>

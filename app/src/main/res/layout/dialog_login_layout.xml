@@ -1,0 +1,196 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root_view"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="428dp"
+    android:background="@color/white">
+
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/common_item_margin_12"
+        android:background="@drawable/app_common_dialog_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_item_margin_32"
+        android:layout_marginRight="@dimen/common_item_margin_32"
+        android:layout_marginTop="@dimen/common_item_margin_32"
+        android:gravity="center"
+        android:text="@string/register_login_to_continue"
+        android:textColor="@color/color_31"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_user_avatar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_item_margin_32"
+        android:layout_marginRight="@dimen/common_item_margin_32"
+        android:layout_marginTop="@dimen/common_item_margin_8"
+        android:gravity="center"
+        android:text="@string/register_login_this_account"
+        android:textColor="@color/color_31"
+        android:textSize="@dimen/common_text_size_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdv_user_avatar" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/login_with_this_account"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginLeft="@dimen/common_item_margin_32"-->
+    <!--android:layout_marginRight="@dimen/common_item_margin_32"-->
+    <!--android:layout_marginTop="@dimen/common_item_margin_16"-->
+    <!--android:background="@drawable/shape_common_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/register_login_this_account"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/common_text_size_14"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />-->
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_login_with_this_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_item_margin_40"
+        android:layout_marginRight="@dimen/common_item_margin_40"
+        android:layout_marginTop="@dimen/common_item_margin_16"
+        android:background="@drawable/shape_common_bg"
+        android:foreground="@drawable/ripple1"
+        app:layout_constraintBottom_toTopOf="@+id/ll_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name">
+
+
+        <ImageView
+            android:id="@+id/iv_vidmate"
+            android:layout_width="25dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="@dimen/common_item_margin_16"
+            android:layout_marginStart="@dimen/common_item_margin_16"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/register_vidmate_icon" />
+
+        <TextView
+            android:id="@+id/login_with_this_account"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/register_login_this_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_14"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_item_margin_24"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/divider0"
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/common_item_margin_16"
+                android:background="@color/color_ed"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_or"
+                app:layout_constraintRight_toLeftOf="@+id/tv_or"
+                app:layout_constraintTop_toTopOf="@+id/tv_or" />
+
+            <TextView
+                android:id="@+id/tv_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/or"
+                android:textColor="@color/main_grey"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/common_item_margin_16"
+                android:background="@color/color_ed"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_or"
+                app:layout_constraintLeft_toRightOf="@+id/tv_or"
+                app:layout_constraintTop_toTopOf="@+id/tv_or" />
+        </android.support.constraint.ConstraintLayout>
+
+        <com.redefine.welike.commonui.thirdlogin.ThirdLoginLayout
+            android:id="@+id/third_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/common_item_margin_16"
+            app:textColor="@color/color_62"
+            app:textSize="12"
+            app:textStyle="false" />
+
+        <TextView
+            android:id="@+id/login_with_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/register_login_with_phone_number"
+            android:textColor="@color/common_text_color_48779D"
+            android:textSize="@dimen/common_text_size_12"
+            tools:text="or Login with Mobile Phone" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

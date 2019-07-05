@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/super_topic_page_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_title_bar_height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+        <TextView
+            android:id="@+id/super_topic_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/common_title_view_text_color"
+            android:textSize="@dimen/common_text_size_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/common_back_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="HashTag" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/super_topic_page_title">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/super_topic_page_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_divider_color"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            app:layout_behavior="com.redefine.welike.commonui.view.FlingBehavior">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/super_topic_page_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        fresco:fadeDuration="300"
+                        fresco:placeholderImage="@drawable/topic_landing_banner_default"
+                        fresco:placeholderImageScaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/transparent_40"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/super_topic_page_banner_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/super_topic_icon_small" />
+
+                    <TextView
+                        android:id="@+id/super_topic_page_banner_title"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="14dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_24"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/super_topic_page_banner_icon"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="HashTag" />
+
+                    <TextView
+                        android:id="@+id/super_topic_page_banner_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_16"
+                        app:layout_constraintBottom_toBottomOf="@+id/super_topic_page_banner"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="24k posts" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/common_item_margin_40"
+                android:paddingRight="@dimen/common_item_margin_40">
+
+                <com.androidkun.xtablayout.XTabLayout
+                    android:id="@+id/super_topic_page_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:xTabDividerWidthWidthText="true"
+                    app:xTabIndicatorColor="@color/main_orange_dark"
+                    app:xTabMode="fixed"
+                    app:xTabSelectedTextColor="@color/common_text_color_31"
+                    app:xTabSelectedTextSize="@dimen/common_text_size_16"
+                    app:xTabTextBold="true"
+                    app:xTabTextColor="@color/common_text_color_afb0b1"
+                    app:xTabTextSelectedBold="true"
+                    app:xTabTextSize="@dimen/common_text_size_16" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <View
+                android:id="@+id/topic_landing_view_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_divider_px1"
+                android:background="@color/common_color_ee" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/super_topic_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <View
+            android:id="@+id/topic_landing_view_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/common_transition_t_b_bg"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ImageView
+        android:id="@+id/super_topic_publish_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/vector_publish" />
+
+    <com.redefine.commonui.widget.ErrorView
+        android:id="@+id/common_error_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/super_topic_page_title" />
+
+    <com.redefine.commonui.widget.LoadingView
+        android:id="@+id/common_loading_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/super_topic_page_title" />
+
+</android.support.constraint.ConstraintLayout>

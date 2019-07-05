@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.redefine.welike.business.startup.ui.fragment.RegistChooseLanguageFragment">
+
+    <com.redefine.welike.business.startup.ui.widget.WelikeIndiaTextView
+        android:id="@+id/regist_welike_india"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/search_page_edit_text_color"
+        android:textSize="@dimen/common_text_size_14"
+        android:visibility="gone"
+        tools:text="Welike India" />
+
+
+    <TextView
+        android:id="@+id/tv_regist_select_language_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_item_margin_16"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/color_31"
+        android:textSize="@dimen/common_text_size_20"
+        android:textStyle="bold"
+        tools:text="Select your interest." />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_regist_choose_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_regist_select_language_title"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/common_item_margin_12"
+        android:paddingRight="@dimen/common_item_margin_12" />
+
+    <TextView
+        android:id="@+id/btn_regist_choose_language_next"
+        style="@style/new_ui.button_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/common_item_margin_16"
+        android:textColor="@color/main_grey"
+        tools:text="Get started" />
+
+</RelativeLayout>

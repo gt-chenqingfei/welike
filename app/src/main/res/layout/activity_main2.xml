@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:background="@color/white">
+
+
+    <FrameLayout
+        android:id="@+id/main_page_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_bottom_tab_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/white">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@drawable/common_transition_b_t_bg"
+        app:layout_constraintBottom_toTopOf="@+id/main_bottom_tab_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--1-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_bottom_tab_home"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/main_bottom_tab_discover"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home_tab"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/main_bottom_tab_home_selector" />
+
+        <TextView
+            android:id="@+id/home_tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_tab_color"
+            android:textSize="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_tab"
+            tools:text="Home" />
+
+        <ImageView
+            android:id="@+id/home_refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/home_tab"
+            app:layout_constraintEnd_toEndOf="@+id/home_tab"
+            app:layout_constraintStart_toStartOf="@+id/home_tab"
+            app:layout_constraintTop_toTopOf="@+id/home_tab"
+            app:srcCompat="@drawable/ic_home_refresh" />
+    </android.support.constraint.ConstraintLayout>
+    <!--2 -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_bottom_tab_discover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/xxx"
+        app:layout_constraintStart_toEndOf="@id/main_bottom_tab_home"
+        app:layout_constraintTop_toTopOf="@+id/main_bottom_tab_home"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="460dp">
+
+        <com.redefine.commonui.widget.RedPointCircleBgImageView
+            android:id="@+id/main_bottom_discover_red_point"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            app:circle_color="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:red_point_center_offset_x="7dp"
+            app:red_point_center_offset_y="-6dp"
+            app:red_point_only_draw_red_point="false"
+            app:red_point_r="4dp"
+            app:red_point_stoke_color="@color/white"
+            app:srcCompat="@drawable/main_bottom_tab_discover_selector" />
+
+        <TextView
+            android:id="@+id/home_tab_discover_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_tab_color"
+            android:textSize="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_bottom_discover_red_point"
+            tools:text="Home" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--3-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/xxx"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_bottom_tab_message"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_bottom_tab_discover"
+        app:layout_constraintTop_toTopOf="@+id/main_bottom_tab_home">
+
+        <ImageView
+            android:id="@+id/iv_publish_bg"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_home_fabu"
+            tools:visibility="visible" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/lottie_publish_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lottie_publish_tv1"
+                android:layout_width="66dp"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_main_gradient_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Start your"
+                tools:visibility="visible" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/lottie_publish_tv2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="10dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/lottie_publish_tv1"-->
+            <!--tools:text="Start your"-->
+            <!--tools:visibility="visible" />-->
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!--<com.airbnb.lottie.LottieAnimationView-->
+        <!--android:id="@+id/lottie_publish"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:visibility="visible" />-->
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_publish"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="9:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/xxx"
+        tools:visibility="visible" />
+    <!--4-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_bottom_tab_message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_bottom_tab_me"
+        app:layout_constraintStart_toEndOf="@id/xxx"
+        app:layout_constraintTop_toTopOf="@+id/main_bottom_tab_home"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="300dp">
+
+        <com.redefine.commonui.widget.RedPointCircleBgImageView
+            android:id="@+id/main_bottom_message_red_point"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:circle_color="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:red_point_center_offset_x="6dp"
+            app:red_point_center_offset_y="-6dp"
+            app:red_point_only_draw_red_point="false"
+            app:red_point_r="4dp"
+            app:red_point_stoke_color="@color/white"
+            app:srcCompat="@drawable/main_bottom_tab_message_selector" />
+
+        <TextView
+            android:id="@+id/home_tab_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_tab_color"
+            android:textSize="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_bottom_message_red_point"
+            tools:text="Home" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--5-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_bottom_tab_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toEndOf="@+id/main_bottom_tab_message"
+        app:layout_constraintTop_toTopOf="@+id/main_bottom_tab_home"
+        tools:layout_editor_absoluteY="209dp">
+
+        <com.redefine.commonui.widget.RedPointCircleBgImageView
+            android:id="@+id/main_bottom_my_red_point"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:circle_color="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:red_point_center_offset_x="6dp"
+            app:red_point_center_offset_y="-6dp"
+            app:red_point_only_draw_red_point="false"
+            app:red_point_r="4dp"
+            app:red_point_stoke_color="@color/white"
+            app:srcCompat="@drawable/main_bottom_tab_me_selector" />
+
+        <TextView
+            android:id="@+id/home_tab_me_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_tab_color"
+            android:textSize="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_bottom_my_red_point"
+            tools:text="Home" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

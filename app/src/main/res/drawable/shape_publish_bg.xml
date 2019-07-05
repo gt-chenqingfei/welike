@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow -->
+    <item android:bottom="3dp">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#04000000" />
+                    <padding android:top="1dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#09000000" />
+                    <padding android:top="1dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#0f000000" />
+                    <padding android:top="1dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- Blue button pressed -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+
+</layer-list>

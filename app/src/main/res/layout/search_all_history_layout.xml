@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/search_all_history"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:textColor="@color/color_48779D"
+        android:textSize="@dimen/common_text_size_14"
+        tools:text="All search history" />
+
+    <FrameLayout
+        android:id="@+id/common_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/common_color_f8f8f8"
+        android:foreground="@drawable/common_shadow_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_feed_bottom_root_view" />
+
+
+    <LinearLayout
+        android:id="@+id/topic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_b_t_shadow"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/search_topic_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_discovery_latest_line1" />
+
+            <TextView
+                android:id="@+id/search_topic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:text="@string/topic_trending_search"
+                android:textColor="@color/common_text_black_31"
+                android:textSize="@dimen/common_text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/search_topic_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_discovery_latest_line1" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/div_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_color_ee" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/search_topic_container1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+
+            <TextView
+                android:id="@+id/search_hot_topic1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple3"
+                android:drawableLeft="@drawable/hot_feed_topic_item_icon"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:paddingRight="12dp"
+                android:textColor="@color/common_text_black_31"
+                android:textSize="@dimen/common_text_size_14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/divider1"
+                tools:text="#Selfie With Campus Selfie With Campus Selfie With Campus" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="@dimen/common_divider_dp1"
+                android:layout_height="match_parent"
+                android:background="@color/color_f4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/search_hot_topic2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple3"
+                android:drawableLeft="@drawable/hot_feed_topic_item_icon"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="12dp"
+                android:textColor="@color/common_text_black_31"
+                android:textSize="@dimen/common_text_size_14"
+                app:layout_constraintLeft_toRightOf="@id/divider1"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="#Selfie With Campus Selfie With Campus Selfie With Campus" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/search_topic_container2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/search_hot_topic3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/hot_feed_topic_item_icon"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:paddingRight="12dp"
+                android:textColor="@color/common_text_black_31"
+                android:textSize="@dimen/common_text_size_14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/divider2"
+                tools:text="#Selfie With Campus Selfie With Campus Selfie With Campus" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="@dimen/common_divider_dp1"
+                android:layout_height="match_parent"
+                android:background="@color/color_f4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/search_hot_topic4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/hot_feed_topic_item_icon"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="12dp"
+                android:textColor="@color/common_text_black_31"
+                android:textSize="@dimen/common_text_size_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/divider2"
+                tools:text="#Selfie With Campus Selfie With Campus Selfie With Campus" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/search_topic_container3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/search_hot_topic5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple3"
+                android:drawableLeft="@drawable/hot_feed_topic_item_icon"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:paddingRight="12dp"
+                android:textColor="@color/common_text_black_31"
+                android:textSize="@dimen/common_text_size_14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/divider3"
+                tools:text="#Selfie With Campus Selfie With Campus Selfie With Campus" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="@dimen/common_divider_dp1"
+                android:layout_height="match_parent"
+                android:background="@color/color_f4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/search_more_topics"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple3"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/divider3">
+
+                <TextView
+                    android:id="@+id/search_more_topics_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/hot_feed_topic_item_icon"
+                    android:drawablePadding="6dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/color_48779D"
+                    android:textSize="@dimen/common_text_size_14"
+                    tools:text="More" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    app:srcCompat="@drawable/blue_arrow" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

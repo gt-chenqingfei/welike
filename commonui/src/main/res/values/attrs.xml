@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--switchBtn-->
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+    </declare-styleable>
+
+    <attr name="circle_color" format="color" />
+
+    <declare-styleable name="CircleBgView">
+        <attr name="circle_color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleBgImageView">
+        <attr name="circle_color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleBgTextView">
+        <attr name="circle_color" />
+    </declare-styleable>
+
+    <declare-styleable name="RedPointCircleBgImageView">
+        <attr name="circle_color" />
+        <attr name="red_point_color" format="color" />
+        <attr name="red_point_stoke_color" format="color" />
+        <attr name="red_point_r" format="dimension" />
+        <attr name="red_point_only_draw_red_point" format="boolean" />
+        <attr name="red_point_center_offset_x" format="dimension" />
+        <attr name="red_point_center_offset_y" format="dimension" />
+        <attr name="red_point_number_text_color" format="color" />
+        <attr name="red_point_number_text_size" format="dimension" />
+        <attr name="red_point_number_stoke_size" format="dimension" />
+    </declare-styleable>
+
+    <attr name="is_draw_top" format="boolean" />
+    <attr name="is_draw_left" format="boolean" />
+    <attr name="is_draw_right" format="boolean" />
+    <attr name="is_draw_bottom" format="boolean" />
+
+    <declare-styleable name="ShadowView">
+        <attr name="is_draw_top" />
+        <attr name="is_draw_left" />
+        <attr name="is_draw_right" />
+        <attr name="is_draw_bottom" />
+    </declare-styleable>
+
+    <declare-styleable name="L10nTextView">
+        <attr name="l10n_text_resource" format="string" />
+    </declare-styleable>
+    <declare-styleable name="androidWheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="circle_color1" format="color" />
+        <attr name="circle_stroke" format="integer" />
+    </declare-styleable>
+</resources>

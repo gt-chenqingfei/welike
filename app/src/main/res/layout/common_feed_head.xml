@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/common_feed_head_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:background="@color/white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/top_post_flag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_user_post_top" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/common_trending_layout"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:paddingLeft="12dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/common_trending_image"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_feed_post_trending_flag" />
+
+        <TextView
+            android:id="@+id/common_trending_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="#313131"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/common_trending_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/transparent_07"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--运营需要使用的，显示测试内容，线上包不显示-->
+    <TextView
+        android:id="@+id/tv_common_feed_operation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_trending_layout"
+        tools:text="AAAAAAAAAA"
+        tools:visibility="gone" />
+
+    <com.redefine.welike.commonui.widget.VipAvatar
+        android:id="@+id/common_feed_head"
+        android:layout_width="@dimen/common_feed_head_size"
+        android:layout_height="@dimen/common_feed_head_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_common_feed_operation"
+        tools:background="@drawable/alien" />
+
+    <TextView
+        android:id="@+id/common_feed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textColor="@color/common_feed_name_text_color"
+        android:textSize="@dimen/common_text_size_14"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/common_feed_time"
+        app:layout_constraintLeft_toRightOf="@+id/common_feed_head"
+        app:layout_constraintRight_toLeftOf="@+id/common_feed_event_mark"
+        app:layout_constraintTop_toTopOf="@id/common_feed_head"
+        tools:text="common_ common_ common_ common_ common_ common_ " />
+
+    <TextView
+        android:id="@+id/common_feed_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_item_margin_6"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/common_feed_time_text_color"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/common_feed_head"
+        app:layout_constraintLeft_toRightOf="@+id/header_flag"
+        app:layout_constraintRight_toLeftOf="@+id/common_feed_follow_btn" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/header_flag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/common_feed_name"
+        app:layout_constraintTop_toBottomOf="@+id/common_feed_name">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/common_hot"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_feed_post_trending_flag" />
+
+        <TextView
+            android:id="@+id/common_hot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="1dp"
+            android:textColor="@color/feed_flag_trending_text_color"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/common_hot"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Trending" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/common_top"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_common_feed_top_flag" />
+
+        <TextView
+            android:id="@+id/common_top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="1dp"
+            android:textColor="@color/feed_flag_top_text_color"
+            android:textSize="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/common_top"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Top" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/common_feed_event_mark"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_margin="1dp"
+        android:layout_marginLeft="2dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/common_feed_name"
+        app:layout_constraintLeft_toRightOf="@+id/common_feed_name"
+        app:layout_constraintRight_toLeftOf="@+id/common_feed_empty"
+        app:layout_constraintTop_toTopOf="@+id/common_feed_name"
+        fresco:actualImageScaleType="fitCenter"
+        tools:background="@drawable/trophy"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/common_feed_empty"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toRightOf="@+id/common_feed_event_mark"
+        app:layout_constraintRight_toLeftOf="@+id/common_feed_follow_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="1dp" />
+
+    <com.redefine.welike.commonui.widget.UserFollowBtn
+        android:id="@+id/common_feed_follow_btn"
+        android:layout_width="76dp"
+        android:layout_height="29dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/common_feed_head"
+        app:layout_constraintLeft_toRightOf="@+id/common_feed_empty"
+        app:layout_constraintRight_toLeftOf="@+id/common_feed_read_count"
+        app:layout_constraintTop_toTopOf="@+id/common_feed_head"
+        tools:background="@color/Orange"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/common_feed_read_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_read_count_bg"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/color_interest_un_select"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/common_feed_head"
+        app:layout_constraintLeft_toRightOf="@+id/common_feed_follow_btn"
+        app:layout_constraintRight_toLeftOf="@+id/common_feed_arrow_btn"
+        app:layout_constraintTop_toTopOf="@+id/common_feed_head"
+        tools:text="9826k views"
+        tools:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/common_feed_arrow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/common_item_margin_12"
+        android:paddingRight="@dimen/common_item_margin_12"
+        android:paddingTop="5dp"
+        android:scaleType="center"
+        android:visibility="gone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/common_feed_head"
+        app:layout_constraintLeft_toRightOf="@+id/common_feed_read_count"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/common_feed_head"
+        app:srcCompat="@drawable/ic_common_feed_post_header_more"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

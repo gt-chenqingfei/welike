@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common -->
+    <color name="app_color">#FF9300</color>
+    <color name="clear">#00000000</color>
+    <color name="half_black">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_transparent_30">#77000000</color>
+    <color name="black_transparent_60">#99000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="ligh_gray">#D9D9D9</color>
+    <color name="gray">#B2B2B2</color>
+    <color name="text_hint">#A3B1CA</color>
+    <color name="ligh_gray_line">#D9D9D9</color>
+    <color name="transparent_70_white">#B2FFFFFF</color>
+    <color name="transparent_90_white">#E6FFFFFF</color>
+    <color name="transparent_97_white">#F7FFFFFF</color>
+    <color name="common_divider_color">#e1e1e1</color>
+    <color name="common_divider_f4_color">#F4F4F4</color>
+    <color name="load_more_text_color">@color/black</color>
+    <color name="transparent">#00f7b3b3</color>
+    <color name="transparent12">#1F000000</color>
+    <color name="transparent17">#11000000</color>
+    <color name="transparent40">#66000000</color>
+    <color name="transparent20">#33000000</color>
+    <color name="quite_time_from_bg">#FFFAF4</color>
+
+    <color name="linear_gradient_start_color">#0F000000</color>
+    <color name="linear_gradient_end_color">@color/transparent</color>
+    <color name="red_point_bg_color">#FF5500</color>
+
+    <color name="art_gradient_start_color">#40000000</color>
+    <color name="art_gradient_end_color">#00000000</color>
+
+    <color name="common_title_view_text_color">#313131</color>
+    <color name="common_gray_round_rect_color">#a1a1a1</color>
+    <color name="common_error_view_text_color">#C2C2C2</color>
+    <color name="common_reload_text_color">@color/app_color</color>
+    <color name="common_loading_bg_color">#F7F7F7</color>
+    <color name="common_empty_text_color">#C2C2C2</color>
+    <color name="common_load_more_bg">#F7F7F7</color>
+    <color name="common_setting_bg">#F8F8F8</color>
+    <color name="common_feed_bottom_ver_divider">#e9e9e9</color>
+    <color name="common_simple_menu_dialog_divider">#E9E9E9</color>
+    <color name="simple_menu_item_text_color">#454545</color>
+    <color name="common_pic_default_color">#EEEEEE</color>
+
+    <color name="common_delete_bg_color">#FF6A49</color>
+    <color name="common_confirm_title_text_color">#696969</color>
+    <color name="common_confirm_content_text_color">#64313131</color>
+    <color name="common_cancel_btn_bg">#E3E5EA</color>
+    <color name="common_menu_title_text_color">#454545</color>
+    <color name="common_confirm_cancel_text_color">#A1A1A1</color>
+    <color name="common_confirm_ok_text_color">#423D2D</color>
+    <color name="common_error_btn_text_color">#423D2D</color>
+    <color name="common_rank_no1_color">#FFB000</color>
+    <color name="common_rank_no2_color">#FF6A49</color>
+    <color name="common_rank_no3_color">#18DC00</color>
+    <color name="common_share_grid_item_text_color">#838383</color>
+    <color name="common_share_bg_color">#EEEEEE</color>
+
+
+    <color name="common_button_appcolor_gradient_start">#FFFF9300</color>
+    <color name="common_button_appcolor_gradient_end">#88FF9300</color>
+    <color name="common_red_btn_color">#FF6A49</color>
+    <color name="common_gray_btn_color">#E3E5EA</color>
+
+    <color name="common_gray_f6">#F6F6F6</color>
+    <color name="common_gray_f5_color">#F5F5F5</color>
+    <color name="common_no_more_color">#B4B4B4</color>
+    <color name="common_divider_f6_color">#F6F6F6</color>
+    <color name="common_text_color_afb0b1">#AFB0B1</color>
+    <color name="common_text_color_423d2d">#423D2D</color>
+    <color name="common_divider_f5_color">#F5F5F5</color>
+    <color name="common_divider_color_dddddd">#DDDDDD</color>
+    <color name="common_text_color_454545">#454545</color>
+
+    <color name="common_tab_indicator_color">#FFA00B</color>
+    <color name="common_red_point_color">#FF5500</color>
+    <color name="common_text_black_62">#626262</color>
+    <color name="common_text_black_31">#313131</color>
+    <color name="common_text_color_5c">#5C5C5C</color>
+    <color name="common_text_color_B06E00">#B06E00</color>
+    <color name="common_text_color_626262">#626262</color>
+    <color name="common_text_color_31">#313131</color>
+    <color name="common_color_e3e5ea">#e3e5ea</color>
+    <color name="common_menu_delete_text_color">#FF6A49</color>
+    <color name="common_menu_share_text_color">#2B98EE</color>
+    <color name="common_menu_item_title_text_color">#B9B9BA</color>
+    <color name="common_text_color_9a">#9a9a9a</color>
+    <color name="common_color_ee">#eeeeee</color>
+    <color name="common_transparent_white">#F0FFFFFF</color>
+    <color name="common_btn_blue_bg">#2B98EE</color>
+    <color name="common_color_ff9a00">#ff9a00</color>
+    <color name="topic_all">#4A90E2</color>
+    <color name="transparent6">#06000000</color>
+
+    <color name="whatsapp_share">#4BB24E</color>
+
+    <color name="common_color_fa">#FAFAFA</color>
+    <color name="common_text_black_53">#535353</color>
+    <color name="common_text_black_53575e">#53575e</color>
+    <color name="discover_table_layout_indicator">#FF9A00</color>
+    <color name="poll_header_layout_indicator">#D5E0EE</color>
+
+
+    <color name="common_text_color_45">#454545</color>
+    <color name="common_text_color_9b">#9b9b9b</color>
+    <color name="topic_send_color">#ff9300</color>
+
+    <color name="common_transparent_0D">#0DFFFFFF</color>
+    <color name="common_transparent_10">#10FFFFFF</color>
+
+    <color name="common_transparent_c2">#80FFFFFF</color>
+    <color name="common_color_f8f8f8">#F8F8F8</color>
+
+    <color name="easy_post_change_text_color">#ff9300</color>
+
+</resources>

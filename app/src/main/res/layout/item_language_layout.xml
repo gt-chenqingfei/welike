@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/common_item_margin_4">
+
+    <RelativeLayout
+        android:id="@+id/rl_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/ripple4"
+        android:background="@drawable/select_language_bg">
+
+        <ImageView
+            android:id="@+id/iv_choose_language"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_item_margin_12"
+            android:src="@drawable/recommon_user_check" />
+
+
+        <ImageView
+            android:id="@+id/iv_language_icon"
+            android:layout_width="72dp"
+            android:layout_height="68dp"
+            android:layout_toLeftOf="@+id/iv_choose_language"
+            android:src="@drawable/icon_active_language_be" />
+
+
+        <ImageView
+            android:id="@+id/tv_choose_language_title"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_item_margin_12"
+            android:text="@string/gravity_center"
+            android:textColor="@color/color_31"
+            android:textSize="16dp"
+            app:srcCompat="@drawable/ic_language_bengali" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_language_icon"
+            android:layout_alignTop="@+id/iv_language_icon"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_language_bg"
+                android:gravity="center"
+                android:text="Coming soon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_size_14" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

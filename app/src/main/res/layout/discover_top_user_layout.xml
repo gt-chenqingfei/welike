@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@drawable/top_user_shake_bg">
+
+    <include
+        android:id="@+id/discover_shake_top_no1_user_item"
+        layout="@layout/discover_shake_top_no1_user_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/discover_shake_top_no2_user_item"
+        layout="@layout/discover_shake_top_no2_user_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="41dp"
+        android:layout_weight="1" />
+
+
+    <include
+        android:id="@+id/discover_shake_top_no3_user_item"
+        layout="@layout/discover_shake_top_no3_user_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="41dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/discover_top_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/common_text_black_62"
+        android:textSize="@dimen/common_text_size_14"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

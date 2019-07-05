@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_title"
+        android:layout_width="0dp"
+        android:paddingTop="@dimen/common_item_margin_8"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/common_item_margin_12"
+        app:layout_constraintEnd_toStartOf="@+id/tv_look_counts"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_trend_title"
+            style="@style/new_ui.text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_trend_pic"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_trend_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_trend_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_trend_title"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_trend_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_item_margin_4"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/common_item_margin_12"
+        android:paddingRight="@dimen/common_item_margin_4"
+        android:text="asadasda"
+        android:textColor="@color/main_grey"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintEnd_toStartOf="@+id/tv_look_counts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_title" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="@dimen/common_item_margin_8"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_look_counts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_look_counts"
+        app:srcCompat="@drawable/common_left_arrow_icon" />
+
+    <TextView
+        android:id="@+id/tv_look_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_item_margin_4"
+        android:background="@drawable/common_trends_views_bg"
+        android:paddingBottom="3dp"
+        android:layout_marginTop="@dimen/common_item_margin_8"
+        android:paddingLeft="@dimen/common_item_margin_6"
+        android:paddingRight="@dimen/common_item_margin_6"
+        android:paddingTop="3dp"
+        android:text="100k views"
+        android:textColor="@color/main_grey"
+        android:textSize="@dimen/common_text_size_12"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_trend_intro"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatImageView"
+        app:layout_constraintTop_toTopOf="@+id/cl_title" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_post_pics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trend_intro" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/common_load_more_bg"
+        app:layout_constraintTop_toBottomOf="@+id/ll_post_pics" />
+
+</android.support.constraint.ConstraintLayout>

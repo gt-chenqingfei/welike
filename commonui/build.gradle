@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(":systembartint")
+    implementation project(":foundation")
+    api project(":base")
+//    compile rootProject.ext.dependencies["appcompat-v7"]
+    api deps.support.app_compat
+    api deps.support.recyclerview
+    api deps.support.design
+    api deps.support.fragment
+
+    api deps.fresco.base
+    api deps.fresco.animated_webp
+    api deps.fresco.webpsupport
+    api deps.fresco.animated_gif
+    api(deps.fresco.imagepipeline) {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    api deps.facebook.share
+    api deps.swipelayout
+    api deps.lottie
+    implementation deps.constraint_layout
+    implementation deps.kotlin.stdlib
+    implementation deps.gms.analytics
+    implementation deps.jsoup
+    implementation deps.okdownload.okdownload
+    implementation deps.okdownload.okhttp
+    implementation deps.okdownload.sqlite
+//    compile rootProject.ext.dependencies["recyclerview-v7"]
+//    compile rootProject.ext.dependencies["design"]
+//    compile rootProject.ext.dependencies["support-annotations"]
+
+//    compile rootProject.ext.dependencies["support-fragment"]
+//    compile rootProject.ext.dependencies["animated-webp"]
+//    compile rootProject.ext.dependencies["webpsupport"]
+//    compile rootProject.ext.dependencies["fresco"]
+//    compile rootProject.ext.dependencies["animated-gif"]
+//    compile (rootProject.ext.dependencies["imagepipeline-okhttp3"]) {
+//        exclude group : 'com.squareup.okhttp3'
+//    }
+//    compile 'com.facebook.android:facebook-share:[4,5)'
+//    compile "com.daimajia.swipelayout:library:1.2.0"
+
+//    compile 'cn.dreamtobe.kpswitch:library:1.6.1'
+//    compile 'com.airbnb.android:lottie:2.5.1'
+    
+}
+repositories {
+    mavenCentral()
+}

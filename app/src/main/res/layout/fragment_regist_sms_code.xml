@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.redefine.welike.business.startup.ui.fragment.RegistSmsCodeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.redefine.welike.business.startup.ui.widget.WelikeIndiaTextView
+            android:id="@+id/regist_welike_india"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/search_page_edit_text_color"
+            android:textSize="@dimen/common_text_size_14"
+            tools:text="Welike India" />
+
+        <ImageView
+            android:id="@+id/common_back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="13dp"
+            android:padding="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_back_btn" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="46dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:src="@drawable/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_welike"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+            app:srcCompat="@drawable/ic_splash_welike_logo" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--<ImageView-->
+    <!--android:layout_width="86dp"-->
+    <!--android:layout_height="107dp"-->
+    <!--android:src="@drawable/regist_logo"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:layout_marginTop="36dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="@dimen/common_item_margin_24"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/verify_code_type"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            app:srcCompat="@drawable/verify_code_sms" />
+
+        <TextView
+            android:id="@+id/regist_otp_code_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:minHeight="42dp"
+            android:textColor="@color/color_31"
+            android:textSize="15dp"
+            tools:text="OTP code sent to +919900001234 \n Please enter it below" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_input_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_regist_sms_input"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/regist_sms_input_color" />
+
+        <ImageView
+            android:id="@+id/regist_sms_delete"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/regist_phonenum_delete"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_regist_sms_input"
+            android:background="@color/regist_phone_num_line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_regist_smscode_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/regist_change_number"
+            android:textSize="@dimen/common_text_size_13"
+            android:visibility="gone"
+            tools:text="Resend" />
+
+        <TextView
+            android:id="@+id/tv_regist_smscode_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_31"
+            android:textSize="@dimen/common_text_size_13"
+            tools:text="60s" />
+
+        <TextView
+            android:id="@+id/tv_regist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_48779D"
+            android:textSize="@dimen/common_text_size_13"
+            tools:text="Wrong Number?" />
+
+    </RelativeLayout>
+
+    <com.redefine.welike.commonui.thirdlogin.ThirdLoginLayout
+        android:id="@+id/third_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:visibility="gone" />
+
+</LinearLayout>
